@@ -13,6 +13,7 @@
 		BC8A631F287EBD5300D7DA7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A631D287EBD5300D7DA7E /* Main.storyboard */; };
 		BC8A6321287EBD5400D7DA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6320287EBD5400D7DA7E /* Assets.xcassets */; };
 		BC8A6324287EBD5400D7DA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6322287EBD5400D7DA7E /* LaunchScreen.storyboard */; };
+		BC8A632F287F025000D7DA7E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A632E287F025000D7DA7E /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BC8A6320287EBD5400D7DA7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC8A6323287EBD5400D7DA7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC8A6325287EBD5400D7DA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8A632E287F025000D7DA7E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,80 @@
 		BC8A6316287EBD5300D7DA7E /* GiveCake */ = {
 			isa = PBXGroup;
 			children = (
-				BC8A6317287EBD5300D7DA7E /* AppDelegate.swift */,
-				BC8A6319287EBD5300D7DA7E /* SceneDelegate.swift */,
-				BC8A631B287EBD5300D7DA7E /* ViewController.swift */,
-				BC8A631D287EBD5300D7DA7E /* Main.storyboard */,
-				BC8A6320287EBD5400D7DA7E /* Assets.xcassets */,
-				BC8A6322287EBD5400D7DA7E /* LaunchScreen.storyboard */,
+				BC8A6330287F02A800D7DA7E /* Sources */,
+				BC8A632D287F023300D7DA7E /* Resources */,
 				BC8A6325287EBD5400D7DA7E /* Info.plist */,
 			);
 			path = GiveCake;
+			sourceTree = "<group>";
+		};
+		BC8A632B287F013D00D7DA7E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BC8A631B287EBD5300D7DA7E /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BC8A632C287F014B00D7DA7E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BC8A631D287EBD5300D7DA7E /* Main.storyboard */,
+				BC8A6322287EBD5400D7DA7E /* LaunchScreen.storyboard */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		BC8A632D287F023300D7DA7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC8A6320287EBD5400D7DA7E /* Assets.xcassets */,
+				BC8A632E287F025000D7DA7E /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC8A6330287F02A800D7DA7E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BC8A6331287F02E300D7DA7E /* Global */,
+				BC8A6335287F035600D7DA7E /* Model */,
+				BC8A632C287F014B00D7DA7E /* Screen */,
+				BC8A632B287F013D00D7DA7E /* ViewController */,
+				BC8A6319287EBD5300D7DA7E /* SceneDelegate.swift */,
+				BC8A6317287EBD5300D7DA7E /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BC8A6331287F02E300D7DA7E /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				BC8A6333287F032B00D7DA7E /* Components */,
+				BC8A6332287F031F00D7DA7E /* Extensions */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		BC8A6332287F031F00D7DA7E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC8A6333287F032B00D7DA7E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BC8A6335287F035600D7DA7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC8A6324287EBD5400D7DA7E /* LaunchScreen.storyboard in Resources */,
+				BC8A632F287F025000D7DA7E /* Colors.xcassets in Resources */,
 				BC8A6321287EBD5400D7DA7E /* Assets.xcassets in Resources */,
 				BC8A631F287EBD5300D7DA7E /* Main.storyboard in Resources */,
 			);
