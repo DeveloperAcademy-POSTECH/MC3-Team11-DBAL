@@ -1,8 +1,8 @@
 ---
-name: ✅ Add Template
+name: ✅ ADD Template
 about: 부수적인 코드를 추가하거나 라이브러리를 추가하거나 새로운 view를 생성할 때 사용합니다.
-title: "[✅ Add] : Add 타이틀"
-labels: ✅ Add
+title: "[✅ ADD] : ADD 타이틀"
+labels: ✅ ADD
 assignees: ''
 
 ---
