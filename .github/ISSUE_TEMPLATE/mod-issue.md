@@ -2,7 +2,7 @@
 name: 📱 MOD Template
 about: Storyboard 파일만 수정할 때 사용합니다.
 title: "[📱 MOD] : MOD 타이틀"
-labels: '📱 MOD'
+labels: 📱 MOD
 assignees: ''
 
 ---

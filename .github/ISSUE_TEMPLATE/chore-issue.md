@@ -2,7 +2,7 @@
 name: 🔧 CHORE Template
 about: 코드를 수정하거나 Info.plist같은 내부 파일을 수정할 때 사용합니다.
 title: "[🔧 CHORE] : CHORE 타이틀"
-labels: '🔧 CHORE'
+labels: 🔧 CHORE
 assignees: ''
 
 ---

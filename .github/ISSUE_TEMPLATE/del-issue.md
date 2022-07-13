@@ -2,7 +2,7 @@
 name: 🔥 DEL Template
 about: 오직 코드를 삭제하는 작업만 수행할 때 사용합니다.
 title: "[🔥 DEL] : DEL 타이틀"
-labels: '🔥 DEL'
+labels: 🔥 DEL
 assignees: ''
 
 ---

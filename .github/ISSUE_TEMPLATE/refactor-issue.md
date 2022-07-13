@@ -2,7 +2,7 @@
 name: ♻️ REFACTOR Template
 about: 기능 변경은 없이 코드를 정리할 때 사용합니다.
 title: "[♻️ REFACTOR] : REFACTOR 타이틀"
-labels: '♻️ REFACTOR'
+labels: ♻️ REFACTOR
 assignees: ''
 
 ---

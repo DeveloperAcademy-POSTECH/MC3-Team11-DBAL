@@ -2,7 +2,7 @@
 name: ⭐️ TIP Template
 about: 팀원들과 팁을 나누고자 할 때 사용합니다. 감사합니다! :)
 title: "[⭐️ TIP] : TIP 타이틀"
-labels: '⭐️ TIP'
+labels: ⭐️ TIP
 assignees: ''
 
 ---

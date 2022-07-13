@@ -2,7 +2,7 @@
 name: ⚡️ IMPROVE Template
 about: 기존 코드에서 성능을 향상시키는 작업을 할 때 사용합니다.
 title: "[⚡️ IMPROVE] : IMPROVE 타이틀"
-labels: '⚡️ IMPROVE'
+labels: ⚡️ IMPROVE
 assignees: ''
 
 ---

@@ -2,7 +2,7 @@
 name: ✨ FEAT Template
 about: 새로운 기능을 구현할 때 사용합니다.
 title: "[✨ FEAT] : FEAT 타이틀"
-labels: '✨ FEAT'
+labels: ✨ FEAT
 assignees: ''
 
 ---

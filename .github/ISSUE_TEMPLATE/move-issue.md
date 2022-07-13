@@ -2,7 +2,7 @@
 name: 🚚 MOVE Template
 about: 프로젝트 내 파일이나 코드를 이동시킬 때 사용합니다.
 title: "[🚚 MOVE] : MOVE 타이틀"
-labels: '🚚 MOVE'
+labels: 🚚 MOVE
 assignees: ''
 
 ---

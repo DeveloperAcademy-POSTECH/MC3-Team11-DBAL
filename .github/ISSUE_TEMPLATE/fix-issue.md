@@ -2,7 +2,7 @@
 name: 🐛 FIX Template
 about: 빨간색의 error를 발생시키는 버그나 오류를 수정할 때 사용합니다.
 title: "[🐛 FIX] : FIX 타이틀"
-labels: '🐛 FIX'
+labels: 🐛 FIX
 assignees: ''
 
 ---
