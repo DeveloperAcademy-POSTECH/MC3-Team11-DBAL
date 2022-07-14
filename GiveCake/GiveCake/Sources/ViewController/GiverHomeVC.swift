@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GiverHomeVC.swift
 //  GiveCake
 //
 //  Created by 김동락 on 2022/07/14.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GiverHomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,4 +16,3 @@ class ViewController: UIViewController {
 
 
 }
-
