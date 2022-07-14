@@ -11,13 +11,12 @@
 		BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E142287FF50900521F55 /* GiverHome.storyboard */; };
 		BC09E145287FF51800521F55 /* GiverFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E144287FF51800521F55 /* GiverFeed.storyboard */; };
 		BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E148287FF5E900521F55 /* GiverMessage.storyboard */; };
-		BC09E14F287FFBB600521F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E14E287FFBB600521F55 /* Main.storyboard */; };
-		BC09E151287FFC4E00521F55 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E150287FFC4E00521F55 /* MainVC.swift */; };
 		BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */; };
 		BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E156287FFCD900521F55 /* GiverLoginVC.swift */; };
 		BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E158287FFD6200521F55 /* GiverHomeVC.swift */; };
 		BC09E15B287FFD6F00521F55 /* GiverFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E15A287FFD6F00521F55 /* GiverFeedVC.swift */; };
 		BC09E15D287FFD7900521F55 /* GiverMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E15C287FFD7900521F55 /* GiverMessageVC.swift */; };
+		BC09E15F28800A3900521F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E15E28800A3900521F55 /* Main.storyboard */; };
 		BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */; };
 		BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */; };
 		BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */; };
@@ -33,13 +32,12 @@
 		BC09E142287FF50900521F55 /* GiverHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverHome.storyboard; sourceTree = "<group>"; };
 		BC09E144287FF51800521F55 /* GiverFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverFeed.storyboard; sourceTree = "<group>"; };
 		BC09E148287FF5E900521F55 /* GiverMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessage.storyboard; sourceTree = "<group>"; };
-		BC09E14E287FFBB600521F55 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		BC09E150287FFC4E00521F55 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverTabBarVC.swift; sourceTree = "<group>"; };
 		BC09E156287FFCD900521F55 /* GiverLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverLoginVC.swift; sourceTree = "<group>"; };
 		BC09E158287FFD6200521F55 /* GiverHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverHomeVC.swift; sourceTree = "<group>"; };
 		BC09E15A287FFD6F00521F55 /* GiverFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverFeedVC.swift; sourceTree = "<group>"; };
 		BC09E15C287FFD7900521F55 /* GiverMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverMessageVC.swift; sourceTree = "<group>"; };
+		BC09E15E28800A3900521F55 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BC8A6379287FAAF800D7DA7E /* GiveCake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiveCake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 		BC8A6392287FAB4C00D7DA7E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BC09E150287FFC4E00521F55 /* MainVC.swift */,
 				BC09E156287FFCD900521F55 /* GiverLoginVC.swift */,
 				BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */,
 				BC09E158287FFD6200521F55 /* GiverHomeVC.swift */,
@@ -128,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				BC8A6387287FAAF900D7DA7E /* LaunchScreen.storyboard */,
-				BC09E14E287FFBB600521F55 /* Main.storyboard */,
+				BC09E15E28800A3900521F55 /* Main.storyboard */,
 				BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */,
 				BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */,
 				BC09E142287FF50900521F55 /* GiverHome.storyboard */,
@@ -226,7 +223,7 @@
 				BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */,
 				BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */,
 				BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */,
-				BC09E14F287FFBB600521F55 /* Main.storyboard in Resources */,
+				BC09E15F28800A3900521F55 /* Main.storyboard in Resources */,
 				BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */,
 				BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */,
 			);
@@ -246,7 +243,6 @@
 				BC09E15D287FFD7900521F55 /* GiverMessageVC.swift in Sources */,
 				BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */,
 				BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */,
-				BC09E151287FFC4E00521F55 /* MainVC.swift in Sources */,
 				BC8A639C287FAC4800D7DA7E /* ExampleExtension.swift in Sources */,
 				BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */,
 			);

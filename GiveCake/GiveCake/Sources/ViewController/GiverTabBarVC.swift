@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GiverTabBarVC: UIViewController {
+class GiverTabBarVC: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
