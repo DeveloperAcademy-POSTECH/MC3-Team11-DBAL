@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // rootview 설정하기
         setRootView(scene, name: "GiverLogin", identifier: "GiverLoginVC")
+//        setRootView(scene, name: "GiverTabBar", identifier: "GiverTabBarVC")
     }
     
     // rootview 설정하기
