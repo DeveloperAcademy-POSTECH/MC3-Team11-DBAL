@@ -62,11 +62,7 @@ class TodayViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.ut_dequeueReusable(TodayTableViewCell.self, for: indexPath)
         cell.selectionStyle = .none
-        if indexPath.row == 0 {
-            cell.bgImageView.image = #imageLiteral(resourceName: "demo_icon")
-        } else {
-            cell.bgImageView.image = #imageLiteral(resourceName: "demo_icon")
-        }
+        cell.bgImageView.image = GiverFeedModel.instance.feedList[indexPath.row].image
         return cell
     }
     
@@ -89,7 +85,7 @@ class TodayViewController: UITableViewController {
         guard let cell = tableView.cellForRow(at: indexPath) as? TodayTableViewCell else { return }
         selectedCell = cell
         
-        let detailVC = CardDetailViewController(cell: cell)
+        let detailVC = CardDetailViewController(cell: cell, selectedIdx: indexPath.row)
         
         detailVC.dismissClosure = { [weak self] in
             guard let StrongSelf = self else { return }

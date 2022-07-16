@@ -13,6 +13,8 @@ class CardDetailViewController: UIViewController {
         return true
     }
     
+    let selectedIdx: Int
+    
     var dismissClosure: (()->())?
     //the point when start to interactive
     var interactiveStartingPoint: CGPoint? = nil
@@ -31,7 +33,7 @@ class CardDetailViewController: UIViewController {
     
     lazy var scrollView: DetailScrollView = {
         let frame = self.view.bounds
-        let view = DetailScrollView(frame: frame)
+        let view = DetailScrollView(frame: frame, selectedIdx: selectedIdx)
         view.delegate = self
         return view
     }()
@@ -44,8 +46,9 @@ class CardDetailViewController: UIViewController {
         return btn
     }()
     
-    init(cell: TodayTableViewCell) {
+    init(cell: TodayTableViewCell, selectedIdx: Int) {
         self.cell = cell
+        self.selectedIdx = selectedIdx
         super.init(nibName: nil, bundle: nil)
         self.setupTranstion()
     }

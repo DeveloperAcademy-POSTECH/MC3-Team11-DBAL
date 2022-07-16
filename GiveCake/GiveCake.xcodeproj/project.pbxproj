@@ -28,6 +28,7 @@
 		BC5087F528827A1A00A4AD5F /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F428827A1A00A4AD5F /* UITableViewExtension.swift */; };
 		BC5087F728827AAA00A4AD5F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F628827AAA00A4AD5F /* StringExtension.swift */; };
 		BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */; };
+		BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */; };
 		BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */; };
 		BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */; };
 		BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */; };
@@ -60,6 +61,7 @@
 		BC5087F428827A1A00A4AD5F /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		BC5087F628827AAA00A4AD5F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverFeedModel.swift; sourceTree = "<group>"; };
 		BC8A6379287FAAF800D7DA7E /* GiveCake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiveCake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				BC8A6397287FABBF00D7DA7E /* ExampleModel.swift */,
+				BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				BC5087F728827AAA00A4AD5F /* StringExtension.swift in Sources */,
 				BC5087E92882776B00A4AD5F /* TodayAnimationTransition.swift in Sources */,
 				BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */,
+				BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */,
 				BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */,
 				BC5087E72882773600A4AD5F /* TodayViewController.swift in Sources */,
 				BC8A639C287FAC4800D7DA7E /* ExampleExtension.swift in Sources */,
