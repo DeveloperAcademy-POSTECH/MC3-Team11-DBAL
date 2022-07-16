@@ -10,7 +10,7 @@
         <!--Giver Tab BarVC-->
         <scene sceneID="d5V-Qo-iNh">
             <objects>
-                <tabBarController id="HkI-9C-4NH" customClass="GiverTabBarVC" customModule="GiveCake" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="GiverTabBarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HkI-9C-4NH" customClass="GiverTabBarVC" customModule="GiveCake" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wpG-mQ-KcB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

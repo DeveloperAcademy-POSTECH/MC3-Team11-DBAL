@@ -14,9 +14,20 @@
 		BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */; };
 		BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E156287FFCD900521F55 /* GiverLoginVC.swift */; };
 		BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E158287FFD6200521F55 /* GiverHomeVC.swift */; };
-		BC09E15B287FFD6F00521F55 /* GiverFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E15A287FFD6F00521F55 /* GiverFeedVC.swift */; };
 		BC09E15D287FFD7900521F55 /* GiverMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E15C287FFD7900521F55 /* GiverMessageVC.swift */; };
 		BC09E15F28800A3900521F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E15E28800A3900521F55 /* Main.storyboard */; };
+		BC5087E3288276F500A4AD5F /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E2288276F500A4AD5F /* CardDetailViewController.swift */; };
+		BC5087E52882771E00A4AD5F /* CardPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E42882771E00A4AD5F /* CardPresentationController.swift */; };
+		BC5087E72882773600A4AD5F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E62882773600A4AD5F /* TodayViewController.swift */; };
+		BC5087E92882776B00A4AD5F /* TodayAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E82882776B00A4AD5F /* TodayAnimationTransition.swift */; };
+		BC5087EB2882778600A4AD5F /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087EA2882778600A4AD5F /* DetailScrollView.swift */; };
+		BC5087ED288277A000A4AD5F /* TodayTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087EC288277A000A4AD5F /* TodayTableHeaderView.swift */; };
+		BC5087EF288277B500A4AD5F /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087EE288277B500A4AD5F /* TodayTableViewCell.swift */; };
+		BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F02882790500A4AD5F /* GlobalConstants.swift */; };
+		BC5087F32882798D00A4AD5F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F22882798D00A4AD5F /* UIViewControllerExtension.swift */; };
+		BC5087F528827A1A00A4AD5F /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F428827A1A00A4AD5F /* UITableViewExtension.swift */; };
+		BC5087F728827AAA00A4AD5F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F628827AAA00A4AD5F /* StringExtension.swift */; };
+		BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */; };
 		BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */; };
 		BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */; };
 		BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */; };
@@ -35,9 +46,20 @@
 		BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverTabBarVC.swift; sourceTree = "<group>"; };
 		BC09E156287FFCD900521F55 /* GiverLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverLoginVC.swift; sourceTree = "<group>"; };
 		BC09E158287FFD6200521F55 /* GiverHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverHomeVC.swift; sourceTree = "<group>"; };
-		BC09E15A287FFD6F00521F55 /* GiverFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverFeedVC.swift; sourceTree = "<group>"; };
 		BC09E15C287FFD7900521F55 /* GiverMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverMessageVC.swift; sourceTree = "<group>"; };
 		BC09E15E28800A3900521F55 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BC5087E2288276F500A4AD5F /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		BC5087E42882771E00A4AD5F /* CardPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentationController.swift; sourceTree = "<group>"; };
+		BC5087E62882773600A4AD5F /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		BC5087E82882776B00A4AD5F /* TodayAnimationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayAnimationTransition.swift; sourceTree = "<group>"; };
+		BC5087EA2882778600A4AD5F /* DetailScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScrollView.swift; sourceTree = "<group>"; };
+		BC5087EC288277A000A4AD5F /* TodayTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableHeaderView.swift; sourceTree = "<group>"; };
+		BC5087EE288277B500A4AD5F /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
+		BC5087F02882790500A4AD5F /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		BC5087F22882798D00A4AD5F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		BC5087F428827A1A00A4AD5F /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		BC5087F628827AAA00A4AD5F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		BC8A6379287FAAF800D7DA7E /* GiveCake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiveCake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +83,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC5087DE2882743400A4AD5F /* GiverFeedVC */ = {
+			isa = PBXGroup;
+			children = (
+				BC5087E1288276D100A4AD5F /* View */,
+				BC5087E0288276CC00A4AD5F /* Model */,
+				BC5087DF288276C300A4AD5F /* Controller */,
+			);
+			path = GiverFeedVC;
+			sourceTree = "<group>";
+		};
+		BC5087DF288276C300A4AD5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC5087E2288276F500A4AD5F /* CardDetailViewController.swift */,
+				BC5087E42882771E00A4AD5F /* CardPresentationController.swift */,
+				BC5087E62882773600A4AD5F /* TodayViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC5087E0288276CC00A4AD5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC5087E82882776B00A4AD5F /* TodayAnimationTransition.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC5087E1288276D100A4AD5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC5087EA2882778600A4AD5F /* DetailScrollView.swift */,
+				BC5087EC288277A000A4AD5F /* TodayTableHeaderView.swift */,
+				BC5087EE288277B500A4AD5F /* TodayTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BC8A6370287FAAF800D7DA7E = {
 			isa = PBXGroup;
 			children = (
@@ -90,10 +150,10 @@
 		BC8A6392287FAB4C00D7DA7E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BC5087DE2882743400A4AD5F /* GiverFeedVC */,
 				BC09E156287FFCD900521F55 /* GiverLoginVC.swift */,
 				BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */,
 				BC09E158287FFD6200521F55 /* GiverHomeVC.swift */,
-				BC09E15A287FFD6F00521F55 /* GiverFeedVC.swift */,
 				BC09E15C287FFD7900521F55 /* GiverMessageVC.swift */,
 			);
 			path = ViewController;
@@ -147,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				BC8A639A287FAC3700D7DA7E /* Extensions */,
+				BC5087F02882790500A4AD5F /* GlobalConstants.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -155,6 +216,10 @@
 			isa = PBXGroup;
 			children = (
 				BC8A639B287FAC4800D7DA7E /* ExampleExtension.swift */,
+				BC5087F22882798D00A4AD5F /* UIViewControllerExtension.swift */,
+				BC5087F428827A1A00A4AD5F /* UITableViewExtension.swift */,
+				BC5087F628827AAA00A4AD5F /* StringExtension.swift */,
+				BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -237,13 +302,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */,
+				BC5087ED288277A000A4AD5F /* TodayTableHeaderView.swift in Sources */,
+				BC5087F32882798D00A4AD5F /* UIViewControllerExtension.swift in Sources */,
 				BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */,
+				BC5087F528827A1A00A4AD5F /* UITableViewExtension.swift in Sources */,
 				BC8A6398287FABBF00D7DA7E /* ExampleModel.swift in Sources */,
-				BC09E15B287FFD6F00521F55 /* GiverFeedVC.swift in Sources */,
+				BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */,
+				BC5087EB2882778600A4AD5F /* DetailScrollView.swift in Sources */,
 				BC09E15D287FFD7900521F55 /* GiverMessageVC.swift in Sources */,
+				BC5087EF288277B500A4AD5F /* TodayTableViewCell.swift in Sources */,
+				BC5087E3288276F500A4AD5F /* CardDetailViewController.swift in Sources */,
+				BC5087F728827AAA00A4AD5F /* StringExtension.swift in Sources */,
+				BC5087E92882776B00A4AD5F /* TodayAnimationTransition.swift in Sources */,
 				BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */,
 				BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */,
+				BC5087E72882773600A4AD5F /* TodayViewController.swift in Sources */,
 				BC8A639C287FAC4800D7DA7E /* ExampleExtension.swift in Sources */,
+				BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */,
+				BC5087E52882771E00A4AD5F /* CardPresentationController.swift in Sources */,
 				BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
