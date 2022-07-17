@@ -11,17 +11,23 @@ class GiverMesssageWriteVC: UIViewController {
 
     @IBOutlet var lbNumberOfCake: UILabel!
     @IBOutlet var tfWriteMessage: UITextField!
+    @IBOutlet var stpNumberOfCake: UIStepper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        stpNumberOfCake.wraps = true
+        stpNumberOfCake.autorepeat = true
+        stpNumberOfCake.minimumValue = 1
+        stpNumberOfCake.maximumValue = 150
     }
     
     @IBAction func btnSendMessage(_ sender: UIButton) {
     }
     
-    @IBAction func stpNumberOfCake(_ sender: UIStepper) {
+    @IBAction func ChangeStpNumberOfCake(_ sender: UIStepper) {
+        lbNumberOfCake.text = Int(sender.value).description
     }
     
     /*

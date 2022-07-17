@@ -143,11 +143,11 @@
                                 <rect key="frame" x="314" y="113" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="stpNumberOfCake:" destination="cef-NT-sw8" eventType="valueChanged" id="636-hX-JXZ"/>
+                                    <action selector="ChangeStpNumberOfCake:" destination="cef-NT-sw8" eventType="valueChanged" id="D7Z-7w-zzh"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1k-Mn-wGA">
-                                <rect key="frame" x="277" y="119" width="8" height="21"/>
+                                <rect key="frame" x="250" y="119" width="35" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -183,6 +183,7 @@
                     </view>
                     <connections>
                         <outlet property="lbNumberOfCake" destination="o1k-Mn-wGA" id="wAo-BD-ApX"/>
+                        <outlet property="stpNumberOfCake" destination="4h6-fa-nmm" id="nzg-6A-5ew"/>
                         <outlet property="tfWriteMessage" destination="Qev-FL-yw9" id="oda-06-pzP"/>
                     </connections>
                 </viewController>
