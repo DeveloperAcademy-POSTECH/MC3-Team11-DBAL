@@ -12,6 +12,7 @@
 		9EB9358C2883E38E00A56668 /* GiverMessageTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB9358B2883E38E00A56668 /* GiverMessageTableVC.swift */; };
 		9EB9358F2883E6BE00A56668 /* GiverMessageDummyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB9358E2883E6BE00A56668 /* GiverMessageDummyModel.swift */; };
 		9EB935922883EF9E00A56668 /* GiverMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB935912883EF9E00A56668 /* GiverMessageTableViewCell.swift */; };
+		9EB9359928842AE000A56668 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB9359828842AE000A56668 /* CloudKit.framework */; };
 		BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */; };
 		BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E142287FF50900521F55 /* GiverHome.storyboard */; };
 		BC09E145287FF51800521F55 /* GiverFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E144287FF51800521F55 /* GiverFeed.storyboard */; };
@@ -49,6 +50,8 @@
 		9EB9358B2883E38E00A56668 /* GiverMessageTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiverMessageTableVC.swift; path = GiveCake/Sources/ViewController/GiverMessageVC/Controller/GiverMessageTableVC.swift; sourceTree = SOURCE_ROOT; };
 		9EB9358E2883E6BE00A56668 /* GiverMessageDummyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverMessageDummyModel.swift; sourceTree = "<group>"; };
 		9EB935912883EF9E00A56668 /* GiverMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiverMessageTableViewCell.swift; path = GiveCake/Sources/ViewController/GiverMessageVC/View/GiverMessageTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		9EB9359628842AA900A56668 /* GiveCake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GiveCake.entitlements; sourceTree = "<group>"; };
+		9EB9359828842AE000A56668 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverLogin.storyboard; sourceTree = "<group>"; };
 		BC09E142287FF50900521F55 /* GiverHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverHome.storyboard; sourceTree = "<group>"; };
 		BC09E144287FF51800521F55 /* GiverFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverFeed.storyboard; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EB9359928842AE000A56668 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +131,14 @@
 				9EB935912883EF9E00A56668 /* GiverMessageTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9EB9359728842AE000A56668 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EB9359828842AE000A56668 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC5087DE2882743400A4AD5F /* GiverFeedVC */ = {
@@ -172,6 +184,7 @@
 			children = (
 				BC8A637B287FAAF800D7DA7E /* GiveCake */,
 				BC8A637A287FAAF800D7DA7E /* Products */,
+				9EB9359728842AE000A56668 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,6 +199,7 @@
 		BC8A637B287FAAF800D7DA7E /* GiveCake */ = {
 			isa = PBXGroup;
 			children = (
+				9EB9359628842AA900A56668 /* GiveCake.entitlements */,
 				BC8A6394287FAB7000D7DA7E /* Sources */,
 				BC8A6393287FAB5E00D7DA7E /* Resources */,
 				BC8A638A287FAAF900D7DA7E /* Info.plist */,
@@ -517,9 +531,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GiveCake/GiveCake.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 664P5JW26B;
+				DEVELOPMENT_TEAM = B5PRRNR42T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GiveCake/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -534,6 +550,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DBAL.GiveCake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -545,9 +562,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GiveCake/GiveCake.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 664P5JW26B;
+				DEVELOPMENT_TEAM = B5PRRNR42T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GiveCake/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -562,6 +581,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DBAL.GiveCake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
