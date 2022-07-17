@@ -14,7 +14,6 @@
 		BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */; };
 		BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E156287FFCD900521F55 /* GiverLoginVC.swift */; };
 		BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E158287FFD6200521F55 /* GiverHomeVC.swift */; };
-		BC09E15D287FFD7900521F55 /* GiverMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E15C287FFD7900521F55 /* GiverMessageVC.swift */; };
 		BC09E15F28800A3900521F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E15E28800A3900521F55 /* Main.storyboard */; };
 		BC5087E3288276F500A4AD5F /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E2288276F500A4AD5F /* CardDetailViewController.swift */; };
 		BC5087E52882771E00A4AD5F /* CardPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E42882771E00A4AD5F /* CardPresentationController.swift */; };
@@ -47,7 +46,6 @@
 		BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverTabBarVC.swift; sourceTree = "<group>"; };
 		BC09E156287FFCD900521F55 /* GiverLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverLoginVC.swift; sourceTree = "<group>"; };
 		BC09E158287FFD6200521F55 /* GiverHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverHomeVC.swift; sourceTree = "<group>"; };
-		BC09E15C287FFD7900521F55 /* GiverMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverMessageVC.swift; sourceTree = "<group>"; };
 		BC09E15E28800A3900521F55 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BC5087E2288276F500A4AD5F /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		BC5087E42882771E00A4AD5F /* CardPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentationController.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				BC09E156287FFCD900521F55 /* GiverLoginVC.swift */,
 				BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */,
 				BC09E158287FFD6200521F55 /* GiverHomeVC.swift */,
-				BC09E15C287FFD7900521F55 /* GiverMessageVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -312,7 +309,6 @@
 				BC8A6398287FABBF00D7DA7E /* ExampleModel.swift in Sources */,
 				BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */,
 				BC5087EB2882778600A4AD5F /* DetailScrollView.swift in Sources */,
-				BC09E15D287FFD7900521F55 /* GiverMessageVC.swift in Sources */,
 				BC5087EF288277B500A4AD5F /* TodayTableViewCell.swift in Sources */,
 				BC5087E3288276F500A4AD5F /* CardDetailViewController.swift in Sources */,
 				BC5087F728827AAA00A4AD5F /* StringExtension.swift in Sources */,
