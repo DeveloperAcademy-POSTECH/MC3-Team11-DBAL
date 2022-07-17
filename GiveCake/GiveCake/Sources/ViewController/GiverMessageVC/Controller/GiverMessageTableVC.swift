@@ -25,23 +25,27 @@ class GiverMessageTableVC: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return sendersOfGiverMessage.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell: GiverMessageTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "giverMessageCell", for: indexPath) as! GiverMessageTableViewCell
 
-        // Configure the cell...
+//        cell.textLabel?.text = sendersOfGiverMessage[(indexPath as NSIndexPath).row]
+//        cell.detailTextLabel?.text = messagesOfGivers[(indexPath as NSIndexPath).row]
 
+        cell.lbTitleOfMessage.text = dataOfMessage[(indexPath as NSIndexPath).row].name
+        cell.lbBodyOfMessage.text = dataOfMessage[(indexPath as NSIndexPath).row].body
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
