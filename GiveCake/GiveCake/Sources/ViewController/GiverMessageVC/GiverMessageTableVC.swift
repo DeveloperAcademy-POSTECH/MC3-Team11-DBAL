@@ -9,6 +9,8 @@ import UIKit
 
 class GiverMessageTableVC: UITableViewController {
 
+    @IBOutlet var tvListView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

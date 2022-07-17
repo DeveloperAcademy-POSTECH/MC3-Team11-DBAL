@@ -9,13 +9,21 @@ import UIKit
 
 class GiverMesssageWriteVC: UIViewController {
 
+    @IBOutlet var lbNumberOfCake: UILabel!
+    @IBOutlet var tfWriteMessage: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func btnSendMessage(_ sender: UIButton) {
+    }
+    
+    @IBAction func stpNumberOfCake(_ sender: UIStepper) {
+    }
+    
     /*
     // MARK: - Navigation
 
