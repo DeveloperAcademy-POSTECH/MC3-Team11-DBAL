@@ -8,7 +8,7 @@
 import UIKit
 
 class GiverMesssageWriteVC: UIViewController {
-
+    
     @IBOutlet var lbNumberOfCake: UILabel!
     @IBOutlet var tfWriteMessage: UITextField!
     @IBOutlet var stpNumberOfCake: UIStepper!
@@ -25,11 +25,17 @@ class GiverMesssageWriteVC: UIViewController {
     
     @IBAction func btnSendMessage(_ sender: UIButton) {
         let fixedMessage: String = tfWriteMessage.text!
+        let fixedNumberOfCake: Int = Int(lbNumberOfCake.text!) ?? 0
         if fixedMessage == "" {
             // Todo: 잘못된 입력값
         }
         receivedMessages.append(fixedMessage)
         print(receivedMessages)
+        
+        // Communicate with iCloud
+        let item = Establishment(userName: "테스트유저1", message: fixedMessage, numberOfCake: fixedNumberOfCake)
+        CloudKitManager.instance.saveEstablishment(item: item)
+        
         self.dismiss(animated: true)
     }
     

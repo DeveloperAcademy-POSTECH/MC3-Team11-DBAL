@@ -36,7 +36,8 @@ struct Feedback {
     }
 }
 
-struct CloudKitManager {
+class CloudKitManager {
+    static var instance = CloudKitManager()
     
     private let GiverRecordType = "Establishment"
     private let TakerRecordType = "Feedback"
@@ -51,6 +52,9 @@ struct CloudKitManager {
         publicDatabase.save(record) { record, error in
             if record != nil, error == nil {
                 print("\(item.userName)'s data saved")
+            } else {
+                print(error)
+                print("네트워크 오류 발생...")
             }
         }
     }
