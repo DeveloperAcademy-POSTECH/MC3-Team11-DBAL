@@ -24,6 +24,13 @@ class GiverMesssageWriteVC: UIViewController {
     }
     
     @IBAction func btnSendMessage(_ sender: UIButton) {
+        let fixedMessage: String = tfWriteMessage.text!
+        if fixedMessage == "" {
+            // Todo: 잘못된 입력값
+        }
+        receivedMessages.append(fixedMessage)
+        print(receivedMessages)
+        self.dismiss(animated: true)
     }
     
     @IBAction func ChangeStpNumberOfCake(_ sender: UIStepper) {
