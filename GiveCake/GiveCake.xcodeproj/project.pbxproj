@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EB935852883E02900A56668 /* GiverMessageTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB935842883E02900A56668 /* GiverMessageTableVC.swift */; };
+		9EB935882883E0A400A56668 /* GiverMesssageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB935872883E0A400A56668 /* GiverMesssageWriteVC.swift */; };
+		9EB9358A2883E0CD00A56668 /* GiverMessageReceiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB935892883E0CD00A56668 /* GiverMessageReceiveVC.swift */; };
 		BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */; };
 		BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E142287FF50900521F55 /* GiverHome.storyboard */; };
 		BC09E145287FF51800521F55 /* GiverFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E144287FF51800521F55 /* GiverFeed.storyboard */; };
@@ -39,6 +42,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9EB935842883E02900A56668 /* GiverMessageTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiverMessageTableVC.swift; path = GiveCake/Sources/ViewController/GiverMessageVC/GiverMessageTableVC.swift; sourceTree = SOURCE_ROOT; };
+		9EB935872883E0A400A56668 /* GiverMesssageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiverMesssageWriteVC.swift; path = GiveCake/Sources/ViewController/GiverMessageVC/GiverMesssageWriteVC.swift; sourceTree = SOURCE_ROOT; };
+		9EB935892883E0CD00A56668 /* GiverMessageReceiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverMessageReceiveVC.swift; sourceTree = "<group>"; };
 		BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverLogin.storyboard; sourceTree = "<group>"; };
 		BC09E142287FF50900521F55 /* GiverHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverHome.storyboard; sourceTree = "<group>"; };
 		BC09E144287FF51800521F55 /* GiverFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverFeed.storyboard; sourceTree = "<group>"; };
@@ -83,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EB935862883E03800A56668 /* GiverMessageVC */ = {
+			isa = PBXGroup;
+			children = (
+				9EB935842883E02900A56668 /* GiverMessageTableVC.swift */,
+				9EB935872883E0A400A56668 /* GiverMesssageWriteVC.swift */,
+				9EB935892883E0CD00A56668 /* GiverMessageReceiveVC.swift */,
+			);
+			path = GiverMessageVC;
+			sourceTree = "<group>";
+		};
 		BC5087DE2882743400A4AD5F /* GiverFeedVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +170,7 @@
 				BC09E156287FFCD900521F55 /* GiverLoginVC.swift */,
 				BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */,
 				BC09E158287FFD6200521F55 /* GiverHomeVC.swift */,
+				9EB935862883E03800A56668 /* GiverMessageVC */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -308,6 +325,8 @@
 				BC5087F528827A1A00A4AD5F /* UITableViewExtension.swift in Sources */,
 				BC8A6398287FABBF00D7DA7E /* ExampleModel.swift in Sources */,
 				BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */,
+				9EB935852883E02900A56668 /* GiverMessageTableVC.swift in Sources */,
+				9EB935882883E0A400A56668 /* GiverMesssageWriteVC.swift in Sources */,
 				BC5087EB2882778600A4AD5F /* DetailScrollView.swift in Sources */,
 				BC5087EF288277B500A4AD5F /* TodayTableViewCell.swift in Sources */,
 				BC5087E3288276F500A4AD5F /* CardDetailViewController.swift in Sources */,
@@ -321,6 +340,7 @@
 				BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */,
 				BC5087E52882771E00A4AD5F /* CardPresentationController.swift in Sources */,
 				BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */,
+				9EB9358A2883E0CD00A56668 /* GiverMessageReceiveVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@
         <!--받은 편지-->
         <scene sceneID="ZXu-wc-BpQ">
             <objects>
-                <tableViewController id="2NX-N5-V8R" sceneMemberID="viewController">
+                <tableViewController id="2NX-N5-V8R" customClass="GiverMessageTableVC" customModule="GiveCake" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Uai-8t-ikJ">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
         <!--받은 메시지-->
         <scene sceneID="wAq-8n-zUi">
             <objects>
-                <viewController id="TqD-9n-7Re" sceneMemberID="viewController">
+                <viewController id="TqD-9n-7Re" customClass="GiverMessageReceiveVC" customModule="GiveCake" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VsT-tb-kxa">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="1848" y="363"/>
         </scene>
-        <!--View Controller-->
+        <!--Giver Messsage WriteVC-->
         <scene sceneID="idf-Uh-EQ0">
             <objects>
-                <viewController id="cef-NT-sw8" sceneMemberID="viewController">
+                <viewController id="cef-NT-sw8" customClass="GiverMesssageWriteVC" customModule="GiveCake" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xwr-ji-Ym1">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
