@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TodayTableHeaderView: UIView {
+class FeedTableHeaderView: UIView {
 
     let todayLabel = UILabel()
     
@@ -31,3 +31,4 @@ class TodayTableHeaderView: UIView {
         addSubview(todayLabel)
     }
 }
+

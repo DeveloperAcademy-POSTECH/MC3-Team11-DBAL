@@ -7,9 +7,9 @@
 
 import UIKit
 
-class TodayViewController: UITableViewController {
+class FeedViewController: UITableViewController {
     
-    var selectedCell: TodayTableViewCell?
+    var selectedCell: FeedTableViewCell?
     
     var statusBarShouldBeHidden = false
     
@@ -22,9 +22,9 @@ class TodayViewController: UITableViewController {
     }
     
     // 테이블 헤더 뷰 (모아보기 글자 써있는 부분)
-    lazy var headerView: TodayTableHeaderView = {
+    lazy var headerView: FeedTableHeaderView = {
         let frame = CGRect(x: 0, y: 0, width: kScreenW, height: 96)
-        let view = TodayTableHeaderView(frame: frame)
+        let view = FeedTableHeaderView(frame: frame)
         return view
     }()
 
@@ -35,9 +35,9 @@ class TodayViewController: UITableViewController {
 
     // 테이블 뷰 세팅하기 (헤더 + 테이블 셀들)
     private func setupTableView() {
-        tableView.register(TodayTableViewCell.self, forCellReuseIdentifier: "\(TodayTableViewCell.self)")
+        tableView.register(FeedTableViewCell.self, forCellReuseIdentifier: "\(FeedTableViewCell.self)")
         tableView.separatorStyle = .none
-        tableView.rowHeight = GlobalConstants.toDayCardRowH
+        tableView.rowHeight = GlobalConstants.feedCardRowH
         tableView.tableHeaderView = headerView
     }
     
@@ -56,7 +56,7 @@ class TodayViewController: UITableViewController {
     
     // 테이블 셀 설정하기
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "\(TodayTableViewCell.self)", for: indexPath) as! TodayTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "\(FeedTableViewCell.self)", for: indexPath) as! FeedTableViewCell
         cell.selectionStyle = .none
         cell.bgImageView.image = GiverFeedModel.instance.feedList[indexPath.row].image
         return cell
@@ -64,7 +64,7 @@ class TodayViewController: UITableViewController {
     
     // 테이블 셀 누르고 있을 때 일어나는 반응 (셀 크기가 살짝 작아짐)
     override func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-        guard let row = tableView.cellForRow(at: indexPath) as? TodayTableViewCell else { return }
+        guard let row = tableView.cellForRow(at: indexPath) as? FeedTableViewCell else { return }
         UIView.animate(withDuration: 0.1) {
             row.bgBackView.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
         }
@@ -72,7 +72,7 @@ class TodayViewController: UITableViewController {
     
     // 테이블 셀 누르고 있는 거 취소됐을때 일어나는 반응 (셀 크기가 원상태로 돌아옴)
     override func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
-        guard let row = tableView.cellForRow(at: indexPath) as? TodayTableViewCell else { return }
+        guard let row = tableView.cellForRow(at: indexPath) as? FeedTableViewCell else { return }
         UIView.animate(withDuration: 0.3) {
             row.bgBackView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }
@@ -82,11 +82,11 @@ class TodayViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         // 현재 클릭된 셀
-        guard let cell = tableView.cellForRow(at: indexPath) as? TodayTableViewCell else { return }
+        guard let cell = tableView.cellForRow(at: indexPath) as? FeedTableViewCell else { return }
         selectedCell = cell
         
         // 현재 클릭된 셀에 대한 상세보기 화면
-        let detailVC = CardDetailViewController(cell: cell, selectedIdx: indexPath.row)
+        let detailVC = FeedDetailViewController(cell: cell, selectedIdx: indexPath.row)
         
         // 상세보기 화면에서 다시 돌아올 경우, 스테이터스바(시간, 배터리 부분) 나타나게 하기
         detailVC.dismissClosure = { [weak self] in
@@ -102,5 +102,3 @@ class TodayViewController: UITableViewController {
 
     }
 }
-
-
