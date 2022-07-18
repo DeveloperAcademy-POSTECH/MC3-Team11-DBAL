@@ -25,10 +25,6 @@ class TodayViewController: UITableViewController {
     lazy var headerView: TodayTableHeaderView = {
         let frame = CGRect(x: 0, y: 0, width: kScreenW, height: 96)
         let view = TodayTableHeaderView(frame: frame)
-        view.iconButtonClosure = { [weak self] in
-            guard let StrongSelf = self else { return }
-            StrongSelf.presentUserTableViewController()
-        }
         return view
     }()
 
@@ -39,7 +35,7 @@ class TodayViewController: UITableViewController {
 
     // 테이블 뷰 세팅하기 (헤더 + 테이블 셀들)
     private func setupTableView() {
-        tableView.ut_registerClassCell(TodayTableViewCell.self)
+        tableView.register(TodayTableViewCell.self, forCellReuseIdentifier: "\(TodayTableViewCell.self)")
         tableView.separatorStyle = .none
         tableView.rowHeight = GlobalConstants.toDayCardRowH
         tableView.tableHeaderView = headerView
@@ -60,7 +56,7 @@ class TodayViewController: UITableViewController {
     
     // 테이블 셀 설정하기
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.ut_dequeueReusable(TodayTableViewCell.self, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "\(TodayTableViewCell.self)", for: indexPath) as! TodayTableViewCell
         cell.selectionStyle = .none
         cell.bgImageView.image = GiverFeedModel.instance.feedList[indexPath.row].image
         return cell
@@ -85,18 +81,23 @@ class TodayViewController: UITableViewController {
     // 테이블 셀 클릭했을 때 일어나는 반응 (상세 보기 화면으로 이동)
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+        // 현재 클릭된 셀
         guard let cell = tableView.cellForRow(at: indexPath) as? TodayTableViewCell else { return }
         selectedCell = cell
         
+        // 현재 클릭된 셀에 대한 상세보기 화면
         let detailVC = CardDetailViewController(cell: cell, selectedIdx: indexPath.row)
         
+        // 상세보기 화면에서 다시 돌아올 경우, 스테이터스바(시간, 배터리 부분) 나타나게 하기
         detailVC.dismissClosure = { [weak self] in
             guard let StrongSelf = self else { return }
             StrongSelf.updateStatusBarAndTabbarFrame(visible: true)
         }
         
+        // 스테이터스바(시간, 배터리 부분) 사라지게 하기
         updateStatusBarAndTabbarFrame(visible: false)
         
+        // 상세보기 화면으로 뷰 전환
         present(detailVC, animated: true, completion: nil)
 
     }

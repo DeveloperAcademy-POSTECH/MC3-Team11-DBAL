@@ -22,6 +22,7 @@ class TodayTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // 테이블 셀 세팅
     private func setupUI() {
         
         bgBackView.addSubview(bgImageView)
@@ -38,6 +39,7 @@ class TodayTableViewCell: UITableViewCell {
         bgImageView.layer.cornerRadius = GlobalConstants.toDayCardCornerRadius
         bgImageView.layer.masksToBounds = true
         
+        // 테이블 셀들간의 간격을 주기 위한 뷰
         emptyView.backgroundColor = UIColor.white.withAlphaComponent(0)
         emptyView.frame = CGRect(x: 0, y: bgImageView.frame.size.height, width: GlobalConstants.todayCardSize.width, height: GlobalConstants.toDayCardRowH - GlobalConstants.todayCardSize.height)
     }

@@ -10,7 +10,6 @@ import UIKit
 class TodayTableHeaderView: UIView {
 
     let todayLabel = UILabel()
-    var iconButtonClosure: (()->())?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
