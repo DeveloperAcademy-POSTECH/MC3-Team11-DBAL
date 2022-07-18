@@ -7,22 +7,19 @@
 
 import UIKit
 
-class CardDetailViewController: UIViewController {
+class FeedDetailViewController: UIViewController {
     
     override var prefersStatusBarHidden: Bool {
         return true
     }
     
-    let selectedIdx: Int
-    
     var dismissClosure: (()->())?
-    //the point when start to interactive
     var interactiveStartingPoint: CGPoint? = nil
-
     var draggingDownToDismiss = false
+    let selectedIdx: Int
+    let cell: FeedTableViewCell!
     
-    let cell: TodayTableViewCell!
-    
+    // 모달 내리듯이 드래그 하는 제스처
     private lazy var dismissPanGesture: UIPanGestureRecognizer = {
         let ges = UIPanGestureRecognizer()
         ges.maximumNumberOfTouches = 1
@@ -31,6 +28,7 @@ class CardDetailViewController: UIViewController {
         return ges
     }()
     
+    // 상세보기 화면의 스크롤 뷰
     lazy var scrollView: DetailScrollView = {
         let frame = self.view.bounds
         let view = DetailScrollView(frame: frame, selectedIdx: selectedIdx)
@@ -38,6 +36,7 @@ class CardDetailViewController: UIViewController {
         return view
     }()
     
+    // 상세보기 화면의 오른쪽 위 x 버튼
     lazy var closeBtn: UIButton = {
         let btn = UIButton()
         btn.frame = CGRect(x: kScreenW - 20 - 30, y: 20, width: 30, height: 30)
@@ -46,13 +45,14 @@ class CardDetailViewController: UIViewController {
         return btn
     }()
     
-    init(cell: TodayTableViewCell, selectedIdx: Int) {
+    init(cell: FeedTableViewCell, selectedIdx: Int) {
         self.cell = cell
         self.selectedIdx = selectedIdx
         super.init(nibName: nil, bundle: nil)
         self.setupTranstion()
     }
     
+    // 모달 애니메이션을 커스텀 하는걸로 정함
     private func setupTranstion() {
         modalPresentationStyle = .custom
         transitioningDelegate = self
@@ -68,6 +68,7 @@ class CardDetailViewController: UIViewController {
         getImageFromCell()
     }
     
+    // 상세보기 화면의 큰 틀 세팅
     private func setupUI() {
         self.view.backgroundColor = .white
         self.view.layer.masksToBounds = true
@@ -82,20 +83,23 @@ class CardDetailViewController: UIViewController {
         }
     }
     
+    // 테이블 셀의 이미지를 그대로 상세보기 이미지로 가져옴
     private func getImageFromCell() {
         scrollView.imageView.image = cell.bgImageView.image
     }
     
+    // 상세보기 화면에서 나가기
     @objc private func closeAction() {
         dismiss(animated: true, completion: nil)
         dismissClosure?()
     }
     
+    // 모달 내리듯이 드래그 하는 제스처로 할 행동
     @objc private func handleDismissPan(gesture: UIPanGestureRecognizer) {
         if !draggingDownToDismiss {
             return
         }
-        
+
         let startingPoint: CGPoint
         
         if let p = interactiveStartingPoint {
@@ -109,7 +113,6 @@ class CardDetailViewController: UIViewController {
         
         var progress = (currentLocation.y - startingPoint.y) / 100
         
-        //prevent viewController bigger when scrolling up
         if currentLocation.y <= startingPoint.y {
             progress = 0
         }
@@ -128,7 +131,7 @@ class CardDetailViewController: UIViewController {
         case .began,.changed:
             scrollView.isScrollEnabled = false
             gesture.view?.transform = CGAffineTransform(scaleX: currentScale, y: currentScale)
-            gesture.view?.layer.cornerRadius = GlobalConstants.toDayCardCornerRadius * (progress)
+            gesture.view?.layer.cornerRadius = GlobalConstants.feedCardCornerRadius * (progress)
             scrollView.showsVerticalScrollIndicator = false
         case .cancelled,.ended:
             scrollView.isScrollEnabled = true
@@ -138,12 +141,11 @@ class CardDetailViewController: UIViewController {
         }
     }
     
-    //当下拉Offset超过100或取消下拉手势时，执行此方法
+    // 모달 내리듯이 드래그 하다가 중간에 취소할 때 되돌아가기
     private func stopDismissPanGesture(_ gesture: UIPanGestureRecognizer) {
-        draggingDownToDismiss = false
         interactiveStartingPoint = nil
+        draggingDownToDismiss = false
         scrollView.showsVerticalScrollIndicator = true
-        
         UIView.animate(withDuration: 0.2) {
             gesture.view?.transform = CGAffineTransform.identity
         }
@@ -151,32 +153,37 @@ class CardDetailViewController: UIViewController {
 
 }
 
-extension CardDetailViewController: UIViewControllerTransitioningDelegate {
+// 만들어둔 뷰전환 커스텀 애니메이션 적용시키기
+extension FeedDetailViewController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return TodayAnimationTransition(animationType: .present)
+        return FeedAnimationTransition(animationType: .present)
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return TodayAnimationTransition(animationType: .dismiss)
+        return FeedAnimationTransition(animationType: .dismiss)
     }
     
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return CardPresentationController(presentedViewController: presented, presenting: presenting)
+        return FeedPresentationController(presentedViewController: presented, presenting: presenting)
     }
 }
 
-extension CardDetailViewController: UIScrollViewDelegate {
+// 스크롤뷰의 드래그와 뒤로가기용 드래그가 공존하기 위한 코드
+// TODO: 글 내용이 너무 적어서 스크롤이 안될 때에는 뒤로가기 드래그가 안됨 -> 글 내용을 담은 텍스트 뷰의 높이를 늘려줘서 스크롤이 조금이라도 되게 해야할듯
+extension FeedDetailViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
         if scrollView.contentOffset.y < 0 {
             scrollView.contentOffset = .zero
             draggingDownToDismiss = true
         }
     }
+    
+    
 }
 
-extension CardDetailViewController: UIGestureRecognizerDelegate {
+// 제스처 인식하기
+extension FeedDetailViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
