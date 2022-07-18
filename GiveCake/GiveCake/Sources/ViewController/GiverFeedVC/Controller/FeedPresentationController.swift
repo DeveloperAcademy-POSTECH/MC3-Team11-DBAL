@@ -7,7 +7,9 @@
 
 import UIKit
 
-class CardPresentationController: UIPresentationController {
+// 커스텀 애니메이션을 위해 기존 뷰는 어떻게 할지 정하는 클래스
+// 요약하자면 상세보기 화면으로 넘어갈때는 흐리게 하고, 다시 돌아올때는 원상태로 되돌림
+class FeedPresentationController: UIPresentationController {
     
     private lazy var blurView = UIVisualEffectView(effect: nil)
     
@@ -27,13 +29,10 @@ class CardPresentationController: UIPresentationController {
             self.blurView.effect = UIBlurEffect(style: .light)
             self.blurView.alpha = 1
         }) { (ctx) in }
-        print("present will begin")
     }
     
     override func presentationTransitionDidEnd(_ completed: Bool) {
-        print("present did end1")
         presentingViewController.endAppearanceTransition()
-        print("present did end2")
     }
     
     override func dismissalTransitionWillBegin() {
@@ -41,7 +40,6 @@ class CardPresentationController: UIPresentationController {
         presentedViewController.transitionCoordinator!.animate(alongsideTransition: { (ctx) in
             self.blurView.alpha = 0.0
         }, completion: nil)
-        print("dismiss will begin")
     }
     
     override func dismissalTransitionDidEnd(_ completed: Bool) {
@@ -49,6 +47,5 @@ class CardPresentationController: UIPresentationController {
         if completed {
             blurView.removeFromSuperview()
         }
-        print("dismiss did end")
     }
 }

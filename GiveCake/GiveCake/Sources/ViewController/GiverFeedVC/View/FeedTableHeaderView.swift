@@ -7,10 +7,9 @@
 
 import UIKit
 
-class TodayTableHeaderView: UIView {
+class FeedTableHeaderView: UIView {
 
     let todayLabel = UILabel()
-    var iconButtonClosure: (()->())?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,6 +20,7 @@ class TodayTableHeaderView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // 텍스트 라벨 세팅
     private func setupUI() {
         let screenWidth = UIScreen.main.bounds.width
         todayLabel.text = "모아보기"
@@ -31,3 +31,4 @@ class TodayTableHeaderView: UIView {
         addSubview(todayLabel)
     }
 }
+

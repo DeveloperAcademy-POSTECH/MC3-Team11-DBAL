@@ -9,7 +9,7 @@ import CoreGraphics
 import UIKit
 
 extension String {
-    /// Calculate text's height from `width` and `front`.
+    // width와 font를 이용해 텍스트뷰의 높이를 계산해줌
     func calculateHeightWith(width: CGFloat, font: UIFont)-> CGFloat {
         let attr = [NSAttributedString.Key.font: font]
         let maxSize: CGSize = CGSize(width: width, height: CGFloat(MAXFLOAT))
