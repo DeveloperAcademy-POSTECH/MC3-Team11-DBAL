@@ -21,6 +21,7 @@ class TodayTableHeaderView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // 텍스트 라벨 세팅
     private func setupUI() {
         let screenWidth = UIScreen.main.bounds.width
         todayLabel.text = "모아보기"
