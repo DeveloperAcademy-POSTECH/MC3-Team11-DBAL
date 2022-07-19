@@ -35,7 +35,6 @@ class DetailScrollView: UIScrollView {
     }
     
     // 상세보기 화면의 상세한 부분 세팅
-    // TODO: 하이파이처럼 상세보기 화면 구성요소 추가하기
     private func setupUI() {
         
         stackView.addArrangedSubview(titleView)

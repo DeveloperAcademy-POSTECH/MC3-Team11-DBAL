@@ -49,9 +49,8 @@ class FeedViewController: UITableViewController {
         }
     }
 
-    // TODO: feed 개수를 반환해야함
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return GiverFeedModel.instance.feedList.count
     }
     
     // 테이블 셀 설정하기
