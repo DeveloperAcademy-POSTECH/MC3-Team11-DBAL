@@ -18,13 +18,13 @@ class GiverFeedModel {
     static var instance = GiverFeedModel()
     var feedList: [Feed] = [
         Feed(
-            image: UIImage(named: "feed_image1")!,
+            image: UIImage(named: "cover_4")!,
             title: "제목입니다1~",
             subTitle: "소제목입니다1~",
             content: "내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n내용입니다1~\n"
         ),
         Feed(
-            image: UIImage(named: "feed_image2")!,
+            image: UIImage(named: "cover_5")!,
             title: "제목입니다2~",
             subTitle: "소제목입니다2~",
             content: "내용입니다2~"

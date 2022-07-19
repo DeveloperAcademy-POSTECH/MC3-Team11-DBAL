@@ -8,10 +8,11 @@
 import UIKit
 
 enum GlobalConstants {
-    static let feedCardRowH: CGFloat = 440
+    static let feedCardRowHeight: CGFloat = 390
     static let feedCardCornerRadius: CGFloat = 15.0
-    static let feedCardSize: CGSize = CGSize(width: kScreenW - 2 * 20, height: 410)
-    static let cardDetailTopImageH: CGFloat = 500
+    static let feedCardSize: CGSize = CGSize(width: kScreenW - 2 * 20, height: 360)
+    static let feedCardDetailHeight: CGFloat = 90
+    static let feedCardDetailImageHeight: CGFloat = 423
 }
 
 

@@ -58,7 +58,7 @@ extension FeedAnimationTransition: UIViewControllerAnimatedTransitioning {
         UIView.animate(withDuration: transitonDuration, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
             toVC.view.frame = UIScreen.main.bounds
             toVC.scrollView.imageView.frame.size.width = kScreenW
-            toVC.scrollView.imageView.frame.size.height = GlobalConstants.cardDetailTopImageH
+            toVC.scrollView.imageView.frame.size.height = GlobalConstants.feedCardDetailImageHeight
             toVC.closeBtn.alpha = 1
             
             fromVC.tabBar.frame.origin.y = kScreenH

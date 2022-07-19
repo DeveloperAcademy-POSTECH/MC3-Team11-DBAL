@@ -11,7 +11,10 @@ class FeedTableViewCell: UITableViewCell {
     
     let bgBackView = UIView()
     let bgImageView = UIImageView()
-    let emptyView = UIView()
+    let descriptionView = UIView()
+    let stackView = UIStackView()
+    let titleView = UILabel()
+    let subTitleView = UILabel()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -26,9 +29,12 @@ class FeedTableViewCell: UITableViewCell {
     // TODO: 하이파이처럼 상세보기 화면 구성요소 더 추가해야함
     private func setupUI() {
         
+        stackView.addArrangedSubview(titleView)
+        stackView.addArrangedSubview(subTitleView)
+        descriptionView.addSubview(stackView)
         bgBackView.addSubview(bgImageView)
+        bgBackView.addSubview(descriptionView)
         contentView.addSubview(bgBackView)
-        contentView.addSubview(emptyView)
         
         bgBackView.frame = CGRect(x: 20, y: 0, width: GlobalConstants.feedCardSize.width, height: GlobalConstants.feedCardSize.height)
         bgBackView.layer.shadowColor = UIColor.black.cgColor
@@ -37,12 +43,27 @@ class FeedTableViewCell: UITableViewCell {
         
         bgImageView.frame = bgBackView.bounds
         bgImageView.contentMode = .scaleAspectFill
-        bgImageView.layer.cornerRadius = GlobalConstants.feedCardCornerRadius
         bgImageView.layer.masksToBounds = true
+        bgImageView.layer.cornerRadius = GlobalConstants.feedCardCornerRadius
         
-        // 테이블 셀들간의 간격을 주기 위한 뷰
-        emptyView.backgroundColor = UIColor.white.withAlphaComponent(0)
-        emptyView.frame = CGRect(x: 0, y: bgImageView.frame.size.height, width: GlobalConstants.feedCardSize.width, height: GlobalConstants.feedCardRowH - GlobalConstants.feedCardSize.height)
+        descriptionView.backgroundColor = .black.withAlphaComponent(0.5)
+        descriptionView.frame = CGRect(x: 0, y: GlobalConstants.feedCardSize.height - GlobalConstants.feedCardDetailHeight, width: GlobalConstants.feedCardSize.width, height: GlobalConstants.feedCardDetailHeight)
+        descriptionView.layer.masksToBounds = true
+        descriptionView.layer.cornerRadius = GlobalConstants.feedCardCornerRadius
+        descriptionView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.alignment = .fill
+        stackView.spacing = 8
+        stackView.frame = CGRect(x: 27, y: 12, width: descriptionView.bounds.width - 54, height: descriptionView.bounds.height - 24)
+        
+        titleView.font = UIFont.boldSystemFont(ofSize: 28)
+        titleView.textColor = .white
+
+        subTitleView.numberOfLines = 0
+        subTitleView.font = UIFont.systemFont(ofSize: 12)
+        subTitleView.textColor = .white
     }
     
 }
