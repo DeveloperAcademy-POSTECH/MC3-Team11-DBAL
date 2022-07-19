@@ -22,16 +22,14 @@
 		BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E156287FFCD900521F55 /* GiverLoginVC.swift */; };
 		BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E158287FFD6200521F55 /* GiverHomeVC.swift */; };
 		BC09E15F28800A3900521F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E15E28800A3900521F55 /* Main.storyboard */; };
-		BC5087E3288276F500A4AD5F /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E2288276F500A4AD5F /* CardDetailViewController.swift */; };
-		BC5087E52882771E00A4AD5F /* CardPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E42882771E00A4AD5F /* CardPresentationController.swift */; };
-		BC5087E72882773600A4AD5F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E62882773600A4AD5F /* TodayViewController.swift */; };
-		BC5087E92882776B00A4AD5F /* TodayAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E82882776B00A4AD5F /* TodayAnimationTransition.swift */; };
+		BC5087E3288276F500A4AD5F /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E2288276F500A4AD5F /* FeedDetailViewController.swift */; };
+		BC5087E52882771E00A4AD5F /* FeedPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E42882771E00A4AD5F /* FeedPresentationController.swift */; };
+		BC5087E72882773600A4AD5F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E62882773600A4AD5F /* FeedViewController.swift */; };
+		BC5087E92882776B00A4AD5F /* FeedAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E82882776B00A4AD5F /* FeedAnimationTransition.swift */; };
 		BC5087EB2882778600A4AD5F /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087EA2882778600A4AD5F /* DetailScrollView.swift */; };
-		BC5087ED288277A000A4AD5F /* TodayTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087EC288277A000A4AD5F /* TodayTableHeaderView.swift */; };
-		BC5087EF288277B500A4AD5F /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087EE288277B500A4AD5F /* TodayTableViewCell.swift */; };
+		BC5087ED288277A000A4AD5F /* FeedTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087EC288277A000A4AD5F /* FeedTableHeaderView.swift */; };
+		BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087EE288277B500A4AD5F /* FeedTableViewCell.swift */; };
 		BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F02882790500A4AD5F /* GlobalConstants.swift */; };
-		BC5087F32882798D00A4AD5F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F22882798D00A4AD5F /* UIViewControllerExtension.swift */; };
-		BC5087F528827A1A00A4AD5F /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F428827A1A00A4AD5F /* UITableViewExtension.swift */; };
 		BC5087F728827AAA00A4AD5F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F628827AAA00A4AD5F /* StringExtension.swift */; };
 		BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */; };
 		BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */; };
@@ -40,8 +38,6 @@
 		BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */; };
 		BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6385287FAAF900D7DA7E /* Assets.xcassets */; };
 		BC8A6389287FAAF900D7DA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6387287FAAF900D7DA7E /* LaunchScreen.storyboard */; };
-		BC8A6398287FABBF00D7DA7E /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A6397287FABBF00D7DA7E /* ExampleModel.swift */; };
-		BC8A639C287FAC4800D7DA7E /* ExampleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A639B287FAC4800D7DA7E /* ExampleExtension.swift */; };
 		BC8A639E287FB05400D7DA7E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A639D287FB05400D7DA7E /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -62,16 +58,14 @@
 		BC09E156287FFCD900521F55 /* GiverLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverLoginVC.swift; sourceTree = "<group>"; };
 		BC09E158287FFD6200521F55 /* GiverHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverHomeVC.swift; sourceTree = "<group>"; };
 		BC09E15E28800A3900521F55 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		BC5087E2288276F500A4AD5F /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
-		BC5087E42882771E00A4AD5F /* CardPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentationController.swift; sourceTree = "<group>"; };
-		BC5087E62882773600A4AD5F /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		BC5087E82882776B00A4AD5F /* TodayAnimationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayAnimationTransition.swift; sourceTree = "<group>"; };
+		BC5087E2288276F500A4AD5F /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
+		BC5087E42882771E00A4AD5F /* FeedPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresentationController.swift; sourceTree = "<group>"; };
+		BC5087E62882773600A4AD5F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		BC5087E82882776B00A4AD5F /* FeedAnimationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAnimationTransition.swift; sourceTree = "<group>"; };
 		BC5087EA2882778600A4AD5F /* DetailScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScrollView.swift; sourceTree = "<group>"; };
-		BC5087EC288277A000A4AD5F /* TodayTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableHeaderView.swift; sourceTree = "<group>"; };
-		BC5087EE288277B500A4AD5F /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
+		BC5087EC288277A000A4AD5F /* FeedTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableHeaderView.swift; sourceTree = "<group>"; };
+		BC5087EE288277B500A4AD5F /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		BC5087F02882790500A4AD5F /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
-		BC5087F22882798D00A4AD5F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		BC5087F428827A1A00A4AD5F /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		BC5087F628827AAA00A4AD5F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverFeedModel.swift; sourceTree = "<group>"; };
@@ -82,8 +76,6 @@
 		BC8A6385287FAAF900D7DA7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC8A6388287FAAF900D7DA7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC8A638A287FAAF900D7DA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC8A6397287FABBF00D7DA7E /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
-		BC8A639B287FAC4800D7DA7E /* ExampleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleExtension.swift; sourceTree = "<group>"; };
 		BC8A639D287FB05400D7DA7E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,9 +156,9 @@
 		BC5087DF288276C300A4AD5F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BC5087E2288276F500A4AD5F /* CardDetailViewController.swift */,
-				BC5087E42882771E00A4AD5F /* CardPresentationController.swift */,
-				BC5087E62882773600A4AD5F /* TodayViewController.swift */,
+				BC5087E2288276F500A4AD5F /* FeedDetailViewController.swift */,
+				BC5087E42882771E00A4AD5F /* FeedPresentationController.swift */,
+				BC5087E62882773600A4AD5F /* FeedViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,7 +166,7 @@
 		BC5087E0288276CC00A4AD5F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BC5087E82882776B00A4AD5F /* TodayAnimationTransition.swift */,
+				BC5087E82882776B00A4AD5F /* FeedAnimationTransition.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				BC5087EA2882778600A4AD5F /* DetailScrollView.swift */,
-				BC5087EC288277A000A4AD5F /* TodayTableHeaderView.swift */,
-				BC5087EE288277B500A4AD5F /* TodayTableViewCell.swift */,
+				BC5087EC288277A000A4AD5F /* FeedTableHeaderView.swift */,
+				BC5087EE288277B500A4AD5F /* FeedTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,7 +260,6 @@
 		BC8A6396287FAB9900D7DA7E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BC8A6397287FABBF00D7DA7E /* ExampleModel.swift */,
 				BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */,
 			);
 			path = Model;
@@ -287,9 +278,6 @@
 		BC8A639A287FAC3700D7DA7E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BC8A639B287FAC4800D7DA7E /* ExampleExtension.swift */,
-				BC5087F22882798D00A4AD5F /* UIViewControllerExtension.swift */,
-				BC5087F428827A1A00A4AD5F /* UITableViewExtension.swift */,
 				BC5087F628827AAA00A4AD5F /* StringExtension.swift */,
 				BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */,
 			);
@@ -374,29 +362,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */,
-				BC5087ED288277A000A4AD5F /* TodayTableHeaderView.swift in Sources */,
-				BC5087F32882798D00A4AD5F /* UIViewControllerExtension.swift in Sources */,
+				BC5087ED288277A000A4AD5F /* FeedTableHeaderView.swift in Sources */,
 				BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */,
-				BC5087F528827A1A00A4AD5F /* UITableViewExtension.swift in Sources */,
-				BC8A6398287FABBF00D7DA7E /* ExampleModel.swift in Sources */,
 				BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */,
 				9EB935882883E0A400A56668 /* GiverMesssageWriteVC.swift in Sources */,
 				BC5087EB2882778600A4AD5F /* DetailScrollView.swift in Sources */,
-				BC5087EF288277B500A4AD5F /* TodayTableViewCell.swift in Sources */,
-				BC5087E3288276F500A4AD5F /* CardDetailViewController.swift in Sources */,
 				9EB935922883EF9E00A56668 /* GiverMessageTableViewCell.swift in Sources */,
 				9EB9359C28845ACE00A56668 /* CloudKitManager.swift in Sources */,
+				BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */,
+				BC5087E3288276F500A4AD5F /* FeedDetailViewController.swift in Sources */,
 				BC5087F728827AAA00A4AD5F /* StringExtension.swift in Sources */,
-				BC5087E92882776B00A4AD5F /* TodayAnimationTransition.swift in Sources */,
+				BC5087E92882776B00A4AD5F /* FeedAnimationTransition.swift in Sources */,
 				BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */,
 				9EB9358F2883E6BE00A56668 /* GiverMessageDummyModel.swift in Sources */,
 				BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */,
 				BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */,
-				BC5087E72882773600A4AD5F /* TodayViewController.swift in Sources */,
-				BC8A639C287FAC4800D7DA7E /* ExampleExtension.swift in Sources */,
+				BC5087E72882773600A4AD5F /* FeedViewController.swift in Sources */,
 				BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */,
-				BC5087E52882771E00A4AD5F /* CardPresentationController.swift in Sources */,
 				9EB9358C2883E38E00A56668 /* GiverMessageTableVC.swift in Sources */,
+				BC5087E52882771E00A4AD5F /* FeedPresentationController.swift in Sources */,
 				BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */,
 				9EB9358A2883E0CD00A56668 /* GiverMessageReceiveVC.swift in Sources */,
 			);

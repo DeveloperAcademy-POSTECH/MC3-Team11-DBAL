@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIView {
+    // 완전히 화면에 딱 맞게 맞춤
     func edges(to view: UIView, top: CGFloat=0, left: CGFloat=0, bottom: CGFloat=0, right: CGFloat=0) {
         NSLayoutConstraint.activate([
             self.leftAnchor.constraint(equalTo: view.leftAnchor, constant: left),
