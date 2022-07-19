@@ -26,7 +26,6 @@ class FeedTableViewCell: UITableViewCell {
     }
     
     // 테이블 셀 세팅
-    // TODO: 하이파이처럼 상세보기 화면 구성요소 더 추가해야함
     private func setupUI() {
         
         stackView.addArrangedSubview(titleView)
@@ -47,7 +46,12 @@ class FeedTableViewCell: UITableViewCell {
         bgImageView.layer.cornerRadius = GlobalConstants.feedCardCornerRadius
         
         descriptionView.backgroundColor = .black.withAlphaComponent(0.5)
-        descriptionView.frame = CGRect(x: 0, y: GlobalConstants.feedCardSize.height - GlobalConstants.feedCardDetailHeight, width: GlobalConstants.feedCardSize.width, height: GlobalConstants.feedCardDetailHeight)
+        descriptionView.frame = CGRect(
+            x: 0,
+            y: GlobalConstants.feedCardSize.height - GlobalConstants.feedCardTitleHeight,
+            width: GlobalConstants.feedCardSize.width,
+            height: GlobalConstants.feedCardTitleHeight
+        )
         descriptionView.layer.masksToBounds = true
         descriptionView.layer.cornerRadius = GlobalConstants.feedCardCornerRadius
         descriptionView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
@@ -55,8 +59,13 @@ class FeedTableViewCell: UITableViewCell {
         stackView.axis = .vertical
         stackView.distribution = .fill
         stackView.alignment = .fill
-        stackView.spacing = 8
-        stackView.frame = CGRect(x: 27, y: 12, width: descriptionView.bounds.width - 54, height: descriptionView.bounds.height - 24)
+        stackView.spacing = GlobalConstants.titlePaddingBetween
+        stackView.frame = CGRect(
+            x: GlobalConstants.titlePaddingLeft,
+            y: GlobalConstants.titlePaddingTop,
+            width: descriptionView.bounds.width - (GlobalConstants.titlePaddingLeft+GlobalConstants.titlePaddingRight + 50),
+            height: descriptionView.bounds.height - (GlobalConstants.titlePaddingTop+GlobalConstants.titlePaddingBottom)
+        )
         
         titleView.font = UIFont.boldSystemFont(ofSize: 28)
         titleView.textColor = .white

@@ -11,7 +11,13 @@ class DetailScrollView: UIScrollView {
     
     let bgBackView = UIView()
     let imageView = UIImageView()
-    let textView = UITextView()
+    let textView = VerticalAlignLabel()
+    let descriptionView = UIView()
+    let stackView = UIStackView()
+    let titleView = UILabel()
+    let subTitleView = UILabel()
+    let dayView = UILabel()
+    
     let selectedIdx: Int
     
     fileprivate let textViewLeftMargin: CGFloat = 20
@@ -31,6 +37,16 @@ class DetailScrollView: UIScrollView {
     // 상세보기 화면의 상세한 부분 세팅
     // TODO: 하이파이처럼 상세보기 화면 구성요소 추가하기
     private func setupUI() {
+        
+        stackView.addArrangedSubview(titleView)
+        stackView.addArrangedSubview(subTitleView)
+        descriptionView.addSubview(stackView)
+        descriptionView.addSubview(dayView)
+        bgBackView.addSubview(imageView)
+        bgBackView.addSubview(descriptionView)
+        addSubview(bgBackView)
+        addSubview(textView)
+        
         bgBackView.frame = CGRect(x: 0, y: 0, width: kScreenW, height: GlobalConstants.feedCardDetailImageHeight)
         bgBackView.layer.masksToBounds = true
         
@@ -38,19 +54,63 @@ class DetailScrollView: UIScrollView {
         imageView.isUserInteractionEnabled = true
         imageView.contentMode = .scaleAspectFill
         
-        let textViewText = GiverFeedModel.instance.feedList[selectedIdx].content
-        let textViewWidth = kScreenW - 2 * textViewLeftMargin
-        let font = UIFont.boldSystemFont(ofSize: 15)
-        let textHeight = textViewText.calculateHeightWith(width: textViewWidth, font: font)
-        textView.frame = CGRect(x: textViewLeftMargin, y: bgBackView.frame.height + textViewTopMargin, width: textViewWidth, height: textHeight + textViewBottomMargin)
-        textView.text = textViewText
-        textView.font = font
-        textView.textColor = .gray
+        descriptionView.backgroundColor = .black.withAlphaComponent(0.5)
+        descriptionView.frame = CGRect(
+            x: 0,
+            y: GlobalConstants.feedCardDetailImageHeight - GlobalConstants.feedCardTitleHeight,
+            width: kScreenW,
+            height: GlobalConstants.feedCardTitleHeight
+        )
+        descriptionView.layer.masksToBounds = true
         
-        bgBackView.addSubview(imageView)
-        addSubview(bgBackView)
-        addSubview(textView)
-    
+        dayView.text = GiverFeedModel.instance.feedList[selectedIdx].day
+        dayView.font = UIFont.systemFont(ofSize: 12)
+        dayView.textColor = .white
+        dayView.frame = CGRect(
+            x: kScreenW - (dayView.intrinsicContentSize.width + GlobalConstants.titlePaddingRight),
+            y: descriptionView.bounds.height -       (dayView.intrinsicContentSize.height +           GlobalConstants.titlePaddingBottom),
+            width: 0,
+            height: 0
+        ) 
+        dayView.sizeToFit()
+        
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.alignment = .fill
+        stackView.spacing = GlobalConstants.titlePaddingBetween
+        stackView.frame = CGRect(
+            x: GlobalConstants.titlePaddingLeft,
+            y: GlobalConstants.titlePaddingTop,
+            width: GlobalConstants.feedCardSize.width - (GlobalConstants.titlePaddingLeft+GlobalConstants.titlePaddingRight + 50),
+            height: descriptionView.bounds.height - (GlobalConstants.titlePaddingTop+GlobalConstants.titlePaddingBottom)
+        )
+        
+        titleView.text = GiverFeedModel.instance.feedList[selectedIdx].title
+        titleView.font = UIFont.boldSystemFont(ofSize: 28)
+        titleView.textColor = .white
+
+        subTitleView.text = GiverFeedModel.instance.feedList[selectedIdx].subTitle
+        subTitleView.numberOfLines = 0
+        subTitleView.font = UIFont.systemFont(ofSize: 12)
+        subTitleView.textColor = .white
+         
+        var height:CGFloat = 0
+        if textView.intrinsicContentSize.height < kScreenH - GlobalConstants.feedCardDetailImageHeight {
+            height = kScreenH - bgBackView.frame.height
+        } else {
+            height = textView.intrinsicContentSize.height + textViewBottomMargin
+        }
+        textView.frame = CGRect(
+            x: textViewLeftMargin,
+            y: bgBackView.frame.height + textViewTopMargin,
+            width: kScreenW - 2 * textViewLeftMargin,
+            height: height
+        )
+        textView.numberOfLines = 0
+        textView.text = GiverFeedModel.instance.feedList[selectedIdx].content
+        textView.font = UIFont.boldSystemFont(ofSize: 15)
+        textView.textColor = .gray
+
         contentSize = CGSize(width: kScreenW, height: bgBackView.frame.height + textViewTopMargin + textView.frame.height + textViewBottomMargin)
     }
 

@@ -29,9 +29,9 @@
 		BC5087ED288277A000A4AD5F /* FeedTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087EC288277A000A4AD5F /* FeedTableHeaderView.swift */; };
 		BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087EE288277B500A4AD5F /* FeedTableViewCell.swift */; };
 		BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F02882790500A4AD5F /* GlobalConstants.swift */; };
-		BC5087F728827AAA00A4AD5F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F628827AAA00A4AD5F /* StringExtension.swift */; };
 		BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */; };
 		BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */; };
+		BC5088052886936900A4AD5F /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5088042886936900A4AD5F /* UILabelExtension.swift */; };
 		BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */; };
 		BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */; };
 		BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */; };
@@ -64,9 +64,9 @@
 		BC5087EC288277A000A4AD5F /* FeedTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableHeaderView.swift; sourceTree = "<group>"; };
 		BC5087EE288277B500A4AD5F /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		BC5087F02882790500A4AD5F /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
-		BC5087F628827AAA00A4AD5F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverFeedModel.swift; sourceTree = "<group>"; };
+		BC5088042886936900A4AD5F /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		BC8A6379287FAAF800D7DA7E /* GiveCake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiveCake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -267,8 +267,8 @@
 		BC8A639A287FAC3700D7DA7E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BC5087F628827AAA00A4AD5F /* StringExtension.swift */,
 				BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */,
+				BC5088042886936900A4AD5F /* UILabelExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -359,7 +359,6 @@
 				9EB935922883EF9E00A56668 /* GiverMessageTableViewCell.swift in Sources */,
 				BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */,
 				BC5087E3288276F500A4AD5F /* FeedDetailViewController.swift in Sources */,
-				BC5087F728827AAA00A4AD5F /* StringExtension.swift in Sources */,
 				BC5087E92882776B00A4AD5F /* FeedAnimationTransition.swift in Sources */,
 				BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */,
 				9EB9358F2883E6BE00A56668 /* GiverMessageDummyModel.swift in Sources */,
@@ -370,6 +369,7 @@
 				9EB9358C2883E38E00A56668 /* GiverMessageTableVC.swift in Sources */,
 				BC5087E52882771E00A4AD5F /* FeedPresentationController.swift in Sources */,
 				BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */,
+				BC5088052886936900A4AD5F /* UILabelExtension.swift in Sources */,
 				9EB9358A2883E0CD00A56668 /* GiverMessageReceiveVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
