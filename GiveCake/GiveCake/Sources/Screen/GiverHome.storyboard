@@ -16,22 +16,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-pZ-N7P">
-                                <rect key="frame" x="157.5" y="437.5" width="99" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1C-ff-qyi">
+                                <rect key="frame" x="27" y="88" width="132" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="byG-Eq-WUY"/>
+                                    <constraint firstAttribute="height" constant="41" id="g4c-VW-dc8"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="기부 현황">
+                                        <attributes>
+                                            <font key="NSFont" size="34" name="AppleSDGothicNeo-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2tQ-pZ-N7P" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="KPo-fQ-DBy"/>
-                            <constraint firstItem="2tQ-pZ-N7P" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="x48-v5-WtQ"/>
+                            <constraint firstItem="f1C-ff-qyi" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="44" id="JYW-hW-4f2"/>
+                            <constraint firstItem="f1C-ff-qyi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="27" id="Mgb-RJ-q9J"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="cJR-Ck-9iB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="f1C-ff-qyi" id="fUX-b4-nxl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
