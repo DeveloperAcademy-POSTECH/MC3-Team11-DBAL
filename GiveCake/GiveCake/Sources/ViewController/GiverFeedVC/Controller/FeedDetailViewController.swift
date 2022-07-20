@@ -170,7 +170,6 @@ extension FeedDetailViewController: UIViewControllerTransitioningDelegate {
 }
 
 // 스크롤뷰의 드래그와 뒤로가기용 드래그가 공존하기 위한 코드
-// TODO: 글 내용이 너무 적어서 스크롤이 안될 때에는 뒤로가기 드래그가 안됨 -> 글 내용을 담은 텍스트 뷰의 높이를 늘려줘서 스크롤이 조금이라도 되게 해야할듯
 extension FeedDetailViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y < 0 {
