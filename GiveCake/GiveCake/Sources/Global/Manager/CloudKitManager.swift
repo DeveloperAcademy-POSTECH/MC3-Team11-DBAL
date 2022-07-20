@@ -36,8 +36,17 @@ struct Feedback {
     }
 }
 
+typealias TakerFeedback = (String, CKAsset?)
+
+protocol CloudKitDelegate {
+    func checkAllFeedback()
+}
+
 class CloudKitManager {
+    
+    var delegate: CloudKitDelegate!
     static var instance = CloudKitManager()
+    var storedFeedback: [TakerFeedback] = []
     
     private let GiverRecordType = "Establishment"
     private let TakerRecordType = "Feedback"
@@ -59,7 +68,9 @@ class CloudKitManager {
         }
     }
     
-    func fetchAllFeedback() {
+    func fetchAllFeedback()  {
+        var storedFeedbackMessage: [String] = []
+        var storedFeedbackPhoto: [CKAsset?] = []
         let predicate = NSPredicate(value: true)
         let query = CKQuery(recordType: TakerRecordType, predicate: predicate)
         let operation = CKQueryOperation(query: query)
@@ -68,6 +79,10 @@ class CloudKitManager {
         operation.recordMatchedBlock = { recordID, result in
             switch result {
             case .success(let record):
+//                storedFeedback.append((record.value(forKey: "message"), record.value(forKey: "photo")))
+                
+                storedFeedbackMessage.append(record.value(forKey: "message") as! String)
+                storedFeedbackPhoto.append(record.value(forKey: "photo") as! CKAsset?)
                 print("success", record)
             case .failure(let error):
                 print(error)
@@ -75,5 +90,19 @@ class CloudKitManager {
         }
         
         operation.start()
+        
+        operation.queryResultBlock = { result in
+            print("다끝났다~!!")
+            for index in 0..<storedFeedbackMessage.count {
+                self.storedFeedback.append ((storedFeedbackMessage[index], storedFeedbackPhoto[index]))
+                print(self.storedFeedback)
+            }
+            self.delegate.checkAllFeedback()
+            print("끝났...다?")
+        }
+        print("메시지만",storedFeedbackMessage)
+        
+        print("this is me", storedFeedback)
+
     }
 }
