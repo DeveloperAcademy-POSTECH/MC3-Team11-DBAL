@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -32,17 +32,65 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6l-f5-AHZ">
+                                <rect key="frame" x="72" y="182" width="270" height="270"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="0YF-Ki-1rx"/>
+                                    <constraint firstAttribute="width" constant="270" id="YFj-3D-Nfd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iz3-Kw-6Vz">
+                                <rect key="frame" x="27" y="477" width="79" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="8WZ-Uz-XfM"/>
+                                    <constraint firstAttribute="width" constant="79" id="nPy-7n-6T7"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="모인 케이크">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFI-wK-ZYO">
+                                <rect key="frame" x="27" y="498" width="149" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="RgX-Yx-X2j"/>
+                                    <constraint firstAttribute="height" constant="48" id="ZMO-hx-T02"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="120/150">
+                                        <attributes>
+                                            <color key="NSColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="40" name="SFProRounded-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="F6l-f5-AHZ" firstAttribute="top" secondItem="f1C-ff-qyi" secondAttribute="bottom" constant="53" id="Erj-0a-e8u"/>
+                            <constraint firstItem="iz3-Kw-6Vz" firstAttribute="top" secondItem="F6l-f5-AHZ" secondAttribute="bottom" constant="25" id="Iud-V0-weW"/>
                             <constraint firstItem="f1C-ff-qyi" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="44" id="JYW-hW-4f2"/>
                             <constraint firstItem="f1C-ff-qyi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="27" id="Mgb-RJ-q9J"/>
+                            <constraint firstItem="iz3-Kw-6Vz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="27" id="TEI-k5-5uD"/>
+                            <constraint firstItem="F6l-f5-AHZ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="UgM-1p-qCY"/>
+                            <constraint firstItem="CFI-wK-ZYO" firstAttribute="top" secondItem="iz3-Kw-6Vz" secondAttribute="bottom" constant="2" id="jTu-9P-jup"/>
+                            <constraint firstItem="CFI-wK-ZYO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="27" id="qVB-HI-1uR"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="cJR-Ck-9iB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="gageView" destination="F6l-f5-AHZ" id="v2O-Bd-8UW"/>
                         <outlet property="titleLabel" destination="f1C-ff-qyi" id="fUX-b4-nxl"/>
                     </connections>
                 </viewController>
