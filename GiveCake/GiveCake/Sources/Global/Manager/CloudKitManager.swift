@@ -58,4 +58,22 @@ class CloudKitManager {
             }
         }
     }
+    
+    func fetchAllFeedback() {
+        let predicate = NSPredicate(value: true)
+        let query = CKQuery(recordType: TakerRecordType, predicate: predicate)
+        let operation = CKQueryOperation(query: query)
+        operation.database = publicDatabase
+        
+        operation.recordMatchedBlock = { recordID, result in
+            switch result {
+            case .success(let record):
+                print("success", record)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+        operation.start()
+    }
 }

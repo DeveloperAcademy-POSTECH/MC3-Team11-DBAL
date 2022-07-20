@@ -19,6 +19,7 @@ class GiverMessageTableVC: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        CloudKitManager.instance.fetchAllFeedback()
     }
 
     // MARK: - Table view data source
@@ -101,5 +102,8 @@ class GiverMessageTableVC: UITableViewController {
         }
     }
     
+    func fetchTakerMeesage() {
+        
+    }
 
 }
