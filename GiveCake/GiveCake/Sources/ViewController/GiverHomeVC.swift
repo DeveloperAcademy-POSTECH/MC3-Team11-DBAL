@@ -21,7 +21,8 @@ class GiverHomeVC: UIViewController {
     @IBOutlet weak var cakeNum: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var gageView: UIView!
-   
+    @IBOutlet weak var countKidsView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let trackLayer = CAShapeLayer()
@@ -57,6 +58,11 @@ class GiverHomeVC: UIViewController {
         
         makeAnimation(shapeLayer: shapeLayer, value: Double(cakeNum)/150.0)
     
+        // 월별 생일 아동 수치 영역 반지름 값
+        countKidsView.layer.cornerRadius = 18
+        
+        
+        
         
       
         

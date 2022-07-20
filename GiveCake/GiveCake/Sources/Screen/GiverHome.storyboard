@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="GiverHomeVC" customModule="GiveCake" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1C-ff-qyi">
@@ -33,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6l-f5-AHZ">
-                                <rect key="frame" x="72" y="182" width="270" height="270"/>
+                                <rect key="frame" x="60" y="182" width="270" height="270"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCN-eM-ZpQ">
                                         <rect key="frame" x="95" y="90.666666666666686" width="80" height="88.666666666666686"/>
@@ -94,10 +94,68 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-BE-1KS">
+                                <rect key="frame" x="20" y="602" width="350" height="73"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B-DayKids_symbol-3" translatesAutoresizingMaskIntoConstraints="NO" id="peb-v0-6uy">
+                                        <rect key="frame" x="20" y="17.666666666666629" width="38" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="2F4-V3-0vH"/>
+                                            <constraint firstAttribute="width" constant="38" id="Ag0-IR-BQ2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcG-ph-Axa">
+                                        <rect key="frame" x="81" y="17" width="95" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="Bdb-x8-hPO"/>
+                                            <constraint firstAttribute="width" constant="95" id="dgF-jg-7Qd"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="8월의 생일 아동">
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="AppleSDGothicNeo-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yut-8z-oFp">
+                                        <rect key="frame" x="81" y="34" width="41" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="41" id="9OC-jh-cpe"/>
+                                            <constraint firstAttribute="height" constant="24" id="Ad8-j4-mIz"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="12명">
+                                                <attributes>
+                                                    <color key="NSColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="20" name="AppleSDGothicNeo-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="0ZH-iM-IUa"/>
+                                    <constraint firstAttribute="width" constant="350" id="3nU-WG-GQD"/>
+                                    <constraint firstItem="vcG-ph-Axa" firstAttribute="top" secondItem="WQ8-BE-1KS" secondAttribute="top" constant="17" id="6hL-2V-duX"/>
+                                    <constraint firstItem="yut-8z-oFp" firstAttribute="top" secondItem="vcG-ph-Axa" secondAttribute="bottom" id="F0M-V6-Gyt"/>
+                                    <constraint firstItem="vcG-ph-Axa" firstAttribute="leading" secondItem="peb-v0-6uy" secondAttribute="trailing" constant="23" id="GbF-tD-pta"/>
+                                    <constraint firstItem="peb-v0-6uy" firstAttribute="leading" secondItem="WQ8-BE-1KS" secondAttribute="leading" constant="20" id="HQi-bL-nBy"/>
+                                    <constraint firstItem="peb-v0-6uy" firstAttribute="centerY" secondItem="WQ8-BE-1KS" secondAttribute="centerY" id="p9p-ck-NTb"/>
+                                    <constraint firstItem="yut-8z-oFp" firstAttribute="leading" secondItem="peb-v0-6uy" secondAttribute="trailing" constant="23" id="rXT-SK-vso"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="WQ8-BE-1KS" firstAttribute="top" secondItem="4KN-Re-6S5" secondAttribute="bottom" constant="57" id="0ge-me-XAP"/>
+                            <constraint firstItem="WQ8-BE-1KS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="3gl-0X-gPU"/>
                             <constraint firstItem="F6l-f5-AHZ" firstAttribute="top" secondItem="f1C-ff-qyi" secondAttribute="bottom" constant="53" id="Erj-0a-e8u"/>
                             <constraint firstItem="iz3-Kw-6Vz" firstAttribute="top" secondItem="F6l-f5-AHZ" secondAttribute="bottom" constant="25" id="Iud-V0-weW"/>
                             <constraint firstItem="f1C-ff-qyi" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="44" id="JYW-hW-4f2"/>
@@ -111,16 +169,18 @@
                     <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="cJR-Ck-9iB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="countKidsView" destination="WQ8-BE-1KS" id="4N4-nc-nUb"/>
                         <outlet property="gageView" destination="F6l-f5-AHZ" id="v2O-Bd-8UW"/>
                         <outlet property="titleLabel" destination="f1C-ff-qyi" id="fUX-b4-nxl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60.869565217391312" y="96.428571428571431"/>
+            <point key="canvasLocation" x="60" y="95.97156398104265"/>
         </scene>
     </scenes>
     <resources>
+        <image name="B-DayKids_symbol-3" width="38" height="38"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
