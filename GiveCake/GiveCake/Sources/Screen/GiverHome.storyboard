@@ -34,10 +34,26 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6l-f5-AHZ">
                                 <rect key="frame" x="72" y="182" width="270" height="270"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCN-eM-ZpQ">
+                                        <rect key="frame" x="95" y="90.666666666666686" width="80" height="88.666666666666686"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="🎂">
+                                                <attributes>
+                                                    <font key="NSFont" size="80" name=".AppleColorEmojiUI"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="270" id="0YF-Ki-1rx"/>
+                                    <constraint firstItem="fCN-eM-ZpQ" firstAttribute="centerX" secondItem="F6l-f5-AHZ" secondAttribute="centerX" id="8JC-3b-Hfj"/>
                                     <constraint firstAttribute="width" constant="270" id="YFj-3D-Nfd"/>
+                                    <constraint firstItem="fCN-eM-ZpQ" firstAttribute="centerY" secondItem="F6l-f5-AHZ" secondAttribute="centerY" id="vG3-l8-oEx"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iz3-Kw-6Vz">

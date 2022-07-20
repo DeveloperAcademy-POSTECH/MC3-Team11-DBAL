@@ -29,6 +29,7 @@ class GiverHomeVC: UIViewController {
         let center = CGPoint(x: gageView.frame.width/2 , y: gageView.frame.height/2)
         print(center)
         let circularPath = UIBezierPath(arcCenter: center, radius: 120, startAngle: -CGFloat.pi / 2, endAngle: 1.5 * CGFloat.pi, clockwise: true)
+        
         // 게이지 트랙 라인입니다.
         trackLayer.path = circularPath.cgPath
         
@@ -60,7 +61,7 @@ class GiverHomeVC: UIViewController {
       
         
     }
-    
+    // 게이지 애니메이션 설정
     func makeAnimation(shapeLayer: CAShapeLayer, value: Double) {
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         
