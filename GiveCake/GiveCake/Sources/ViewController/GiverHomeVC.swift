@@ -18,6 +18,7 @@ class CLoudkit {
 
 class GiverHomeVC: UIViewController {
 
+    @IBOutlet weak var cakeNum: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var gageView: UIView!
    
@@ -25,10 +26,8 @@ class GiverHomeVC: UIViewController {
         super.viewDidLoad()
         let trackLayer = CAShapeLayer()
         let shapeLayer = CAShapeLayer()
-        
         let center = CGPoint(x: gageView.frame.width/2 , y: gageView.frame.height/2)
         print(center)
-        
         let circularPath = UIBezierPath(arcCenter: center, radius: 120, startAngle: -CGFloat.pi / 2, endAngle: 1.5 * CGFloat.pi, clockwise: true)
         // 게이지 트랙 라인입니다.
         trackLayer.path = circularPath.cgPath
@@ -56,6 +55,10 @@ class GiverHomeVC: UIViewController {
         let cakeNum = cloudkit.getCakeNumber()
         
         makeAnimation(shapeLayer: shapeLayer, value: Double(cakeNum)/150.0)
+    
+        
+      
+        
     }
     
     func makeAnimation(shapeLayer: CAShapeLayer, value: Double) {
@@ -70,5 +73,7 @@ class GiverHomeVC: UIViewController {
         basicAnimation.isRemovedOnCompletion = false
         
         shapeLayer.add(basicAnimation, forKey: "urSoBasic")
+        
+        
     }
 }

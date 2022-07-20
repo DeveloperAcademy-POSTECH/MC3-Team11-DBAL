@@ -56,18 +56,23 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFI-wK-ZYO">
-                                <rect key="frame" x="27" y="498" width="149" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="149" id="RgX-Yx-X2j"/>
-                                    <constraint firstAttribute="height" constant="48" id="ZMO-hx-T02"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KN-Re-6S5">
+                                <rect key="frame" x="27" y="498" width="232" height="47"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="120/150">
+                                    <fragment content="120/150 ">
                                         <attributes>
                                             <color key="NSColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="40" name="SFProRounded-Semibold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <font key="NSFont" size="40" name="SFProDisplay-Semibold"/>
+                                            <font key="NSOriginalFont" size="40" name="SFProDisplay-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Cake">
+                                        <attributes>
+                                            <color key="NSColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="32" name="SFProDisplay-Semibold"/>
+                                            <font key="NSOriginalFont" size="40" name="SFProDisplay-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -80,11 +85,11 @@
                             <constraint firstItem="F6l-f5-AHZ" firstAttribute="top" secondItem="f1C-ff-qyi" secondAttribute="bottom" constant="53" id="Erj-0a-e8u"/>
                             <constraint firstItem="iz3-Kw-6Vz" firstAttribute="top" secondItem="F6l-f5-AHZ" secondAttribute="bottom" constant="25" id="Iud-V0-weW"/>
                             <constraint firstItem="f1C-ff-qyi" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="44" id="JYW-hW-4f2"/>
+                            <constraint firstItem="4KN-Re-6S5" firstAttribute="top" secondItem="iz3-Kw-6Vz" secondAttribute="bottom" constant="2" id="JZO-ln-2xc"/>
                             <constraint firstItem="f1C-ff-qyi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="27" id="Mgb-RJ-q9J"/>
                             <constraint firstItem="iz3-Kw-6Vz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="27" id="TEI-k5-5uD"/>
                             <constraint firstItem="F6l-f5-AHZ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="UgM-1p-qCY"/>
-                            <constraint firstItem="CFI-wK-ZYO" firstAttribute="top" secondItem="iz3-Kw-6Vz" secondAttribute="bottom" constant="2" id="jTu-9P-jup"/>
-                            <constraint firstItem="CFI-wK-ZYO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="27" id="qVB-HI-1uR"/>
+                            <constraint firstItem="4KN-Re-6S5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="27" id="t3k-dJ-brw"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="cJR-Ck-9iB"/>
@@ -96,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61" y="97"/>
+            <point key="canvasLocation" x="60.869565217391312" y="96.428571428571431"/>
         </scene>
     </scenes>
     <resources>
