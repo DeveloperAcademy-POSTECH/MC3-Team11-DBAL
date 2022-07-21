@@ -52,14 +52,29 @@ extension FeedAnimationTransition: UIViewControllerAnimatedTransitioning {
         toVC.view.frame = frame
         toVC.scrollView.imageView.frame.size.width = GlobalConstants.feedCardSize.width
         toVC.scrollView.imageView.frame.size.height = GlobalConstants.feedCardSize.height
+        toVC.scrollView.descriptionView.frame = CGRect(
+            x: 0,
+            y: GlobalConstants.feedCardSize.height - GlobalConstants.feedCardTitleHeight,
+            width: GlobalConstants.feedCardSize.width,
+            height: GlobalConstants.feedCardTitleHeight
+        )
+        toVC.scrollView.dayView.alpha = 0
         
         containerView.addSubview(toVC.view)
         // 3. to 뷰의 이미지 사이즈를 애니메이션과 함께 화면 가로에 맞게 늘려줌
         UIView.animate(withDuration: transitonDuration, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
             toVC.view.frame = UIScreen.main.bounds
             toVC.scrollView.imageView.frame.size.width = kScreenW
-            toVC.scrollView.imageView.frame.size.height = GlobalConstants.cardDetailTopImageH
+            toVC.scrollView.imageView.frame.size.height = GlobalConstants.feedCardDetailImageHeight
+            toVC.scrollView.descriptionView.frame = CGRect(
+                x: 0,
+                y: GlobalConstants.feedCardDetailImageHeight - GlobalConstants.feedCardTitleHeight,
+                width: kScreenW,
+                height: GlobalConstants.feedCardTitleHeight
+            )
+
             toVC.closeBtn.alpha = 1
+            toVC.scrollView.dayView.alpha = 1
             
             fromVC.tabBar.frame.origin.y = kScreenH
         }) { (completed) in
@@ -81,7 +96,14 @@ extension FeedAnimationTransition: UIViewControllerAnimatedTransitioning {
             fromVC.view.layer.cornerRadius = GlobalConstants.feedCardCornerRadius
             fromVC.scrollView.imageView.frame.size.width = GlobalConstants.feedCardSize.width
             fromVC.scrollView.imageView.frame.size.height = GlobalConstants.feedCardSize.height
+            fromVC.scrollView.descriptionView.frame = CGRect(
+                x: 0,
+                y: GlobalConstants.feedCardSize.height - GlobalConstants.feedCardTitleHeight,
+                width: GlobalConstants.feedCardSize.width,
+                height: GlobalConstants.feedCardTitleHeight
+            )
             fromVC.closeBtn.alpha = 0
+            fromVC.scrollView.dayView.alpha = 0
             
             toVC.tabBar.frame.origin.y = kScreenH - toVC.tabBar.frame.height
         }) { (completed) in

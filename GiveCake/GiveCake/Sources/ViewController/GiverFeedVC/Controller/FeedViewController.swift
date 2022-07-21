@@ -37,7 +37,7 @@ class FeedViewController: UITableViewController {
     private func setupTableView() {
         tableView.register(FeedTableViewCell.self, forCellReuseIdentifier: "\(FeedTableViewCell.self)")
         tableView.separatorStyle = .none
-        tableView.rowHeight = GlobalConstants.feedCardRowH
+        tableView.rowHeight = GlobalConstants.feedCardRowHeight
         tableView.tableHeaderView = headerView
     }
     
@@ -49,9 +49,8 @@ class FeedViewController: UITableViewController {
         }
     }
 
-    // TODO: feed 개수를 반환해야함
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return GiverFeedModel.instance.feedList.count
     }
     
     // 테이블 셀 설정하기
@@ -59,6 +58,8 @@ class FeedViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(FeedTableViewCell.self)", for: indexPath) as! FeedTableViewCell
         cell.selectionStyle = .none
         cell.bgImageView.image = GiverFeedModel.instance.feedList[indexPath.row].image
+        cell.titleView.text = GiverFeedModel.instance.feedList[indexPath.row].title
+        cell.subTitleView.text = GiverFeedModel.instance.feedList[indexPath.row].subTitle
         return cell
     }
     
