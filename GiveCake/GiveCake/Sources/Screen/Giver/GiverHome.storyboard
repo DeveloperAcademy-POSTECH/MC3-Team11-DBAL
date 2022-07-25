@@ -36,11 +36,11 @@
                                 <rect key="frame" x="60" y="182" width="270" height="270"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCN-eM-ZpQ">
-                                        <rect key="frame" x="95" y="90.666666666666686" width="80" height="88.666666666666686"/>
+                                        <rect key="frame" x="92" y="87.333333333333314" width="86" height="95.666666666666686"/>
                                         <attributedString key="attributedText">
                                             <fragment content="🎂">
                                                 <attributes>
-                                                    <font key="NSFont" size="80" name=".AppleColorEmojiUI"/>
+                                                    <font key="NSFont" metaFont="system" size="80"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>

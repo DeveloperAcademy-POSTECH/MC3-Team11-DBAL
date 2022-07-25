@@ -33,6 +33,11 @@
 		BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */; };
 		BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */; };
 		BC508808288E580A00A4AD5F /* VerticalAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508807288E580A00A4AD5F /* VerticalAlignLabel.swift */; };
+		BC50880A288E6EEC00A4AD5F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508809288E6EEC00A4AD5F /* MainVC.swift */; };
+		BC50880C288E765300A4AD5F /* TakerLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC50880B288E765300A4AD5F /* TakerLogin.storyboard */; };
+		BC50880E288E766100A4AD5F /* AdminLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC50880D288E766100A4AD5F /* AdminLogin.storyboard */; };
+		BC508816288E783600A4AD5F /* TakerLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508815288E783600A4AD5F /* TakerLoginVC.swift */; };
+		BC508818288E784500A4AD5F /* AdminLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508817288E784500A4AD5F /* AdminLoginVC.swift */; };
 		BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */; };
 		BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */; };
 		BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */; };
@@ -69,6 +74,11 @@
 		BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverFeedModel.swift; sourceTree = "<group>"; };
 		BC508807288E580A00A4AD5F /* VerticalAlignLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlignLabel.swift; sourceTree = "<group>"; };
+		BC508809288E6EEC00A4AD5F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		BC50880B288E765300A4AD5F /* TakerLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakerLogin.storyboard; sourceTree = "<group>"; };
+		BC50880D288E766100A4AD5F /* AdminLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminLogin.storyboard; sourceTree = "<group>"; };
+		BC508815288E783600A4AD5F /* TakerLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerLoginVC.swift; sourceTree = "<group>"; };
+		BC508817288E784500A4AD5F /* AdminLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginVC.swift; sourceTree = "<group>"; };
 		BC8A6379287FAAF800D7DA7E /* GiveCake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiveCake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +199,61 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		BC50880F288E766D00A4AD5F /* Giver */ = {
+			isa = PBXGroup;
+			children = (
+				BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */,
+				BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */,
+				BC09E142287FF50900521F55 /* GiverHome.storyboard */,
+				BC09E144287FF51800521F55 /* GiverFeed.storyboard */,
+				BC09E148287FF5E900521F55 /* GiverMessage.storyboard */,
+			);
+			path = Giver;
+			sourceTree = "<group>";
+		};
+		BC508810288E768200A4AD5F /* Taker */ = {
+			isa = PBXGroup;
+			children = (
+				BC50880B288E765300A4AD5F /* TakerLogin.storyboard */,
+			);
+			path = Taker;
+			sourceTree = "<group>";
+		};
+		BC508811288E768800A4AD5F /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				BC50880D288E766100A4AD5F /* AdminLogin.storyboard */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		BC508812288E77C600A4AD5F /* Giver */ = {
+			isa = PBXGroup;
+			children = (
+				BC09E156287FFCD900521F55 /* GiverLoginVC.swift */,
+				BC5087DE2882743400A4AD5F /* GiverFeedVC */,
+				BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */,
+				BC09E158287FFD6200521F55 /* GiverHomeVC.swift */,
+			);
+			path = Giver;
+			sourceTree = "<group>";
+		};
+		BC508813288E77D500A4AD5F /* Taker */ = {
+			isa = PBXGroup;
+			children = (
+				BC508815288E783600A4AD5F /* TakerLoginVC.swift */,
+			);
+			path = Taker;
+			sourceTree = "<group>";
+		};
+		BC508814288E77DB00A4AD5F /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				BC508817288E784500A4AD5F /* AdminLoginVC.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
 		BC8A6370287FAAF800D7DA7E = {
 			isa = PBXGroup;
 			children = (
@@ -220,11 +285,11 @@
 		BC8A6392287FAB4C00D7DA7E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BC5087DE2882743400A4AD5F /* GiverFeedVC */,
-				BC09E156287FFCD900521F55 /* GiverLoginVC.swift */,
-				BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */,
-				BC09E158287FFD6200521F55 /* GiverHomeVC.swift */,
 				9EB935862883E03800A56668 /* GiverMessageVC */,
+				BC508809288E6EEC00A4AD5F /* MainVC.swift */,
+				BC508812288E77C600A4AD5F /* Giver */,
+				BC508813288E77D500A4AD5F /* Taker */,
+				BC508814288E77DB00A4AD5F /* Admin */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -256,11 +321,9 @@
 			children = (
 				BC8A6387287FAAF900D7DA7E /* LaunchScreen.storyboard */,
 				BC09E15E28800A3900521F55 /* Main.storyboard */,
-				BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */,
-				BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */,
-				BC09E142287FF50900521F55 /* GiverHome.storyboard */,
-				BC09E144287FF51800521F55 /* GiverFeed.storyboard */,
-				BC09E148287FF5E900521F55 /* GiverMessage.storyboard */,
+				BC50880F288E766D00A4AD5F /* Giver */,
+				BC508810288E768200A4AD5F /* Taker */,
+				BC508811288E768800A4AD5F /* Admin */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -351,7 +414,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC8A6389287FAAF900D7DA7E /* LaunchScreen.storyboard in Resources */,
+				BC50880E288E766100A4AD5F /* AdminLogin.storyboard in Resources */,
 				BC8A639E287FB05400D7DA7E /* Colors.xcassets in Resources */,
+				BC50880C288E765300A4AD5F /* TakerLogin.storyboard in Resources */,
 				BC09E145287FF51800521F55 /* GiverFeed.storyboard in Resources */,
 				BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */,
 				BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */,
@@ -372,6 +437,7 @@
 				BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */,
 				BC5087ED288277A000A4AD5F /* FeedTableHeaderView.swift in Sources */,
 				BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */,
+				BC50880A288E6EEC00A4AD5F /* MainVC.swift in Sources */,
 				BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */,
 				9EB935882883E0A400A56668 /* GiverMesssageWriteVC.swift in Sources */,
 				BC5087EB2882778600A4AD5F /* DetailScrollView.swift in Sources */,
@@ -382,6 +448,7 @@
 				BC5087E92882776B00A4AD5F /* FeedAnimationTransition.swift in Sources */,
 				BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */,
 				9EB9358F2883E6BE00A56668 /* GiverMessageDummyModel.swift in Sources */,
+				BC508816288E783600A4AD5F /* TakerLoginVC.swift in Sources */,
 				BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */,
 				BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */,
 				BC5087E72882773600A4AD5F /* FeedViewController.swift in Sources */,
@@ -391,6 +458,7 @@
 				BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */,
 				BC508808288E580A00A4AD5F /* VerticalAlignLabel.swift in Sources */,
 				9EB9358A2883E0CD00A56668 /* GiverMessageReceiveVC.swift in Sources */,
+				BC508818288E784500A4AD5F /* AdminLoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
