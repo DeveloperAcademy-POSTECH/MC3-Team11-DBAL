@@ -15,16 +15,15 @@ class GiverLoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 네비게이션바 숨기기
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         // 버튼에 함수 연결
         toTabBarBtn.addTarget(self, action: #selector(onClickedToTabBarBtn(sender:)), for: .touchUpInside)
     }
   
     // tabbar 화면으로 이동
     @objc func onClickedToTabBarBtn(sender: UIButton) {
-        let storyboard = UIStoryboard(name: "GiverTabBar", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "GiverTabBarVC") as! GiverTabBarVC
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
+        performSegue(withIdentifier: "loginToGiverTabBarSegue", sender: nil)
     }
     
 }

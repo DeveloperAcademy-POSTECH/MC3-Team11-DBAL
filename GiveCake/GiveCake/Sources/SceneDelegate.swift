@@ -19,8 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         // rootview 설정하기
-        setRootView(scene, name: "GiverLogin", identifier: "GiverLoginVC")
-//        setRootView(scene, name: "GiverTabBar", identifier: "GiverTabBarVC")
+        // 현재 기본값은 MainVC
+        // 아래 코드는 TabBarVC를 루트뷰로 설정하는 코드
+        // setRootView(scene, name: "GiverTabBar", identifier: "GiverTabBarVC")
     }
     
     // rootview 설정하기

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JFC-HX-CN6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,20 +8,96 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="w7x-s5-No2">
+            <objects>
+                <navigationController id="JFC-HX-CN6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DtN-Pv-FkK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Pqo-VD-pj3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8L2-Gb-nfq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-613" y="78"/>
+        </scene>
+        <!--MainVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="MainVC" customModule="GiveCake" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bn0-Gs-OlH">
+                                <rect key="frame" x="170.5" y="811" width="73" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="계속하기"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycX-kx-0Hw">
+                                <rect key="frame" x="132" y="188" width="150" height="34"/>
+                                <color key="backgroundColor" red="0.94328004121780396" green="0.81494068244837048" blue="0.87762761394199174" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="uGe-iV-SgZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ycX-kx-0Hw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="EwQ-zr-0Gl"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Bn0-Gs-OlH" secondAttribute="bottom" constant="20" id="HCs-4M-bI2"/>
+                            <constraint firstItem="ycX-kx-0Hw" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="VF9-X1-rr0"/>
+                            <constraint firstItem="Bn0-Gs-OlH" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ytP-oV-zg1"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="YL9-Py-D7P"/>
+                    <connections>
+                        <outlet property="continueBtn" destination="Bn0-Gs-OlH" id="Uj4-5S-zbv"/>
+                        <outlet property="enterCodeTextField" destination="ycX-kx-0Hw" id="Yw1-lw-d3s"/>
+                        <segue destination="feo-Tz-Yeq" kind="show" identifier="goToGiverLoginSegue" id="jD9-rq-SNM"/>
+                        <segue destination="eyf-3Y-aV0" kind="show" identifier="goToTakerLoginSegue" id="U1i-8C-4hD"/>
+                        <segue destination="y7R-xQ-fKh" kind="show" identifier="goToAdminLoginSegue" id="pbv-rf-zrt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="78"/>
+        </scene>
+        <!--GiverLogin-->
+        <scene sceneID="ch8-tC-JqO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GiverLogin" id="feo-Tz-Yeq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EbU-68-tA1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bH9-Or-gwN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="827" y="-10"/>
+        </scene>
+        <!--TakerLogin-->
+        <scene sceneID="O6m-p8-BFY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TakerLogin" id="eyf-3Y-aV0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Qdu-yg-KBC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gM1-ES-MkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="78"/>
+        </scene>
+        <!--AdminLogin-->
+        <scene sceneID="6H1-OV-wyz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdminLogin" id="y7R-xQ-fKh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BwY-T9-Nsl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFX-Kd-KQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832" y="169"/>
         </scene>
     </scenes>
     <resources>
