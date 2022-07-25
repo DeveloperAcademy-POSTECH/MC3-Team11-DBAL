@@ -16,8 +16,8 @@ class TakerMessageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myTableViewCellNib = UINib(nibName: "MyTableViewCell", bundle: nil)
-        self.tableView.register(myTableViewCellNib, forCellReuseIdentifier: "MyTableViewCell")
+        let myTableViewCellNib = UINib(nibName: "TakerMessageCell", bundle: nil)
+        self.tableView.register(myTableViewCellNib, forCellReuseIdentifier: "TakerMessageCell")
         self.tableView.rowHeight = UITableView.automaticDimension
     
         self.tableView.delegate = self
@@ -35,7 +35,7 @@ extension TakerMessageVC: UITableViewDelegate, UITableViewDataSource {
     }
     // 각 셀에 대한 설정
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyTableViewCell", for: indexPath) as! MyTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TakerMessageCell", for: indexPath) as! MyTableViewCell
         
         cell.emoticonLabel.text = messageList[indexPath.row].emoticon
         cell.senderLabel.text = messageList[indexPath.row].sender

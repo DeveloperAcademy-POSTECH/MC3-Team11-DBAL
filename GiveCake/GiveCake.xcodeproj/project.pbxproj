@@ -40,9 +40,9 @@
 		BC508818288E784500A4AD5F /* AdminLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508817288E784500A4AD5F /* AdminLoginVC.swift */; };
 		BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC50881C288EB03500A4AD5F /* TakerMessage.storyboard */; };
 		BC508821288EB08000A4AD5F /* TakerMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508820288EB08000A4AD5F /* TakerMessageVC.swift */; };
-		BC508823288EB63000A4AD5F /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC508822288EB63000A4AD5F /* MyTableViewCell.xib */; };
+		BC508823288EB63000A4AD5F /* TakerMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC508822288EB63000A4AD5F /* TakerMessageCell.xib */; };
 		BC508825288EBB6C00A4AD5F /* TakerMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508824288EBB6C00A4AD5F /* TakerMessageModel.swift */; };
-		BC508827288EBC8500A4AD5F /* TakerMessageCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508826288EBC8500A4AD5F /* TakerMessageCellVC.swift */; };
+		BC508827288EBC8500A4AD5F /* TakerMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508826288EBC8500A4AD5F /* TakerMessageCell.swift */; };
 		BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */; };
 		BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */; };
 		BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */; };
@@ -86,9 +86,9 @@
 		BC508817288E784500A4AD5F /* AdminLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginVC.swift; sourceTree = "<group>"; };
 		BC50881C288EB03500A4AD5F /* TakerMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakerMessage.storyboard; sourceTree = "<group>"; };
 		BC508820288EB08000A4AD5F /* TakerMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageVC.swift; sourceTree = "<group>"; };
-		BC508822288EB63000A4AD5F /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		BC508822288EB63000A4AD5F /* TakerMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TakerMessageCell.xib; sourceTree = "<group>"; };
 		BC508824288EBB6C00A4AD5F /* TakerMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageModel.swift; sourceTree = "<group>"; };
-		BC508826288EBC8500A4AD5F /* TakerMessageCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageCellVC.swift; sourceTree = "<group>"; };
+		BC508826288EBC8500A4AD5F /* TakerMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageCell.swift; sourceTree = "<group>"; };
 		BC8A6379287FAAF800D7DA7E /* GiveCake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiveCake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 			children = (
 				BC50880B288E765300A4AD5F /* TakerLogin.storyboard */,
 				BC50881C288EB03500A4AD5F /* TakerMessage.storyboard */,
-				BC508822288EB63000A4AD5F /* MyTableViewCell.xib */,
+				BC508822288EB63000A4AD5F /* TakerMessageCell.xib */,
 			);
 			path = Taker;
 			sourceTree = "<group>";
@@ -255,7 +255,7 @@
 			children = (
 				BC508815288E783600A4AD5F /* TakerLoginVC.swift */,
 				BC508820288EB08000A4AD5F /* TakerMessageVC.swift */,
-				BC508826288EBC8500A4AD5F /* TakerMessageCellVC.swift */,
+				BC508826288EBC8500A4AD5F /* TakerMessageCell.swift */,
 			);
 			path = Taker;
 			sourceTree = "<group>";
@@ -436,7 +436,7 @@
 				BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */,
 				BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */,
 				BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */,
-				BC508823288EB63000A4AD5F /* MyTableViewCell.xib in Resources */,
+				BC508823288EB63000A4AD5F /* TakerMessageCell.xib in Resources */,
 				BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */,
 				BC09E15F28800A3900521F55 /* Main.storyboard in Resources */,
 				BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */,
@@ -467,7 +467,7 @@
 				BC508825288EBB6C00A4AD5F /* TakerMessageModel.swift in Sources */,
 				BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */,
 				9EB9358F2883E6BE00A56668 /* GiverMessageDummyModel.swift in Sources */,
-				BC508827288EBC8500A4AD5F /* TakerMessageCellVC.swift in Sources */,
+				BC508827288EBC8500A4AD5F /* TakerMessageCell.swift in Sources */,
 				BC508816288E783600A4AD5F /* TakerLoginVC.swift in Sources */,
 				BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */,
 				BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */,
