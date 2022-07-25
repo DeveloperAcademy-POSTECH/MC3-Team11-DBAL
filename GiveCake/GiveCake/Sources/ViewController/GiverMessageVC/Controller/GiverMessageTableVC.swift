@@ -7,20 +7,37 @@
 
 import UIKit
 
-class GiverMessageTableVC: UITableViewController {
-
+class GiverMessageTableVC: UITableViewController, CloudKitDelegate {
+    
+    private let cloudKitManager = CloudKitManager()
+    
+    var fetchedTakerMessagePhoto: [TakerFeedback] = []
     @IBOutlet var tvListView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        CloudKitManager.instance.delegate = self
+        CloudKitManager.instance.fetchAllFeedback()
+        print("뷰디드로드",fetchedTakerMessagePhoto)
     }
-
+    
+    func checkAllFeedback() {
+        print("네?")
+        fetchedTakerMessagePhoto = CloudKitManager.instance.storedFeedback
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+        print(fetchedTakerMessagePhoto.count)
+        print("와오아오아ㅗ아")
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -30,7 +47,7 @@ class GiverMessageTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return sendersOfGiverMessage.count
+        return fetchedTakerMessagePhoto.count
     }
 
     
@@ -40,8 +57,11 @@ class GiverMessageTableVC: UITableViewController {
 //        cell.textLabel?.text = sendersOfGiverMessage[(indexPath as NSIndexPath).row]
 //        cell.detailTextLabel?.text = messagesOfGivers[(indexPath as NSIndexPath).row]
 
+//        cell.lbTitleOfMessage.text = dataOfMessage[(indexPath as NSIndexPath).row].name
+//        cell.lbBodyOfMessage.text = dataOfMessage[(indexPath as NSIndexPath).row].body
+        
         cell.lbTitleOfMessage.text = dataOfMessage[(indexPath as NSIndexPath).row].name
-        cell.lbBodyOfMessage.text = dataOfMessage[(indexPath as NSIndexPath).row].body
+        cell.lbBodyOfMessage.text = fetchedTakerMessagePhoto[(indexPath as NSIndexPath).row].0
         
         return cell
     }
@@ -98,8 +118,12 @@ class GiverMessageTableVC: UITableViewController {
             let indexPath = self.tvListView.indexPath(for: cell)
             let detailView = segue.destination as! GiverMessageReceiveVC
             detailView.receiveData(name: "러브", body: messageOfGivers[(indexPath! as NSIndexPath).row])
+
         }
     }
     
+    func fetchTakerMeesage() {
+        
+    }
 
 }
