@@ -51,6 +51,8 @@
 		BCCE56EA288EDA1600FB6929 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56E9288EDA1600FB6929 /* MessageCell.swift */; };
 		BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */; };
 		BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */; };
+		BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */; };
+		BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +103,8 @@
 		BCCE56E9288EDA1600FB6929 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakerMessageWrite.storyboard; sourceTree = "<group>"; };
 		BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageWriteVC.swift; sourceTree = "<group>"; };
+		BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminMessage.storyboard; sourceTree = "<group>"; };
+		BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMessageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				BC50880D288E766100A4AD5F /* AdminLogin.storyboard */,
+				BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				BC508817288E784500A4AD5F /* AdminLoginVC.swift */,
+				BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -440,6 +446,7 @@
 				BCCE56E8288ED74B00FB6929 /* MessageCell.xib in Resources */,
 				BC50880C288E765300A4AD5F /* TakerLogin.storyboard in Resources */,
 				BC09E145287FF51800521F55 /* GiverFeed.storyboard in Resources */,
+				BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */,
 				BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */,
 				BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */,
 				BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */,
@@ -462,6 +469,7 @@
 				BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */,
 				BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */,
 				BC5087ED288277A000A4AD5F /* FeedTableHeaderView.swift in Sources */,
+				BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */,
 				BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */,
 				BC50880A288E6EEC00A4AD5F /* MainVC.swift in Sources */,
 				BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */,
