@@ -10,7 +10,5 @@ import UIKit
 class AdminLoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 네비게이션바 숨기기
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
 }
