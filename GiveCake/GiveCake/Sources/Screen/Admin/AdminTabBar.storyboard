@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Admin Tab BarVC-->
+        <scene sceneID="J5o-y8-rRc">
+            <objects>
+                <tabBarController id="iLe-eK-HAd" userLabel="Admin Tab BarVC" customClass="AdminTabBarVC" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ypq-Cd-khr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.96078431372549022" green="0.69019607843137254" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="16Y-Vt-6R7" kind="relationship" relationship="viewControllers" id="KLx-DP-lyl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kwX-Pq-z8o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1258" y="-46"/>
+        </scene>
+        <!--AdminFeed-->
+        <scene sceneID="HBR-jr-oMT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdminFeed" id="16Y-Vt-6R7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="FFs-ae-vpJ"/>
+                    <navigationItem key="navigationItem" id="Bve-YM-D3u"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMa-G3-cGh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-365" y="-54"/>
+        </scene>
+    </scenes>
+</document>

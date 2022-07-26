@@ -31,7 +31,7 @@
 		BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087EE288277B500A4AD5F /* FeedTableViewCell.swift */; };
 		BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F02882790500A4AD5F /* GlobalConstants.swift */; };
 		BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */; };
-		BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */; };
+		BC5087FD2882AD0800A4AD5F /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087FC2882AD0800A4AD5F /* FeedModel.swift */; };
 		BC508808288E580A00A4AD5F /* VerticalAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508807288E580A00A4AD5F /* VerticalAlignLabel.swift */; };
 		BC50880A288E6EEC00A4AD5F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508809288E6EEC00A4AD5F /* MainVC.swift */; };
 		BC50880C288E765300A4AD5F /* TakerLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC50880B288E765300A4AD5F /* TakerLogin.storyboard */; };
@@ -44,6 +44,16 @@
 		BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6385287FAAF900D7DA7E /* Assets.xcassets */; };
 		BC8A6389287FAAF900D7DA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6387287FAAF900D7DA7E /* LaunchScreen.storyboard */; };
 		BC8A639E287FB05400D7DA7E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A639D287FB05400D7DA7E /* Colors.xcassets */; };
+		CD417230288F941E00BA8E9E /* AdminTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41722F288F941E00BA8E9E /* AdminTabBar.storyboard */; };
+		CD417232288F942A00BA8E9E /* AdminFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD417231288F942A00BA8E9E /* AdminFeed.storyboard */; };
+		CD41723A288F9B9900BA8E9E /* AdminTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD417239288F9B9900BA8E9E /* AdminTabBarVC.swift */; };
+		CD41723C288FBEBD00BA8E9E /* DetailScrollViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41723B288FBEBD00BA8E9E /* DetailScrollViewAdmin.swift */; };
+		CD417240288FC26100BA8E9E /* FeedTableHeaderViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41723F288FC26100BA8E9E /* FeedTableHeaderViewAdmin.swift */; };
+		CD417242288FC27400BA8E9E /* FeedTableViewCellAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD417241288FC27400BA8E9E /* FeedTableViewCellAdmin.swift */; };
+		CD417244288FC28E00BA8E9E /* FeedAnimationTransitionAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD417243288FC28E00BA8E9E /* FeedAnimationTransitionAdmin.swift */; };
+		CD417246288FC2A300BA8E9E /* FeedDetailViewControllerAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD417245288FC2A300BA8E9E /* FeedDetailViewControllerAdmin.swift */; };
+		CD417248288FC2B800BA8E9E /* FeedPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD417247288FC2B800BA8E9E /* FeedPresentationController.swift */; };
+		CD41724A288FC2C800BA8E9E /* FeedViewControllerAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD417249288FC2C800BA8E9E /* FeedViewControllerAdmin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,7 +82,7 @@
 		BC5087EE288277B500A4AD5F /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		BC5087F02882790500A4AD5F /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverFeedModel.swift; sourceTree = "<group>"; };
+		BC5087FC2882AD0800A4AD5F /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
 		BC508807288E580A00A4AD5F /* VerticalAlignLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlignLabel.swift; sourceTree = "<group>"; };
 		BC508809288E6EEC00A4AD5F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		BC50880B288E765300A4AD5F /* TakerLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakerLogin.storyboard; sourceTree = "<group>"; };
@@ -87,6 +97,16 @@
 		BC8A6388287FAAF900D7DA7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC8A638A287FAAF900D7DA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8A639D287FB05400D7DA7E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CD41722F288F941E00BA8E9E /* AdminTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminTabBar.storyboard; sourceTree = "<group>"; };
+		CD417231288F942A00BA8E9E /* AdminFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminFeed.storyboard; sourceTree = "<group>"; };
+		CD417239288F9B9900BA8E9E /* AdminTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabBarVC.swift; sourceTree = "<group>"; };
+		CD41723B288FBEBD00BA8E9E /* DetailScrollViewAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScrollViewAdmin.swift; sourceTree = "<group>"; };
+		CD41723F288FC26100BA8E9E /* FeedTableHeaderViewAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableHeaderViewAdmin.swift; sourceTree = "<group>"; };
+		CD417241288FC27400BA8E9E /* FeedTableViewCellAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCellAdmin.swift; sourceTree = "<group>"; };
+		CD417243288FC28E00BA8E9E /* FeedAnimationTransitionAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAnimationTransitionAdmin.swift; sourceTree = "<group>"; };
+		CD417245288FC2A300BA8E9E /* FeedDetailViewControllerAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewControllerAdmin.swift; sourceTree = "<group>"; };
+		CD417247288FC2B800BA8E9E /* FeedPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresentationController.swift; sourceTree = "<group>"; };
+		CD417249288FC2C800BA8E9E /* FeedViewControllerAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerAdmin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				BC50880D288E766100A4AD5F /* AdminLogin.storyboard */,
+				CD41722F288F941E00BA8E9E /* AdminTabBar.storyboard */,
+				CD417231288F942A00BA8E9E /* AdminFeed.storyboard */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -250,6 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				BC508817288E784500A4AD5F /* AdminLoginVC.swift */,
+				CD417239288F9B9900BA8E9E /* AdminTabBarVC.swift */,
+				CD417233288F9B3600BA8E9E /* AdminFeedVC */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -331,7 +355,7 @@
 		BC8A6396287FAB9900D7DA7E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */,
+				BC5087FC2882AD0800A4AD5F /* FeedModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -353,6 +377,44 @@
 				BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD417233288F9B3600BA8E9E /* AdminFeedVC */ = {
+			isa = PBXGroup;
+			children = (
+				CD417236288F9B6400BA8E9E /* View */,
+				CD417235288F9B6100BA8E9E /* Model */,
+				CD417234288F9B5E00BA8E9E /* Controller */,
+			);
+			path = AdminFeedVC;
+			sourceTree = "<group>";
+		};
+		CD417234288F9B5E00BA8E9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD417245288FC2A300BA8E9E /* FeedDetailViewControllerAdmin.swift */,
+				CD417247288FC2B800BA8E9E /* FeedPresentationController.swift */,
+				CD417249288FC2C800BA8E9E /* FeedViewControllerAdmin.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD417235288F9B6100BA8E9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD417243288FC28E00BA8E9E /* FeedAnimationTransitionAdmin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD417236288F9B6400BA8E9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD41723B288FBEBD00BA8E9E /* DetailScrollViewAdmin.swift */,
+				CD41723F288FC26100BA8E9E /* FeedTableHeaderViewAdmin.swift */,
+				CD417241288FC27400BA8E9E /* FeedTableViewCellAdmin.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,7 +484,9 @@
 				BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */,
 				BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */,
 				BC09E15F28800A3900521F55 /* Main.storyboard in Resources */,
+				CD417232288F942A00BA8E9E /* AdminFeed.storyboard in Resources */,
 				BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */,
+				CD417230288F941E00BA8E9E /* AdminTabBar.storyboard in Resources */,
 				BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,13 +498,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD41723C288FBEBD00BA8E9E /* DetailScrollViewAdmin.swift in Sources */,
 				BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */,
+				CD417240288FC26100BA8E9E /* FeedTableHeaderViewAdmin.swift in Sources */,
 				BC5087ED288277A000A4AD5F /* FeedTableHeaderView.swift in Sources */,
 				BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */,
 				BC50880A288E6EEC00A4AD5F /* MainVC.swift in Sources */,
 				BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */,
+				CD41724A288FC2C800BA8E9E /* FeedViewControllerAdmin.swift in Sources */,
 				9EB935882883E0A400A56668 /* GiverMesssageWriteVC.swift in Sources */,
 				BC5087EB2882778600A4AD5F /* DetailScrollView.swift in Sources */,
+				CD417242288FC27400BA8E9E /* FeedTableViewCellAdmin.swift in Sources */,
 				9EB935922883EF9E00A56668 /* GiverMessageTableViewCell.swift in Sources */,
 				9EB9359C28845ACE00A56668 /* CloudKitManager.swift in Sources */,
 				BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */,
@@ -449,15 +517,19 @@
 				BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */,
 				9EB9358F2883E6BE00A56668 /* GiverMessageDummyModel.swift in Sources */,
 				BC508816288E783600A4AD5F /* TakerLoginVC.swift in Sources */,
-				BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */,
+				BC5087FD2882AD0800A4AD5F /* FeedModel.swift in Sources */,
 				BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */,
 				BC5087E72882773600A4AD5F /* FeedViewController.swift in Sources */,
+				CD417246288FC2A300BA8E9E /* FeedDetailViewControllerAdmin.swift in Sources */,
+				CD417244288FC28E00BA8E9E /* FeedAnimationTransitionAdmin.swift in Sources */,
 				BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */,
 				9EB9358C2883E38E00A56668 /* GiverMessageTableVC.swift in Sources */,
+				CD41723A288F9B9900BA8E9E /* AdminTabBarVC.swift in Sources */,
 				BC5087E52882771E00A4AD5F /* FeedPresentationController.swift in Sources */,
 				BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */,
 				BC508808288E580A00A4AD5F /* VerticalAlignLabel.swift in Sources */,
 				9EB9358A2883E0CD00A56668 /* GiverMessageReceiveVC.swift in Sources */,
+				CD417248288FC2B800BA8E9E /* FeedPresentationController.swift in Sources */,
 				BC508818288E784500A4AD5F /* AdminLoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

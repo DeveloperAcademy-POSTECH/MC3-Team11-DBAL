@@ -1,13 +1,13 @@
 //
-//  DetailScrollView.swift
+//  DetailScrollViewAdmin.swift
 //  GiveCake
 //
-//  Created by 김동락 on 2022/07/16.
+//  Created by seojeon22 on 2022/07/26.
 //
 
 import UIKit
 
-class DetailScrollView: UIScrollView {
+class DetailScrollViewAdmin: UIScrollView {
     
     let bgBackView = UIView()
     let imageView = UIImageView()
@@ -70,7 +70,7 @@ class DetailScrollView: UIScrollView {
             y: descriptionView.bounds.height -       (dayView.intrinsicContentSize.height +           GlobalConstants.titlePaddingBottom),
             width: 0,
             height: 0
-        ) 
+        )
         dayView.sizeToFit()
         
         stackView.axis = .vertical

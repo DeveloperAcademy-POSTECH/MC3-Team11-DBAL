@@ -30,10 +30,23 @@
                             <constraint firstItem="sZb-0a-VjB" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dbs-dQ-Hls"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="jmM-nb-hix" kind="show" id="qxc-sC-PRA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="87"/>
+        </scene>
+        <!--AdminTabBar-->
+        <scene sceneID="qu6-L9-i8g">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdminTabBar" id="jmM-nb-hix" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3VY-TH-ciw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zTt-gU-kXc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795" y="86"/>
         </scene>
     </scenes>
     <resources>
