@@ -23,7 +23,10 @@ class GiverLoginVC: UIViewController {
   
     // tabbar 화면으로 이동
     @objc func onClickedToTabBarBtn(sender: UIButton) {
-        performSegue(withIdentifier: "loginToGiverTabBarSegue", sender: nil)
+        let storyboard = UIStoryboard(name: "GiverTabBar", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "GiverTabBarVC") as! GiverTabBarVC
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
     }
     
 }

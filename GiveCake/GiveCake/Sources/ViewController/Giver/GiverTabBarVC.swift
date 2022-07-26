@@ -11,9 +11,5 @@ class GiverTabBarVC: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 탭바 화면에서의 네비게이션바 숨기기
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
-
-
 }
