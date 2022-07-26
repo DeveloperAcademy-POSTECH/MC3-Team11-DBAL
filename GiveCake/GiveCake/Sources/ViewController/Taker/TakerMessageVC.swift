@@ -8,7 +8,7 @@
 import UIKit
 
 class TakerMessageVC: UIViewController {
-    let messageList = TakerMessageModel.instance.messageList
+    fileprivate let messageList = TakerMessageModel.instance.messageList
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var header: UIView!
     @IBOutlet weak var writeBtn: UIButton!
@@ -31,8 +31,27 @@ class TakerMessageVC: UIViewController {
         header.layer.shadowOpacity = 1.0
         header.layer.shadowRadius = 0.0
         header.layer.masksToBounds = false
+        
+        // 버튼 동작 연결
+        writeBtn.addTarget(self, action: #selector(onClickedWriteBtn(sender:)), for: .touchUpInside)
+        
+        // alert 설정하기
+        let alert = UIAlertController(title: "편지가 전달 됐습니다.", message: "행복한 생일 보내세요~!", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인", style: .default)
+        alert.addAction(okAction)
+        
+//        guard let takerMessageWriteVC = self.storyboard?.instantiateViewController(withIdentifier: "TakerMessageWriteVC") as? TakerMessageWriteVC else {return}
+//        
+//        
+//        takerMessageWriteVC.completionHandler = {
+//            self.present(alert, animated: true)
+//        }
     }
     
+    // 메시지 작성 화면으로 이동
+    @objc fileprivate func onClickedWriteBtn(sender: UIButton) {
+        performSegue(withIdentifier: "goToTakerMessageWrite", sender: nil)
+    }
 
     
 }

@@ -68,11 +68,22 @@
                         <outlet property="header" destination="Il2-qf-9by" id="blc-57-f58"/>
                         <outlet property="tableView" destination="maP-Wt-sNg" id="gd4-Fr-AaV"/>
                         <outlet property="writeBtn" destination="Yto-N1-f4Y" id="Vgq-dp-XTc"/>
+                        <segue destination="aDb-hq-nbA" kind="show" identifier="goToTakerMessageWrite" id="ScS-9r-TKe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="86.383928571428569"/>
+        </scene>
+        <!--TakerMessageWrite-->
+        <scene sceneID="yvl-fr-xON">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TakerMessageWrite" id="aDb-hq-nbA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8Lg-LM-tYv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBc-xK-SQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="615" y="86"/>
         </scene>
     </scenes>
     <resources>

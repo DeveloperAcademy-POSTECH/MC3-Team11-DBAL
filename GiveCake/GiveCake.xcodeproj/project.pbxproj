@@ -50,6 +50,7 @@
 		BCCE56E8288ED74B00FB6929 /* TakerMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56E7288ED74B00FB6929 /* TakerMessageCell.xib */; };
 		BCCE56EA288EDA1600FB6929 /* TakerMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56E9288EDA1600FB6929 /* TakerMessageCell.swift */; };
 		BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */; };
+		BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		BCCE56E7288ED74B00FB6929 /* TakerMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TakerMessageCell.xib; sourceTree = "<group>"; };
 		BCCE56E9288EDA1600FB6929 /* TakerMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageCell.swift; sourceTree = "<group>"; };
 		BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakerMessageWrite.storyboard; sourceTree = "<group>"; };
+		BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageWriteVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 				BC508815288E783600A4AD5F /* TakerLoginVC.swift */,
 				BC508820288EB08000A4AD5F /* TakerMessageVC.swift */,
 				BCCE56E9288EDA1600FB6929 /* TakerMessageCell.swift */,
+				BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */,
 			);
 			path = Taker;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC508821288EB08000A4AD5F /* TakerMessageVC.swift in Sources */,
+				BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */,
 				BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */,
 				BC5087ED288277A000A4AD5F /* FeedTableHeaderView.swift in Sources */,
 				BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */,
