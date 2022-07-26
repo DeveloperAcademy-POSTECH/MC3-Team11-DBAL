@@ -23,7 +23,7 @@ class AdminLoginVC: UIViewController {
   
     // tabbar 화면으로 이동
     @objc func onClickedToTabBarBtn(sender: UIButton) {
-        performSegue(withIdentifier: "loginToTakerTabBarSegue", sender: nil)
+        performSegue(withIdentifier: "loginToAdminTabBarSegue", sender: nil)
     }
     
 }
