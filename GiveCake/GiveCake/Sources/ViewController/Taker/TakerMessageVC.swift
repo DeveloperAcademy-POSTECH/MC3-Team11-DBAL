@@ -9,9 +9,13 @@ import UIKit
 
 class TakerMessageVC: UIViewController {
     fileprivate let messageList = TakerMessageModel.instance.messageList
+    fileprivate let alert = UIAlertController(title: "편지가 전달 됐습니다.", message: "행복한 생일 보내세요~!", preferredStyle: .alert)
+    fileprivate let blurView = UIVisualEffectView(effect: nil)
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var header: UIView!
     @IBOutlet weak var writeBtn: UIButton!
+    @IBOutlet var screen: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,17 +39,33 @@ class TakerMessageVC: UIViewController {
         // 버튼 동작 연결
         writeBtn.addTarget(self, action: #selector(onClickedWriteBtn(sender:)), for: .touchUpInside)
         
-        // alert 설정하기
-        let alert = UIAlertController(title: "편지가 전달 됐습니다.", message: "행복한 생일 보내세요~!", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "확인", style: .default)
+        // Alert 설정하기
+        let okAction = UIAlertAction(title: "확인", style: .default) { _ in
+            // 확인 누르면 blur효과 지우기
+            UIView.animate(withDuration: 0.1, delay: 0, animations: {
+                self.blurView.alpha = 0.0
+            })
+        }
         alert.addAction(okAction)
         
-//        guard let takerMessageWriteVC = self.storyboard?.instantiateViewController(withIdentifier: "TakerMessageWriteVC") as? TakerMessageWriteVC else {return}
-//        
-//        
-//        takerMessageWriteVC.completionHandler = {
-//            self.present(alert, animated: true)
-//        }
+        // BlurView 설정
+        
+        blurView.translatesAutoresizingMaskIntoConstraints = false
+        screen.addSubview(blurView)
+        blurView.edges(to: screen)
+        blurView.alpha = 0.0
+        blurView.effect = UIBlurEffect(style: .light)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? TakerMessageWriteVC else {return}
+        vc.completionHandler = {
+            // 0.5초 있다가 alert 띄워주고 blur효과 주기
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.blurView.alpha = 0.9
+                self.present(self.alert, animated: true)
+            }
+        }
     }
     
     // 메시지 작성 화면으로 이동

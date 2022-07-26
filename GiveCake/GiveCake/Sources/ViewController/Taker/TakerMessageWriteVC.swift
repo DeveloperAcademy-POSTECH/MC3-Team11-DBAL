@@ -42,5 +42,7 @@ extension TakerMessageWriteVC: UITextViewDelegate {
         } else {
             placeHolder.alpha = 0.0
         }
+        
+        // TODO: 글자수 제한하는 기능 만들기
     }
 }
