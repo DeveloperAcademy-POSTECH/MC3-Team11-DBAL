@@ -19,7 +19,7 @@ class GiverFeedModel {
     static var instance = GiverFeedModel()
     var feedList: [Feed] = [
         Feed(
-            image: UIImage(named: "cover_4")!,
+            image: UIImage(named: "feed_ssoo_image")!,
             title: "8월의 케이크",
             subTitle: "아이들이 행복한 세상! 🍰\n늘 함께해주셔서 감사합니다~!",
             day: "2020.8.xx",
@@ -32,7 +32,7 @@ class GiverFeedModel {
                     """
         ),
         Feed(
-            image: UIImage(named: "cover_5")!,
+            image: UIImage(named: "feed_hans_image")!,
             title: "제목입니다2~",
             subTitle: "소제목입니다2~",
             day: "2020.7.xx",
