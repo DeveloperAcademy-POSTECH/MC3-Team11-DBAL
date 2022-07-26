@@ -16,9 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AdminLogin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZb-0a-VjB">
-                                <rect key="frame" x="162" y="437.5" width="90" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3W-Ey-vcH">
+                                <rect key="frame" x="30" y="801" width="354" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="fhw-rE-pTB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <backgroundConfiguration key="background" cornerRadius="15"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="시작하기">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AppleSDGothicNeo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.3686274886" green="0.1647058874" blue="0.1647058874" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96078431610000004" green="0.69019609689999994" blue="0.74117654560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="센터 관리자 이름" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="6oZ-qb-GDL">
+                                <rect key="frame" x="30" y="286" width="354" height="53"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.90196078430000004" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="GcI-9Y-xiW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrS-HQ-2oL">
+                                <rect key="frame" x="40" y="259" width="28" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름을 입력해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpE-CM-c2i">
+                                <rect key="frame" x="40" y="168" width="192.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -26,10 +61,23 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sZb-0a-VjB" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="A3d-g4-168"/>
-                            <constraint firstItem="sZb-0a-VjB" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dbs-dQ-Hls"/>
+                            <constraint firstItem="lpE-CM-c2i" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="AYh-op-zvm"/>
+                            <constraint firstItem="6oZ-qb-GDL" firstAttribute="top" secondItem="rrS-HQ-2oL" secondAttribute="bottom" constant="7" id="H1V-DJ-afr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6oZ-qb-GDL" secondAttribute="trailing" constant="30" id="Hfx-SB-KFj"/>
+                            <constraint firstItem="rrS-HQ-2oL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="P33-WB-3CQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="N3W-Ey-vcH" secondAttribute="trailing" constant="30" id="P8U-IB-gvE"/>
+                            <constraint firstItem="N3W-Ey-vcH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="RFZ-rM-dYx"/>
+                            <constraint firstItem="lpE-CM-c2i" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="168" id="gqG-si-iGg"/>
+                            <constraint firstAttribute="bottom" secondItem="N3W-Ey-vcH" secondAttribute="bottom" constant="35" id="jJM-Ri-khD"/>
+                            <constraint firstItem="rrS-HQ-2oL" firstAttribute="top" secondItem="lpE-CM-c2i" secondAttribute="bottom" constant="62" id="nqP-tb-IJO"/>
+                            <constraint firstItem="6oZ-qb-GDL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="sBE-xl-Ve1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adminNameTextField" destination="6oZ-qb-GDL" id="maQ-dN-hUd"/>
+                        <outlet property="onClickedToTabBarBtn" destination="N3W-Ey-vcH" id="qSH-2H-Pso"/>
+                        <outlet property="toTabBarBtn" destination="N3W-Ey-vcH" id="5ba-qD-bab"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
