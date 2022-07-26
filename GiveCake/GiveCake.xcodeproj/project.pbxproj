@@ -47,8 +47,8 @@
 		BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6385287FAAF900D7DA7E /* Assets.xcassets */; };
 		BC8A6389287FAAF900D7DA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6387287FAAF900D7DA7E /* LaunchScreen.storyboard */; };
 		BC8A639E287FB05400D7DA7E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A639D287FB05400D7DA7E /* Colors.xcassets */; };
-		BCCE56E8288ED74B00FB6929 /* TakerMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56E7288ED74B00FB6929 /* TakerMessageCell.xib */; };
-		BCCE56EA288EDA1600FB6929 /* TakerMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56E9288EDA1600FB6929 /* TakerMessageCell.swift */; };
+		BCCE56E8288ED74B00FB6929 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56E7288ED74B00FB6929 /* MessageCell.xib */; };
+		BCCE56EA288EDA1600FB6929 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56E9288EDA1600FB6929 /* MessageCell.swift */; };
 		BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */; };
 		BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */; };
 /* End PBXBuildFile section */
@@ -97,8 +97,8 @@
 		BC8A6388287FAAF900D7DA7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC8A638A287FAAF900D7DA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8A639D287FB05400D7DA7E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		BCCE56E7288ED74B00FB6929 /* TakerMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TakerMessageCell.xib; sourceTree = "<group>"; };
-		BCCE56E9288EDA1600FB6929 /* TakerMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageCell.swift; sourceTree = "<group>"; };
+		BCCE56E7288ED74B00FB6929 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		BCCE56E9288EDA1600FB6929 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakerMessageWrite.storyboard; sourceTree = "<group>"; };
 		BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageWriteVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,7 +230,6 @@
 			children = (
 				BC50880B288E765300A4AD5F /* TakerLogin.storyboard */,
 				BC50881C288EB03500A4AD5F /* TakerMessage.storyboard */,
-				BCCE56E7288ED74B00FB6929 /* TakerMessageCell.xib */,
 				BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */,
 			);
 			path = Taker;
@@ -260,7 +259,6 @@
 			children = (
 				BC508815288E783600A4AD5F /* TakerLoginVC.swift */,
 				BC508820288EB08000A4AD5F /* TakerMessageVC.swift */,
-				BCCE56E9288EDA1600FB6929 /* TakerMessageCell.swift */,
 				BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */,
 			);
 			path = Taker;
@@ -307,6 +305,7 @@
 			children = (
 				9EB935862883E03800A56668 /* GiverMessageVC */,
 				BC508809288E6EEC00A4AD5F /* MainVC.swift */,
+				BCCE56E9288EDA1600FB6929 /* MessageCell.swift */,
 				BC508812288E77C600A4AD5F /* Giver */,
 				BC508813288E77D500A4AD5F /* Taker */,
 				BC508814288E77DB00A4AD5F /* Admin */,
@@ -341,6 +340,7 @@
 			children = (
 				BC8A6387287FAAF900D7DA7E /* LaunchScreen.storyboard */,
 				BC09E15E28800A3900521F55 /* Main.storyboard */,
+				BCCE56E7288ED74B00FB6929 /* MessageCell.xib */,
 				BC50880F288E766D00A4AD5F /* Giver */,
 				BC508810288E768200A4AD5F /* Taker */,
 				BC508811288E768800A4AD5F /* Admin */,
@@ -437,7 +437,7 @@
 				BC8A6389287FAAF900D7DA7E /* LaunchScreen.storyboard in Resources */,
 				BC50880E288E766100A4AD5F /* AdminLogin.storyboard in Resources */,
 				BC8A639E287FB05400D7DA7E /* Colors.xcassets in Resources */,
-				BCCE56E8288ED74B00FB6929 /* TakerMessageCell.xib in Resources */,
+				BCCE56E8288ED74B00FB6929 /* MessageCell.xib in Resources */,
 				BC50880C288E765300A4AD5F /* TakerLogin.storyboard in Resources */,
 				BC09E145287FF51800521F55 /* GiverFeed.storyboard in Resources */,
 				BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */,
@@ -476,7 +476,7 @@
 				BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */,
 				9EB9358F2883E6BE00A56668 /* GiverMessageDummyModel.swift in Sources */,
 				BC508816288E783600A4AD5F /* TakerLoginVC.swift in Sources */,
-				BCCE56EA288EDA1600FB6929 /* TakerMessageCell.swift in Sources */,
+				BCCE56EA288EDA1600FB6929 /* MessageCell.swift in Sources */,
 				BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */,
 				BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */,
 				BC5087E72882773600A4AD5F /* FeedViewController.swift in Sources */,

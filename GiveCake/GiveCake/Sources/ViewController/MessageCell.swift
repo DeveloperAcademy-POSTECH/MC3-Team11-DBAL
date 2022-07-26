@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TakerMessageCell: UITableViewCell {
+class MessageCell: UITableViewCell {
 
     @IBOutlet weak var background: UIView!
     @IBOutlet weak var senderLabel: UILabel!
