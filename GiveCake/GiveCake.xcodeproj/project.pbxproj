@@ -49,6 +49,7 @@
 		BC8A639E287FB05400D7DA7E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A639D287FB05400D7DA7E /* Colors.xcassets */; };
 		BCCE56E8288ED74B00FB6929 /* TakerMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56E7288ED74B00FB6929 /* TakerMessageCell.xib */; };
 		BCCE56EA288EDA1600FB6929 /* TakerMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56E9288EDA1600FB6929 /* TakerMessageCell.swift */; };
+		BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		BC8A639D287FB05400D7DA7E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		BCCE56E7288ED74B00FB6929 /* TakerMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TakerMessageCell.xib; sourceTree = "<group>"; };
 		BCCE56E9288EDA1600FB6929 /* TakerMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageCell.swift; sourceTree = "<group>"; };
+		BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakerMessageWrite.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 				BC50880B288E765300A4AD5F /* TakerLogin.storyboard */,
 				BC50881C288EB03500A4AD5F /* TakerMessage.storyboard */,
 				BCCE56E7288ED74B00FB6929 /* TakerMessageCell.xib */,
+				BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */,
 			);
 			path = Taker;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */,
 				BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */,
 				BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */,
+				BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */,
 				BC09E15F28800A3900521F55 /* Main.storyboard in Resources */,
 				BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */,
 				BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */,

@@ -20,6 +20,7 @@ class TakerMessageVC: UIViewController {
         let myTableViewCellNib = UINib(nibName: "TakerMessageCell", bundle: nil)
         self.tableView.register(myTableViewCellNib, forCellReuseIdentifier: "takerMessageCell")
         self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.separatorStyle = .none
     
         self.tableView.delegate = self
         self.tableView.dataSource = self

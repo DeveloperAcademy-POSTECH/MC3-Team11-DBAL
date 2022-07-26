@@ -8,10 +8,11 @@
 import UIKit
 
 class TakerMessageCell: UITableViewCell {
+
     @IBOutlet weak var background: UIView!
+    @IBOutlet weak var senderLabel: UILabel!
     @IBOutlet weak var emoticonLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
-    @IBOutlet weak var senderLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
