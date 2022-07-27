@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Taker MessageVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TakerMessageVC" id="Y6W-OH-hqX" customClass="TakerMessageVC" customModule="GiveCake" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" userLabel="Screen">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="maP-Wt-sNg">
+                                <rect key="frame" x="0.0" y="146" width="414" height="716"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Il2-qf-9by">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="받은 편지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lns-8i-UQs">
+                                        <rect key="frame" x="33" y="84" width="125" height="41"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yto-N1-f4Y">
+                                        <rect key="frame" x="345.5" y="90" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="HDg-Ih-bef"/>
+                                            <constraint firstAttribute="width" constant="28" id="IgW-vM-eZr"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.066666666666666666" green="0.84313725490196079" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="paperplane.circle.fill" catalog="system" title="">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Yto-N1-f4Y" secondAttribute="bottom" constant="28" id="6qz-og-SXD"/>
+                                    <constraint firstItem="Lns-8i-UQs" firstAttribute="leading" secondItem="Il2-qf-9by" secondAttribute="leading" constant="33" id="CbN-rI-zQ1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lns-8i-UQs" secondAttribute="bottom" constant="21" id="LDp-W9-ULI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yto-N1-f4Y" secondAttribute="trailing" constant="40.700000000000003" id="cG8-Za-T4h"/>
+                                    <constraint firstAttribute="height" constant="146" id="yc1-Bz-oOV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="maP-Wt-sNg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3l0-GC-u1f"/>
+                            <constraint firstItem="maP-Wt-sNg" firstAttribute="top" secondItem="Il2-qf-9by" secondAttribute="bottom" id="8gO-8T-tbu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="maP-Wt-sNg" secondAttribute="bottom" id="Alu-50-UX4"/>
+                            <constraint firstItem="Il2-qf-9by" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="-44" id="FWF-rl-u5q"/>
+                            <constraint firstItem="Il2-qf-9by" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Lqr-VL-mQ4"/>
+                            <constraint firstItem="maP-Wt-sNg" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Xep-Af-93a"/>
+                            <constraint firstItem="Il2-qf-9by" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="uDi-PZ-pYX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="header" destination="Il2-qf-9by" id="blc-57-f58"/>
+                        <outlet property="screen" destination="5EZ-qb-Rvc" id="KrW-4s-epe"/>
+                        <outlet property="tableView" destination="maP-Wt-sNg" id="gd4-Fr-AaV"/>
+                        <outlet property="writeBtn" destination="Yto-N1-f4Y" id="Vgq-dp-XTc"/>
+                        <segue destination="aDb-hq-nbA" kind="show" identifier="goToTakerMessageWrite" id="ScS-9r-TKe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="86.383928571428569"/>
+        </scene>
+        <!--TakerMessageWrite-->
+        <scene sceneID="yvl-fr-xON">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TakerMessageWrite" id="aDb-hq-nbA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8Lg-LM-tYv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBc-xK-SQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="615" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paperplane.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

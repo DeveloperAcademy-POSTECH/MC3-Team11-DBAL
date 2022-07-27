@@ -34,19 +34,38 @@
 		BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087EE288277B500A4AD5F /* FeedTableViewCell.swift */; };
 		BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F02882790500A4AD5F /* GlobalConstants.swift */; };
 		BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */; };
-		BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */; };
+		BC5087FD2882AD0800A4AD5F /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087FC2882AD0800A4AD5F /* FeedModel.swift */; };
 		BC508808288E580A00A4AD5F /* VerticalAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508807288E580A00A4AD5F /* VerticalAlignLabel.swift */; };
 		BC50880A288E6EEC00A4AD5F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508809288E6EEC00A4AD5F /* MainVC.swift */; };
 		BC50880C288E765300A4AD5F /* TakerLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC50880B288E765300A4AD5F /* TakerLogin.storyboard */; };
 		BC50880E288E766100A4AD5F /* AdminLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC50880D288E766100A4AD5F /* AdminLogin.storyboard */; };
 		BC508816288E783600A4AD5F /* TakerLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508815288E783600A4AD5F /* TakerLoginVC.swift */; };
 		BC508818288E784500A4AD5F /* AdminLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508817288E784500A4AD5F /* AdminLoginVC.swift */; };
+		BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC50881C288EB03500A4AD5F /* TakerMessage.storyboard */; };
+		BC508821288EB08000A4AD5F /* TakerMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508820288EB08000A4AD5F /* TakerMessageVC.swift */; };
+		BC508825288EBB6C00A4AD5F /* TakerMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508824288EBB6C00A4AD5F /* TakerMessageModel.swift */; };
 		BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */; };
 		BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */; };
 		BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */; };
 		BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6385287FAAF900D7DA7E /* Assets.xcassets */; };
 		BC8A6389287FAAF900D7DA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6387287FAAF900D7DA7E /* LaunchScreen.storyboard */; };
 		BC8A639E287FB05400D7DA7E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A639D287FB05400D7DA7E /* Colors.xcassets */; };
+		BCCE56E8288ED74B00FB6929 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56E7288ED74B00FB6929 /* MessageCell.xib */; };
+		BCCE56EA288EDA1600FB6929 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56E9288EDA1600FB6929 /* MessageCell.swift */; };
+		BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */; };
+		BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */; };
+		BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */; };
+		BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */; };
+		CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */; };
+		CD41724E2890D61200BA8E9E /* AdminTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */; };
+		CD4172542890DDD900BA8E9E /* AdminTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */; };
+		CD4172562890DE9500BA8E9E /* DetailScrollViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4172552890DE9500BA8E9E /* DetailScrollViewAdmin.swift */; };
+		CD4172582890DEA500BA8E9E /* FeedTableHeaderViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4172572890DEA500BA8E9E /* FeedTableHeaderViewAdmin.swift */; };
+		CD41725A2890DEB600BA8E9E /* FeedTableViewCellAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4172592890DEB600BA8E9E /* FeedTableViewCellAdmin.swift */; };
+		CD41725C2890DECB00BA8E9E /* FeedAnimationTransitionAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41725B2890DECB00BA8E9E /* FeedAnimationTransitionAdmin.swift */; };
+		CD41725E2890DEDC00BA8E9E /* FeedDetailViewControllerAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41725D2890DEDC00BA8E9E /* FeedDetailViewControllerAdmin.swift */; };
+		CD4172602890DEF300BA8E9E /* FeedPresentationControllerAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41725F2890DEF300BA8E9E /* FeedPresentationControllerAdmin.swift */; };
+		CD4172622890DF1A00BA8E9E /* FeedViewControllerAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4172612890DF1A00BA8E9E /* FeedViewControllerAdmin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,13 +97,16 @@
 		BC5087EE288277B500A4AD5F /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		BC5087F02882790500A4AD5F /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverFeedModel.swift; sourceTree = "<group>"; };
+		BC5087FC2882AD0800A4AD5F /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
 		BC508807288E580A00A4AD5F /* VerticalAlignLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlignLabel.swift; sourceTree = "<group>"; };
 		BC508809288E6EEC00A4AD5F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		BC50880B288E765300A4AD5F /* TakerLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakerLogin.storyboard; sourceTree = "<group>"; };
 		BC50880D288E766100A4AD5F /* AdminLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminLogin.storyboard; sourceTree = "<group>"; };
 		BC508815288E783600A4AD5F /* TakerLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerLoginVC.swift; sourceTree = "<group>"; };
 		BC508817288E784500A4AD5F /* AdminLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginVC.swift; sourceTree = "<group>"; };
+		BC50881C288EB03500A4AD5F /* TakerMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakerMessage.storyboard; sourceTree = "<group>"; };
+		BC508820288EB08000A4AD5F /* TakerMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageVC.swift; sourceTree = "<group>"; };
+		BC508824288EBB6C00A4AD5F /* TakerMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageModel.swift; sourceTree = "<group>"; };
 		BC8A6379287FAAF800D7DA7E /* GiveCake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiveCake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +115,22 @@
 		BC8A6388287FAAF900D7DA7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC8A638A287FAAF900D7DA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8A639D287FB05400D7DA7E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		BCCE56E7288ED74B00FB6929 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		BCCE56E9288EDA1600FB6929 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakerMessageWrite.storyboard; sourceTree = "<group>"; };
+		BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageWriteVC.swift; sourceTree = "<group>"; };
+		BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminMessage.storyboard; sourceTree = "<group>"; };
+		BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMessageVC.swift; sourceTree = "<group>"; };
+		CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminFeed.storyboard; sourceTree = "<group>"; };
+		CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminTabBar.storyboard; sourceTree = "<group>"; };
+		CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabBarVC.swift; sourceTree = "<group>"; };
+		CD4172552890DE9500BA8E9E /* DetailScrollViewAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScrollViewAdmin.swift; sourceTree = "<group>"; };
+		CD4172572890DEA500BA8E9E /* FeedTableHeaderViewAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableHeaderViewAdmin.swift; sourceTree = "<group>"; };
+		CD4172592890DEB600BA8E9E /* FeedTableViewCellAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCellAdmin.swift; sourceTree = "<group>"; };
+		CD41725B2890DECB00BA8E9E /* FeedAnimationTransitionAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAnimationTransitionAdmin.swift; sourceTree = "<group>"; };
+		CD41725D2890DEDC00BA8E9E /* FeedDetailViewControllerAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewControllerAdmin.swift; sourceTree = "<group>"; };
+		CD41725F2890DEF300BA8E9E /* FeedPresentationControllerAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresentationControllerAdmin.swift; sourceTree = "<group>"; };
+		CD4172612890DF1A00BA8E9E /* FeedViewControllerAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerAdmin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				BC50880B288E765300A4AD5F /* TakerLogin.storyboard */,
+				BC50881C288EB03500A4AD5F /* TakerMessage.storyboard */,
+				BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */,
 			);
 			path = Taker;
 			sourceTree = "<group>";
@@ -231,6 +271,9 @@
 			children = (
 				BC50880D288E766100A4AD5F /* AdminLogin.storyboard */,
 				A0519B2C28913513002DF848 /* AdminHome.storyboard */,
+				CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */,
+				CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */,
+				BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -251,6 +294,8 @@
 			isa = PBXGroup;
 			children = (
 				BC508815288E783600A4AD5F /* TakerLoginVC.swift */,
+				BC508820288EB08000A4AD5F /* TakerMessageVC.swift */,
+				BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */,
 			);
 			path = Taker;
 			sourceTree = "<group>";
@@ -259,6 +304,9 @@
 			isa = PBXGroup;
 			children = (
 				BC508817288E784500A4AD5F /* AdminLoginVC.swift */,
+				CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */,
+				BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */,
+				CD41724F2890DD6E00BA8E9E /* AdminFeedVC */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -296,6 +344,7 @@
 			children = (
 				9EB935862883E03800A56668 /* GiverMessageVC */,
 				BC508809288E6EEC00A4AD5F /* MainVC.swift */,
+				BCCE56E9288EDA1600FB6929 /* MessageCell.swift */,
 				BC508812288E77C600A4AD5F /* Giver */,
 				BC508813288E77D500A4AD5F /* Taker */,
 				BC508814288E77DB00A4AD5F /* Admin */,
@@ -330,6 +379,7 @@
 			children = (
 				BC8A6387287FAAF900D7DA7E /* LaunchScreen.storyboard */,
 				BC09E15E28800A3900521F55 /* Main.storyboard */,
+				BCCE56E7288ED74B00FB6929 /* MessageCell.xib */,
 				BC50880F288E766D00A4AD5F /* Giver */,
 				BC508810288E768200A4AD5F /* Taker */,
 				BC508811288E768800A4AD5F /* Admin */,
@@ -340,7 +390,8 @@
 		BC8A6396287FAB9900D7DA7E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */,
+				BC5087FC2882AD0800A4AD5F /* FeedModel.swift */,
+				BC508824288EBB6C00A4AD5F /* TakerMessageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -362,6 +413,44 @@
 				BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD41724F2890DD6E00BA8E9E /* AdminFeedVC */ = {
+			isa = PBXGroup;
+			children = (
+				CD4172522890DD8B00BA8E9E /* View */,
+				CD4172512890DD8800BA8E9E /* Model */,
+				CD4172502890DD8400BA8E9E /* Controller */,
+			);
+			path = AdminFeedVC;
+			sourceTree = "<group>";
+		};
+		CD4172502890DD8400BA8E9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD41725D2890DEDC00BA8E9E /* FeedDetailViewControllerAdmin.swift */,
+				CD41725F2890DEF300BA8E9E /* FeedPresentationControllerAdmin.swift */,
+				CD4172612890DF1A00BA8E9E /* FeedViewControllerAdmin.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD4172512890DD8800BA8E9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD41725B2890DECB00BA8E9E /* FeedAnimationTransitionAdmin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD4172522890DD8B00BA8E9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD4172552890DE9500BA8E9E /* DetailScrollViewAdmin.swift */,
+				CD4172572890DEA500BA8E9E /* FeedTableHeaderViewAdmin.swift */,
+				CD4172592890DEB600BA8E9E /* FeedTableViewCellAdmin.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,13 +514,19 @@
 				BC8A6389287FAAF900D7DA7E /* LaunchScreen.storyboard in Resources */,
 				BC50880E288E766100A4AD5F /* AdminLogin.storyboard in Resources */,
 				BC8A639E287FB05400D7DA7E /* Colors.xcassets in Resources */,
+				BCCE56E8288ED74B00FB6929 /* MessageCell.xib in Resources */,
 				BC50880C288E765300A4AD5F /* TakerLogin.storyboard in Resources */,
 				BC09E145287FF51800521F55 /* GiverFeed.storyboard in Resources */,
+				BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */,
+				CD41724E2890D61200BA8E9E /* AdminTabBar.storyboard in Resources */,
 				BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */,
 				A00D0978289112FC00F72459 /* GiverHomeComplete.storyboard in Resources */,
 				A0519B2D28913513002DF848 /* AdminHome.storyboard in Resources */,
+				CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */,
+				BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */,
 				BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */,
 				BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */,
+				BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */,
 				BC09E15F28800A3900521F55 /* Main.storyboard in Resources */,
 				BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */,
 				BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */,
@@ -445,31 +540,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC508821288EB08000A4AD5F /* TakerMessageVC.swift in Sources */,
+				BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */,
 				BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */,
 				BC5087ED288277A000A4AD5F /* FeedTableHeaderView.swift in Sources */,
+				BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */,
 				BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */,
 				BC50880A288E6EEC00A4AD5F /* MainVC.swift in Sources */,
 				BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */,
+				CD4172602890DEF300BA8E9E /* FeedPresentationControllerAdmin.swift in Sources */,
 				9EB935882883E0A400A56668 /* GiverMesssageWriteVC.swift in Sources */,
 				BC5087EB2882778600A4AD5F /* DetailScrollView.swift in Sources */,
 				9EB935922883EF9E00A56668 /* GiverMessageTableViewCell.swift in Sources */,
 				9EB9359C28845ACE00A56668 /* CloudKitManager.swift in Sources */,
 				BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */,
+				CD41725E2890DEDC00BA8E9E /* FeedDetailViewControllerAdmin.swift in Sources */,
 				BC5087E3288276F500A4AD5F /* FeedDetailViewController.swift in Sources */,
+				CD4172542890DDD900BA8E9E /* AdminTabBarVC.swift in Sources */,
+				CD41725A2890DEB600BA8E9E /* FeedTableViewCellAdmin.swift in Sources */,
 				BC5087E92882776B00A4AD5F /* FeedAnimationTransition.swift in Sources */,
+				BC508825288EBB6C00A4AD5F /* TakerMessageModel.swift in Sources */,
 				BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */,
 				9EB9358F2883E6BE00A56668 /* GiverMessageDummyModel.swift in Sources */,
 				BC508816288E783600A4AD5F /* TakerLoginVC.swift in Sources */,
 				BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */,
 				A00D097C2891165A00F72459 /* GiverHomeCompleteVC.swift in Sources */,
+				CD41725C2890DECB00BA8E9E /* FeedAnimationTransitionAdmin.swift in Sources */,
+				BCCE56EA288EDA1600FB6929 /* MessageCell.swift in Sources */,
+				BC5087FD2882AD0800A4AD5F /* FeedModel.swift in Sources */,
 				BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */,
 				BC5087E72882773600A4AD5F /* FeedViewController.swift in Sources */,
 				BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */,
 				9EB9358C2883E38E00A56668 /* GiverMessageTableVC.swift in Sources */,
 				BC5087E52882771E00A4AD5F /* FeedPresentationController.swift in Sources */,
 				BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */,
+				CD4172562890DE9500BA8E9E /* DetailScrollViewAdmin.swift in Sources */,
+				CD4172582890DEA500BA8E9E /* FeedTableHeaderViewAdmin.swift in Sources */,
 				BC508808288E580A00A4AD5F /* VerticalAlignLabel.swift in Sources */,
 				9EB9358A2883E0CD00A56668 /* GiverMessageReceiveVC.swift in Sources */,
+				CD4172622890DF1A00BA8E9E /* FeedViewControllerAdmin.swift in Sources */,
 				BC508818288E784500A4AD5F /* AdminLoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,7 +728,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TD534ZU4RG;
+				DEVELOPMENT_TEAM = 72PKNR92XJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GiveCake/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -632,7 +741,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DBAL.GiveCake;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DBAL.GiveCakee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -650,7 +759,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TD534ZU4RG;
+				DEVELOPMENT_TEAM = 72PKNR92XJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GiveCake/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -663,7 +772,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DBAL.GiveCake;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DBAL.GiveCakee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

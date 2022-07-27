@@ -1,13 +1,13 @@
 //
-//  TodayViewController.swift
+//  FeedViewControllerAdmin.swift
 //  GiveCake
 //
-//  Created by 김동락 on 2022/07/16.
+//  Created by seojeon22 on 2022/07/27.
 //
 
 import UIKit
 
-class FeedViewController: UITableViewController {
+class FeedViewControllerAdmin: UITableViewController {
     
     var selectedCell: FeedTableViewCell?
     

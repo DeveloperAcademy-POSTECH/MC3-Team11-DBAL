@@ -10,7 +10,6 @@ import UIKit
 class GiverLoginVC: UIViewController {
     // 스토리보드에서 버튼 객체 가져옴
     @IBOutlet weak var nicknameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var toTabBarBtn: UIButton!
     
     override func viewDidLoad() {

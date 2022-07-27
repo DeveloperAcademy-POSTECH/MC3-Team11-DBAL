@@ -16,9 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TakerLogin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oh9-W3-Lcv">
-                                <rect key="frame" x="165.5" y="437.5" width="83" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3G-Ij-B7F">
+                                <rect key="frame" x="30" y="801" width="354" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Oqa-w7-K0C"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <backgroundConfiguration key="background" cornerRadius="15"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="시작하기">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AppleSDGothicNeo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.3686274886" green="0.1647058874" blue="0.1647058874" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96078431610000004" green="0.69019609689999994" blue="0.74117654560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="위탁 아동의 이름" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="UO3-UE-n1D">
+                                <rect key="frame" x="30" y="286" width="354" height="53"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.90196078430000004" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="ibK-40-KG9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아동 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iv1-PZ-0cW">
+                                <rect key="frame" x="40" y="259" width="60" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이의 이름을 입력해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvG-vT-Dcj">
+                                <rect key="frame" x="40" y="168" width="260" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -26,10 +61,22 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oh9-W3-Lcv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="FB6-RZ-ix5"/>
-                            <constraint firstItem="oh9-W3-Lcv" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="o0B-yX-L9X"/>
+                            <constraint firstAttribute="bottom" secondItem="V3G-Ij-B7F" secondAttribute="bottom" constant="35" id="9sJ-DU-7uc"/>
+                            <constraint firstItem="xvG-vT-Dcj" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="168" id="Rfk-jG-6Q1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UO3-UE-n1D" secondAttribute="trailing" constant="30" id="SEB-gh-gdK"/>
+                            <constraint firstItem="V3G-Ij-B7F" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="UPS-Wx-V1f"/>
+                            <constraint firstItem="iv1-PZ-0cW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="Xuh-E9-gMO"/>
+                            <constraint firstItem="UO3-UE-n1D" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="YJO-mA-ecp"/>
+                            <constraint firstItem="iv1-PZ-0cW" firstAttribute="top" secondItem="xvG-vT-Dcj" secondAttribute="bottom" constant="62" id="fOb-Hh-rFH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="V3G-Ij-B7F" secondAttribute="trailing" constant="30" id="jl1-Ky-EGl"/>
+                            <constraint firstItem="UO3-UE-n1D" firstAttribute="top" secondItem="iv1-PZ-0cW" secondAttribute="bottom" constant="7" id="qj5-m1-DTz"/>
+                            <constraint firstItem="xvG-vT-Dcj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="snU-6G-T0G"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="childNameTextField" destination="UO3-UE-n1D" id="iwJ-as-8RQ"/>
+                        <outlet property="toTabBarBtn" destination="V3G-Ij-B7F" id="oE2-Ab-o5D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
