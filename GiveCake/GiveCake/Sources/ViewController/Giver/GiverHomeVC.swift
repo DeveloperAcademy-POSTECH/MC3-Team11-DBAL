@@ -10,7 +10,7 @@ import UIKit
 class CLoudkit {
     func getCakeNumber() -> Int{
         
-        return 120
+        return 30
         
     }
     
@@ -58,13 +58,12 @@ class GiverHomeVC: UIViewController {
         let cakeNum = cloudkit.getCakeNumber()
         
         makeAnimation(shapeLayer: shapeLayer, value: Double(cakeNum)/150.0)
-        
+        //게이지뷰 투명화
         gageView.backgroundColor = .clear
        
-    
         // 월별 생일 아동 수치 보드, 원형게이지 보드 반지름 값
         countKidsView.layer.cornerRadius = 20
-        countCakeView.layer.cornerRadius = 20
+        countCakeView.layer.cornerRadius = 25
         
         
       
