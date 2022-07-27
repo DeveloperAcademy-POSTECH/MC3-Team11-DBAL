@@ -166,7 +166,7 @@
                             <constraint firstItem="4KN-Re-6S5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="27" id="t3k-dJ-brw"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="cJR-Ck-9iB"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="Home_fill_DBAL" id="cJR-Ck-9iB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="countKidsView" destination="WQ8-BE-1KS" id="4N4-nc-nUb"/>
@@ -181,7 +181,7 @@
     </scenes>
     <resources>
         <image name="B-DayKids_symbol-3" width="38" height="38"/>
-        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="Home_fill_DBAL" width="18" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -15,8 +15,8 @@ struct Feed {
     var content: String
 }
 
-class GiverFeedModel {
-    static var instance = GiverFeedModel()
+class FeedModel {
+    static var instance = FeedModel()
     var feedList: [Feed] = [
         Feed(
             image: UIImage(named: "feed_ssoo_image")!,
