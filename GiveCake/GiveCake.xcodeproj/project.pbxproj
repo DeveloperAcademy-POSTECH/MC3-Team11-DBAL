@@ -54,6 +54,8 @@
 		BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */; };
 		BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */; };
 		BCCE56F42891194100FB6929 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F32891194000FB6929 /* UIColorExtension.swift */; };
+		BCCE56F628914AD200FB6929 /* GiverMessageDophi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56F528914AD200FB6929 /* GiverMessageDophi.storyboard */; };
+		BCCE56F828914ADE00FB6929 /* GiverMessageWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56F728914ADE00FB6929 /* GiverMessageWrite.storyboard */; };
 		CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */; };
 		CD41724E2890D61200BA8E9E /* AdminTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */; };
 		CD4172542890DDD900BA8E9E /* AdminTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */; };
@@ -117,6 +119,8 @@
 		BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminMessage.storyboard; sourceTree = "<group>"; };
 		BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMessageVC.swift; sourceTree = "<group>"; };
 		BCCE56F32891194000FB6929 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		BCCE56F528914AD200FB6929 /* GiverMessageDophi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessageDophi.storyboard; sourceTree = "<group>"; };
+		BCCE56F728914ADE00FB6929 /* GiverMessageWrite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessageWrite.storyboard; sourceTree = "<group>"; };
 		CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminFeed.storyboard; sourceTree = "<group>"; };
 		CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminTabBar.storyboard; sourceTree = "<group>"; };
 		CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabBarVC.swift; sourceTree = "<group>"; };
@@ -247,6 +251,8 @@
 				BC09E142287FF50900521F55 /* GiverHome.storyboard */,
 				BC09E144287FF51800521F55 /* GiverFeed.storyboard */,
 				BC09E148287FF5E900521F55 /* GiverMessage.storyboard */,
+				BCCE56F528914AD200FB6929 /* GiverMessageDophi.storyboard */,
+				BCCE56F728914ADE00FB6929 /* GiverMessageWrite.storyboard */,
 			);
 			path = Giver;
 			sourceTree = "<group>";
@@ -514,10 +520,12 @@
 				BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */,
 				CD41724E2890D61200BA8E9E /* AdminTabBar.storyboard in Resources */,
 				BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */,
+				BCCE56F628914AD200FB6929 /* GiverMessageDophi.storyboard in Resources */,
 				CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */,
 				BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */,
 				BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */,
 				BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */,
+				BCCE56F828914ADE00FB6929 /* GiverMessageWrite.storyboard in Resources */,
 				BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */,
 				BC09E15F28800A3900521F55 /* Main.storyboard in Resources */,
 				BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */,
