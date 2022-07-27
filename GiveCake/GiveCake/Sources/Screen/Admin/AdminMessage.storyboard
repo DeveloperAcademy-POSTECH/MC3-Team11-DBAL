@@ -11,12 +11,12 @@
         <!--편지-->
         <scene sceneID="t5e-R4-qp0">
             <objects>
-                <viewController id="E3U-V5-6RW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdminMessage" id="E3U-V5-6RW" customClass="AdminMessageVC" customModule="GiveCake" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r44-P8-50l" userLabel="Screen">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Gmw-VY-yaY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Gmw-VY-yaY">
                                 <rect key="frame" x="0.0" y="186" width="414" height="627"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -76,6 +76,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="편지" image="Envelope_fill_DBAL" id="RAQ-gl-Lg0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="deleteBtn" destination="pw0-eG-Vje" id="zyy-0d-Q90"/>
+                        <outlet property="header" destination="3ym-E9-kbS" id="SKa-AL-EcB"/>
+                        <outlet property="segmentedCtrl" destination="WZL-Ku-mmo" id="ctM-dW-4d9"/>
+                        <outlet property="tableView" destination="Gmw-VY-yaY" id="OPm-yJ-Xsd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0H-pS-9nq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
