@@ -13,10 +13,13 @@ class TakerMessageWriteVC: UIViewController {
     @IBOutlet weak var textField: UITextView!
     @IBOutlet weak var rectangle: UIView!
     @IBOutlet weak var placeHolder: UILabel!
+    @IBOutlet weak var textFieldBackground: UIView!
+    
     var completionHandler: (() -> (Void))?
     
     override func viewDidLoad() {
         rectangle.layer.cornerRadius = 2
+        textFieldBackground.layer.cornerRadius = 7
         textField.delegate = self
         
         // 키보드 바로 띄워주기
