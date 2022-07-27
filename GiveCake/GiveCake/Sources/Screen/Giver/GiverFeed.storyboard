@@ -31,6 +31,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="모아보기" image="cake_symbol" id="Inm-29-Jsg"/>
+                    <navigationItem key="navigationItem" id="Sak-bX-BGi"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kwN-VC-9T9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

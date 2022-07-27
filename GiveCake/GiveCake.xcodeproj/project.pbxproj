@@ -38,12 +38,21 @@
 		BC50880E288E766100A4AD5F /* AdminLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC50880D288E766100A4AD5F /* AdminLogin.storyboard */; };
 		BC508816288E783600A4AD5F /* TakerLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508815288E783600A4AD5F /* TakerLoginVC.swift */; };
 		BC508818288E784500A4AD5F /* AdminLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508817288E784500A4AD5F /* AdminLoginVC.swift */; };
+		BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC50881C288EB03500A4AD5F /* TakerMessage.storyboard */; };
+		BC508821288EB08000A4AD5F /* TakerMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508820288EB08000A4AD5F /* TakerMessageVC.swift */; };
+		BC508825288EBB6C00A4AD5F /* TakerMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508824288EBB6C00A4AD5F /* TakerMessageModel.swift */; };
 		BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */; };
 		BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */; };
 		BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */; };
 		BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6385287FAAF900D7DA7E /* Assets.xcassets */; };
 		BC8A6389287FAAF900D7DA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6387287FAAF900D7DA7E /* LaunchScreen.storyboard */; };
 		BC8A639E287FB05400D7DA7E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8A639D287FB05400D7DA7E /* Colors.xcassets */; };
+		BCCE56E8288ED74B00FB6929 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56E7288ED74B00FB6929 /* MessageCell.xib */; };
+		BCCE56EA288EDA1600FB6929 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56E9288EDA1600FB6929 /* MessageCell.swift */; };
+		BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */; };
+		BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */; };
+		BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */; };
+		BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +88,9 @@
 		BC50880D288E766100A4AD5F /* AdminLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminLogin.storyboard; sourceTree = "<group>"; };
 		BC508815288E783600A4AD5F /* TakerLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerLoginVC.swift; sourceTree = "<group>"; };
 		BC508817288E784500A4AD5F /* AdminLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginVC.swift; sourceTree = "<group>"; };
+		BC50881C288EB03500A4AD5F /* TakerMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakerMessage.storyboard; sourceTree = "<group>"; };
+		BC508820288EB08000A4AD5F /* TakerMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageVC.swift; sourceTree = "<group>"; };
+		BC508824288EBB6C00A4AD5F /* TakerMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageModel.swift; sourceTree = "<group>"; };
 		BC8A6379287FAAF800D7DA7E /* GiveCake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiveCake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +99,12 @@
 		BC8A6388287FAAF900D7DA7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC8A638A287FAAF900D7DA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8A639D287FB05400D7DA7E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		BCCE56E7288ED74B00FB6929 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		BCCE56E9288EDA1600FB6929 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakerMessageWrite.storyboard; sourceTree = "<group>"; };
+		BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageWriteVC.swift; sourceTree = "<group>"; };
+		BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminMessage.storyboard; sourceTree = "<group>"; };
+		BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMessageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				BC50880B288E765300A4AD5F /* TakerLogin.storyboard */,
+				BC50881C288EB03500A4AD5F /* TakerMessage.storyboard */,
+				BCCE56EB288F7C5400FB6929 /* TakerMessageWrite.storyboard */,
 			);
 			path = Taker;
 			sourceTree = "<group>";
@@ -223,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				BC50880D288E766100A4AD5F /* AdminLogin.storyboard */,
+				BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -242,6 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				BC508815288E783600A4AD5F /* TakerLoginVC.swift */,
+				BC508820288EB08000A4AD5F /* TakerMessageVC.swift */,
+				BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */,
 			);
 			path = Taker;
 			sourceTree = "<group>";
@@ -250,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				BC508817288E784500A4AD5F /* AdminLoginVC.swift */,
+				BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -287,6 +311,7 @@
 			children = (
 				9EB935862883E03800A56668 /* GiverMessageVC */,
 				BC508809288E6EEC00A4AD5F /* MainVC.swift */,
+				BCCE56E9288EDA1600FB6929 /* MessageCell.swift */,
 				BC508812288E77C600A4AD5F /* Giver */,
 				BC508813288E77D500A4AD5F /* Taker */,
 				BC508814288E77DB00A4AD5F /* Admin */,
@@ -321,6 +346,7 @@
 			children = (
 				BC8A6387287FAAF900D7DA7E /* LaunchScreen.storyboard */,
 				BC09E15E28800A3900521F55 /* Main.storyboard */,
+				BCCE56E7288ED74B00FB6929 /* MessageCell.xib */,
 				BC50880F288E766D00A4AD5F /* Giver */,
 				BC508810288E768200A4AD5F /* Taker */,
 				BC508811288E768800A4AD5F /* Admin */,
@@ -332,6 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				BC5087FC2882AD0800A4AD5F /* GiverFeedModel.swift */,
+				BC508824288EBB6C00A4AD5F /* TakerMessageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -416,11 +443,15 @@
 				BC8A6389287FAAF900D7DA7E /* LaunchScreen.storyboard in Resources */,
 				BC50880E288E766100A4AD5F /* AdminLogin.storyboard in Resources */,
 				BC8A639E287FB05400D7DA7E /* Colors.xcassets in Resources */,
+				BCCE56E8288ED74B00FB6929 /* MessageCell.xib in Resources */,
 				BC50880C288E765300A4AD5F /* TakerLogin.storyboard in Resources */,
 				BC09E145287FF51800521F55 /* GiverFeed.storyboard in Resources */,
+				BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */,
 				BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */,
+				BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */,
 				BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */,
 				BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */,
+				BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */,
 				BC09E15F28800A3900521F55 /* Main.storyboard in Resources */,
 				BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */,
 				BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */,
@@ -434,8 +465,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC508821288EB08000A4AD5F /* TakerMessageVC.swift in Sources */,
+				BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */,
 				BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */,
 				BC5087ED288277A000A4AD5F /* FeedTableHeaderView.swift in Sources */,
+				BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */,
 				BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */,
 				BC50880A288E6EEC00A4AD5F /* MainVC.swift in Sources */,
 				BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */,
@@ -446,9 +480,11 @@
 				BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */,
 				BC5087E3288276F500A4AD5F /* FeedDetailViewController.swift in Sources */,
 				BC5087E92882776B00A4AD5F /* FeedAnimationTransition.swift in Sources */,
+				BC508825288EBB6C00A4AD5F /* TakerMessageModel.swift in Sources */,
 				BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */,
 				9EB9358F2883E6BE00A56668 /* GiverMessageDummyModel.swift in Sources */,
 				BC508816288E783600A4AD5F /* TakerLoginVC.swift in Sources */,
+				BCCE56EA288EDA1600FB6929 /* MessageCell.swift in Sources */,
 				BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */,
 				BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */,
 				BC5087E72882773600A4AD5F /* FeedViewController.swift in Sources */,
