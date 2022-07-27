@@ -53,6 +53,7 @@
 		BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */; };
 		BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */; };
 		BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */; };
+		BCCE56F42891194100FB6929 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F32891194000FB6929 /* UIColorExtension.swift */; };
 		CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */; };
 		CD41724E2890D61200BA8E9E /* AdminTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */; };
 		CD4172542890DDD900BA8E9E /* AdminTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */; };
@@ -115,6 +116,7 @@
 		BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageWriteVC.swift; sourceTree = "<group>"; };
 		BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminMessage.storyboard; sourceTree = "<group>"; };
 		BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMessageVC.swift; sourceTree = "<group>"; };
+		BCCE56F32891194000FB6929 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminFeed.storyboard; sourceTree = "<group>"; };
 		CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminTabBar.storyboard; sourceTree = "<group>"; };
 		CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabBarVC.swift; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */,
+				BCCE56F32891194000FB6929 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -561,6 +564,7 @@
 				9EB9358C2883E38E00A56668 /* GiverMessageTableVC.swift in Sources */,
 				BC5087E52882771E00A4AD5F /* FeedPresentationController.swift in Sources */,
 				BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */,
+				BCCE56F42891194100FB6929 /* UIColorExtension.swift in Sources */,
 				CD4172562890DE9500BA8E9E /* DetailScrollViewAdmin.swift in Sources */,
 				CD4172582890DEA500BA8E9E /* FeedTableHeaderViewAdmin.swift in Sources */,
 				BC508808288E580A00A4AD5F /* VerticalAlignLabel.swift in Sources */,
