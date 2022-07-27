@@ -57,7 +57,7 @@
                             <outlet property="delegate" destination="2NX-N5-V8R" id="agT-7g-xwr"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="편지" image="envelope" catalog="system" id="8VF-i8-zE6"/>
+                    <tabBarItem key="tabBarItem" title="편지" image="Envelope_fill_DBAL" id="8VF-i8-zE6"/>
                     <navigationItem key="navigationItem" title="받은 편지" id="Df6-6L-l5o">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="1u9-3l-YcM">
                             <connections>
@@ -211,8 +211,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Envelope_fill_DBAL" width="22" height="17"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
-        <image name="envelope" catalog="system" width="128" height="93"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

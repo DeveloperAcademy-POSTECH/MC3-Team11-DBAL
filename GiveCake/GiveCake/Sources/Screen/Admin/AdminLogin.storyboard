@@ -76,11 +76,22 @@
                     <connections>
                         <outlet property="adminNameTextField" destination="6oZ-qb-GDL" id="maQ-dN-hUd"/>
                         <outlet property="toTabBarBtn" destination="N3W-Ey-vcH" id="5ba-qD-bab"/>
+                        <segue destination="vE6-O4-qhd" kind="show" identifier="loginToAdminTabBarSegue" id="pjm-9l-e0w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="87"/>
+            <point key="canvasLocation" x="129" y="45"/>
+        </scene>
+        <!--AdminTabBar-->
+        <scene sceneID="P7j-nk-Shp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdminTabBar" id="vE6-O4-qhd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ndf-m4-cwZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NIv-j7-QPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="10"/>
         </scene>
     </scenes>
     <resources>

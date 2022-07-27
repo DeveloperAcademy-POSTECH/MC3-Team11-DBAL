@@ -160,7 +160,7 @@
                             <constraint firstItem="lGJ-fT-GY2" firstAttribute="top" secondItem="f1C-ff-qyi" secondAttribute="bottom" constant="29" id="peN-zd-Wxj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="cJR-Ck-9iB"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="Home_fill_DBAL" id="cJR-Ck-9iB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="celebrateGirlImage" destination="0km-NX-7rw" id="HC6-6y-6jt"/>
