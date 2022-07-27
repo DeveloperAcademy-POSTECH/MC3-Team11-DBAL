@@ -8,7 +8,7 @@
 import UIKit
 
 class AdminMessageVC: UIViewController {
-    fileprivate let messageList = TakerMessageModel.instance.messageList
+    fileprivate var messageList = MessageModel.instance.takerMessageList
     fileprivate let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
     fileprivate let blurView = UIVisualEffectView(effect: nil)
     fileprivate var isTableEditing = false {
@@ -17,8 +17,8 @@ class AdminMessageVC: UIViewController {
             if isTableEditing {
                 tableView.setEditing(false, animated: true)
                 
-                selectToDeleteBtn.setImage(UIImage(systemName: "trash"), for: .normal)
-                selectToDeleteBtn.setTitle("", for: .normal)
+                editBtn.setImage(UIImage(systemName: "trash"), for: .normal)
+                editBtn.setTitle("", for: .normal)
                 
                 tabBarController?.tabBar.isHidden = false
             } else {
@@ -29,8 +29,8 @@ class AdminMessageVC: UIViewController {
                 
                 tableView.setEditing(true, animated: true)
                 
-                selectToDeleteBtn.setTitle("취소", for: .normal)
-                selectToDeleteBtn.setImage(emptyImage, for: .normal)
+                editBtn.setTitle("취소", for: .normal)
+                editBtn.setImage(emptyImage, for: .normal)
                 
                 tabBarController?.tabBar.isHidden = true
             }
@@ -40,46 +40,61 @@ class AdminMessageVC: UIViewController {
     @IBOutlet var screen: UIView!
     @IBOutlet weak var header: UIView!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var selectToDeleteBtn: UIButton!
+    @IBOutlet weak var editBtn: UIButton!
     @IBOutlet weak var segmentedCtrl: UISegmentedControl!
     
     override func viewDidLoad() {
-        // 테이블뷰 세팅
+        // 테이블뷰 세팅하기
+        setTableView()
+        // 헤더의 그림자 세팅하기
+        setHeaderShadow()
+        // 버튼 동작 연결
+        editBtn.addTarget(self, action: #selector(onClickedEditBtn(sender:)), for: .touchUpInside)
+        segmentedCtrl.addTarget(self, action: #selector(onClickedSegmentedCtrl(sender:)), for: .valueChanged)
+        // 밑에서 삭제 버튼 나오는 공간 만들기
+        makeBottomDeleteView()
+        // alert 세팅하기
+        setAlert()
+        // blurView 세팅하기
+        setBlurView()
+    }
+    
+    @objc fileprivate func onClickedEditBtn(sender: UIButton) {
+        isTableEditing.toggle()
+    }
+    
+    @objc fileprivate func onClickedDeleteBtn(sender: UIButton) {
+        present(alert, animated: true)
+        blurView.alpha = 0.9
+    }
+    
+    @objc fileprivate func onClickedSegmentedCtrl(sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            messageList = MessageModel.instance.takerMessageList
+            tableView.reloadData()
+        } else {
+            messageList = MessageModel.instance.giverMessasgeList
+            tableView.reloadData()
+        }
+    }
+    
+    // tableView 세팅하기
+    fileprivate func setTableView() {
         let myTableCellNib = UINib(nibName: "MessageCell", bundle: nil)
         tableView.register(myTableCellNib, forCellReuseIdentifier: "MessageCell")
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
-        
         tableView.delegate = self
         tableView.dataSource = self
-        
-        // 헤더의 그림자 설정
+    }
+    
+    // 헤더의 그림자 세팅하기
+    fileprivate func setHeaderShadow() {
         header.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
         header.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         header.layer.shadowOpacity = 1.0
         header.layer.shadowRadius = 0.0
         header.layer.masksToBounds = false
-        
-        // 버튼 동작 연결
-        selectToDeleteBtn.addTarget(self, action: #selector(onClickedDeleteBtn(sender:)), for: .touchUpInside)
-        
-        // 밑에서 삭제 버튼 나오는 공간 만들기
-        makeBottomDeleteView()
-        
-        // alert 세팅하기
-        setAlert()
-        
-        // blurView 세팅하기
-        setBlurView()
-    }
-    
-    @objc fileprivate func onClickedDeleteBtn(sender: UIButton) {
-        isTableEditing.toggle()
-    }
-    
-    @objc fileprivate func onClickedSelectToDeleteBtn(sender: UIButton) {
-        present(alert, animated: true)
-        blurView.alpha = 0.9
     }
     
     // 밑에서 삭제 버튼 나오는 공간 만들기
@@ -96,7 +111,7 @@ class AdminMessageVC: UIViewController {
         deleteBtn.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         deleteBtn.setTitleColor(UIColor(rgb: 0xFC5555), for: .normal)
         deleteBtn.setTitleColor(UIColor(rgb: 0xFF8888), for: .highlighted)
-        deleteBtn.addTarget(self, action: #selector(onClickedSelectToDeleteBtn(sender:)), for: .touchUpInside)
+        deleteBtn.addTarget(self, action: #selector(onClickedDeleteBtn(sender:)), for: .touchUpInside)
         
         bottomDeleteView.addSubview(deleteBtn)
         screen.addSubview(bottomDeleteView)

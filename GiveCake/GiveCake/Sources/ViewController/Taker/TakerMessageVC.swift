@@ -8,7 +8,7 @@
 import UIKit
 
 class TakerMessageVC: UIViewController {
-    fileprivate let messageList = TakerMessageModel.instance.messageList
+    fileprivate let messageList = MessageModel.instance.takerMessageList
     fileprivate let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
     fileprivate let blurView = UIVisualEffectView(effect: nil)
     
