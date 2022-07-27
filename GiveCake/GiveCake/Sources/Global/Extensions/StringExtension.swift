@@ -46,6 +46,7 @@ extension String {
             tempString = tempString.replacingOccurrences(of: "러브는", with: name + "는")
             tempString = tempString.replacingOccurrences(of: "러브야", with: name + "야")
         }
+        tempString = tempString.replacingOccurrences(of: "러브", with: name)
         
         return tempString
     }
