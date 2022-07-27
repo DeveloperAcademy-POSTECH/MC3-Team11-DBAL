@@ -18,10 +18,11 @@ class CLoudkit {
 
 class GiverHomeVC: UIViewController {
 
-    @IBOutlet weak var cakeNum: UILabel!
+    @IBOutlet weak var countCakeView: UIView!
+    @IBOutlet weak var countKidsView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var gageView: UIView!
-    @IBOutlet weak var countKidsView: UIView!
+    @IBOutlet weak var celebrateGirlImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,7 @@ class GiverHomeVC: UIViewController {
         // 게이지 트랙 라인입니다.
         trackLayer.path = circularPath.cgPath
         
-        trackLayer.strokeColor = #colorLiteral(red: 0.8980392157, green: 0.8980392157, blue: 0.9568627451, alpha: 1)
+        trackLayer.strokeColor = #colorLiteral(red: 1, green: 0.9999999404, blue: 0.9999999404, alpha: 1)
         //trackLayer.strokeColor = UIColor(rgb: 0xE5E5EA).cgColor
         trackLayer.lineWidth = 30
         trackLayer.fillColor = UIColor.clear.cgColor
@@ -46,7 +47,7 @@ class GiverHomeVC: UIViewController {
         // 게이지 표시 라인입니다.
         shapeLayer.path = circularPath.cgPath
         
-        shapeLayer.strokeColor = UIColor.systemBlue.cgColor
+        shapeLayer.strokeColor = #colorLiteral(red: 0.9607843137, green: 0.6901960784, blue: 0.7411764706, alpha: 1)
         shapeLayer.lineWidth = 30
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineCap = .round
@@ -57,11 +58,13 @@ class GiverHomeVC: UIViewController {
         let cakeNum = cloudkit.getCakeNumber()
         
         makeAnimation(shapeLayer: shapeLayer, value: Double(cakeNum)/150.0)
+        
+        gageView.backgroundColor = .clear
+       
     
-        // 월별 생일 아동 수치 영역 반지름 값
-        countKidsView.layer.cornerRadius = 18
-        
-        
+        // 월별 생일 아동 수치 보드, 원형게이지 보드 반지름 값
+        countKidsView.layer.cornerRadius = 20
+        countCakeView.layer.cornerRadius = 20
         
         
       
