@@ -9,41 +9,15 @@ import UIKit
 
 class AdminMessageVC: UIViewController {
     fileprivate let messageList = TakerMessageModel.instance.messageList
-    fileprivate let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
-    fileprivate let blurView = UIVisualEffectView(effect: nil)
-    fileprivate var isTableEditing = false {
-        willSet{
-            // 편집 모드로 들어가거나 나오기
-            if isTableEditing {
-                tableView.setEditing(false, animated: true)
-                
-                selectToDeleteBtn.setImage(UIImage(systemName: "trash"), for: .normal)
-                selectToDeleteBtn.setTitle("", for: .normal)
-                
-                tabBarController?.tabBar.isHidden = false
-            } else {
-                // 빈 이미지 만들기 (nil값으로 줬을때는 왜인지 잘 작동안해서 이런 방식으로 함...)
-                UIGraphicsBeginImageContext(CGSize(width: 4, height: 4))
-                let emptyImage = UIGraphicsGetImageFromCurrentImageContext()
-                UIGraphicsEndImageContext()
-                
-                tableView.setEditing(true, animated: true)
-                
-                selectToDeleteBtn.setTitle("취소", for: .normal)
-                selectToDeleteBtn.setImage(emptyImage, for: .normal)
-                
-                tabBarController?.tabBar.isHidden = true
-            }
-        }
-    }
     
-    @IBOutlet var screen: UIView!
     @IBOutlet weak var header: UIView!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var selectToDeleteBtn: UIButton!
+    @IBOutlet weak var deleteBtn: UIButton!
     @IBOutlet weak var segmentedCtrl: UISegmentedControl!
     
     override func viewDidLoad() {
+        
+        
         // 테이블뷰 세팅
         let myTableCellNib = UINib(nibName: "MessageCell", bundle: nil)
         tableView.register(myTableCellNib, forCellReuseIdentifier: "MessageCell")
@@ -61,71 +35,25 @@ class AdminMessageVC: UIViewController {
         header.layer.masksToBounds = false
         
         // 버튼 동작 연결
-        selectToDeleteBtn.addTarget(self, action: #selector(onClickedDeleteBtn(sender:)), for: .touchUpInside)
-        
-        // 밑에서 삭제 버튼 나오는 공간 만들기
-        makeBottomDeleteView()
-        
-        // alert 세팅하기
-        setAlert()
-        
-        // blurView 세팅하기
-        setBlurView()
+        deleteBtn.addTarget(self, action: #selector(onClickedDeleteBtn(sender:)), for: .touchUpInside)
     }
     
     @objc fileprivate func onClickedDeleteBtn(sender: UIButton) {
-        isTableEditing.toggle()
-    }
-    
-    @objc fileprivate func onClickedSelectToDeleteBtn(sender: UIButton) {
-        present(alert, animated: true)
-        blurView.alpha = 0.9
-    }
-    
-    // 밑에서 삭제 버튼 나오는 공간 만들기
-    fileprivate func makeBottomDeleteView() {
-        guard let tabBarHeight = tabBarController?.tabBar.frame.height else {return}
-        
-        let bottomDeleteView = UIView()
-        bottomDeleteView.frame = CGRect(x: 0, y: kScreenH-tabBarHeight, width: kScreenW, height: tabBarHeight)
-        bottomDeleteView.backgroundColor = UIColor(rgb: 0xFEFEFE)
-        
-        let deleteBtn = UIButton()
-        deleteBtn.frame = CGRect(x: kScreenW-62, y: 17, width: 30 , height: 19)
-        deleteBtn.setTitle("삭제", for: .normal)
-        deleteBtn.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .regular)
-        deleteBtn.setTitleColor(UIColor(rgb: 0xFC5555), for: .normal)
-        deleteBtn.setTitleColor(UIColor(rgb: 0xFF8888), for: .highlighted)
-        deleteBtn.addTarget(self, action: #selector(onClickedSelectToDeleteBtn(sender:)), for: .touchUpInside)
-        
-        bottomDeleteView.addSubview(deleteBtn)
-        screen.addSubview(bottomDeleteView)
-    }
-    
-    // alert 세팅하기
-    fileprivate func setAlert() {
-        alert.title = "삭제 하시겠습니까?"
-        alert.message = "삭제를 하면 편지는 사라집니다.\n삭제 후에 편지를 복구할 수 없습니다."
-        
-        let cancelAction = UIAlertAction(title: "취소", style: .cancel) { _ in
-            self.blurView.alpha = 0.0
+        // 편집 모드로 들어가거나 나오기 + 버튼 라벨 바꾸기
+        if tableView.isEditing {
+            tableView.setEditing(false, animated: true)
+            deleteBtn.setImage(UIImage(systemName: "trash"), for: .normal)
+            deleteBtn.setTitle("", for: .normal)
+        } else {
+            // 빈 이미지 만들기 (nil값으로 줬을때는 왜인지 잘 작동안해서 이런 방식으로 함...)
+            UIGraphicsBeginImageContext(CGSize(width: 4, height: 4))
+            let emptyImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            tableView.setEditing(true, animated: true)
+            deleteBtn.setTitle("취소", for: .normal)
+            deleteBtn.setImage(emptyImage, for: .normal)
         }
-        let deleteAction = UIAlertAction(title: "삭제", style: .destructive) { _ in
-            print(self.tableView.indexPathsForSelectedRows)
-            self.isTableEditing = false
-            self.blurView.alpha = 0.0
-        }
-        alert.addAction(cancelAction)
-        alert.addAction(deleteAction)
-    }
-    
-    // blurView 세팅하기
-    fileprivate func setBlurView() {
-        blurView.translatesAutoresizingMaskIntoConstraints = false
-        screen.addSubview(blurView)
-        blurView.edges(to: screen)
-        blurView.alpha = 0.0
-        blurView.effect = UIBlurEffect(style: .light)
     }
 }
 
@@ -141,7 +69,6 @@ extension AdminMessageVC: UITableViewDelegate, UITableViewDataSource {
         cell.emoticonLabel.text = messageList[indexPath.row].emoticon
         cell.senderLabel.text = messageList[indexPath.row].sender
         cell.contentLabel.text = messageList[indexPath.row].content
-        cell.tintColor = UIColor(rgb: 0x11D7D8)
         
         // 선택됐을 때 나타나는 회색 색깔 제거
         let backgroundView = UIView()

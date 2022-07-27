@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E3U-V5-6RW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -77,10 +77,9 @@
                     <tabBarItem key="tabBarItem" title="편지" image="Envelope_fill_DBAL" id="RAQ-gl-Lg0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="deleteBtn" destination="pw0-eG-Vje" id="zyy-0d-Q90"/>
                         <outlet property="header" destination="3ym-E9-kbS" id="SKa-AL-EcB"/>
-                        <outlet property="screen" destination="r44-P8-50l" id="fAJ-Wf-Nan"/>
                         <outlet property="segmentedCtrl" destination="WZL-Ku-mmo" id="ctM-dW-4d9"/>
-                        <outlet property="selectToDeleteBtn" destination="pw0-eG-Vje" id="zyy-0d-Q90"/>
                         <outlet property="tableView" destination="Gmw-VY-yaY" id="OPm-yJ-Xsd"/>
                     </connections>
                 </viewController>
