@@ -75,7 +75,6 @@
                     </view>
                     <connections>
                         <outlet property="adminNameTextField" destination="6oZ-qb-GDL" id="maQ-dN-hUd"/>
-                        <outlet property="onClickedToTabBarBtn" destination="N3W-Ey-vcH" id="qSH-2H-Pso"/>
                         <outlet property="toTabBarBtn" destination="N3W-Ey-vcH" id="5ba-qD-bab"/>
                     </connections>
                 </viewController>
