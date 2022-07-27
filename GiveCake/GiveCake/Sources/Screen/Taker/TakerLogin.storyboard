@@ -76,11 +76,22 @@
                     <connections>
                         <outlet property="childNameTextField" destination="UO3-UE-n1D" id="iwJ-as-8RQ"/>
                         <outlet property="toTabBarBtn" destination="V3G-Ij-B7F" id="oE2-Ab-o5D"/>
+                        <segue destination="8bA-Le-laP" kind="show" identifier="loginToTakerSegue" id="h7j-VV-bQl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="87"/>
+        </scene>
+        <!--TakerMessage-->
+        <scene sceneID="Khh-GL-Awg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TakerMessage" id="8bA-Le-laP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Qnd-vI-sKg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LkC-Eo-JF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592" y="86"/>
         </scene>
     </scenes>
     <resources>

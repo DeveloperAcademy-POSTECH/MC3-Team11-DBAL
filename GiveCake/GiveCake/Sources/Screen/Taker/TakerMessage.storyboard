@@ -69,7 +69,7 @@
                         <outlet property="screen" destination="5EZ-qb-Rvc" id="KrW-4s-epe"/>
                         <outlet property="tableView" destination="maP-Wt-sNg" id="gd4-Fr-AaV"/>
                         <outlet property="writeBtn" destination="Yto-N1-f4Y" id="Vgq-dp-XTc"/>
-                        <segue destination="aDb-hq-nbA" kind="show" identifier="goToTakerMessageWrite" id="ScS-9r-TKe"/>
+                        <segue destination="aDb-hq-nbA" kind="presentation" identifier="goToTakerMessageWrite" id="RzF-Ys-7UY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
