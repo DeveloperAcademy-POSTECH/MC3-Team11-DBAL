@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3W-Ey-vcH">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3W-Ey-vcH">
                                 <rect key="frame" x="30" y="801" width="354" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="fhw-rE-pTB"/>
@@ -57,6 +57,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVh-u6-FhH">
+                                <rect key="frame" x="30" y="801" width="354" height="60"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="0UE-FF-sUt"/>
+                                    <constraint firstAttribute="height" constant="60" id="L3O-o2-QzO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="iRa-vf-VWu"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="lut-6y-YvW"/>
+                                </constraints>
+                                <color key="tintColor" red="0.95259684320000004" green="0.6902951598" blue="0.74117475749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                        <color key="strokeColor" red="0.95259684320000004" green="0.6902951598" blue="0.74117475749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="시작하기">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AppleSDGothicNeo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.95259684320000004" green="0.6902951598" blue="0.74117475749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.3686274886" green="0.1647058874" blue="0.1647058874" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,6 +91,9 @@
                             <constraint firstItem="lpE-CM-c2i" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="AYh-op-zvm"/>
                             <constraint firstItem="6oZ-qb-GDL" firstAttribute="top" secondItem="rrS-HQ-2oL" secondAttribute="bottom" constant="7" id="H1V-DJ-afr"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6oZ-qb-GDL" secondAttribute="trailing" constant="30" id="Hfx-SB-KFj"/>
+                            <constraint firstAttribute="bottom" secondItem="NVh-u6-FhH" secondAttribute="bottom" constant="35" id="Jq1-dV-9F9"/>
+                            <constraint firstItem="NVh-u6-FhH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="Kgu-WJ-aiG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NVh-u6-FhH" secondAttribute="trailing" constant="30" id="MEa-Y3-Ay9"/>
                             <constraint firstItem="rrS-HQ-2oL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="P33-WB-3CQ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="N3W-Ey-vcH" secondAttribute="trailing" constant="30" id="P8U-IB-gvE"/>
                             <constraint firstItem="N3W-Ey-vcH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="RFZ-rM-dYx"/>
@@ -75,6 +105,7 @@
                     </view>
                     <connections>
                         <outlet property="adminNameTextField" destination="6oZ-qb-GDL" id="maQ-dN-hUd"/>
+                        <outlet property="disableBtn" destination="NVh-u6-FhH" id="uzy-YG-mC0"/>
                         <outlet property="toTabBarBtn" destination="N3W-Ey-vcH" id="5ba-qD-bab"/>
                         <segue destination="vE6-O4-qhd" kind="show" identifier="loginToAdminTabBarSegue" id="pjm-9l-e0w"/>
                     </connections>

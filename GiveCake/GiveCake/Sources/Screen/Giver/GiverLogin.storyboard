@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNs-vR-5sp">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNs-vR-5sp">
                                 <rect key="frame" x="30" y="749" width="330" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Hdg-rf-9ub"/>
@@ -61,15 +61,44 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8i-qw-yke">
+                                <rect key="frame" x="30" y="749" width="330" height="60"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="8Xq-WS-gWz"/>
+                                    <constraint firstAttribute="height" constant="60" id="jFc-zf-rIa"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="kRb-0F-5bn"/>
+                                </constraints>
+                                <color key="tintColor" red="0.95259684320000004" green="0.6902951598" blue="0.74117475749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                        <color key="strokeColor" red="0.95259684320000004" green="0.6902951598" blue="0.74117475749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="시작하기">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AppleSDGothicNeo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.95259684320000004" green="0.6902951598" blue="0.74117475749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.3686274886" green="0.1647058874" blue="0.1647058874" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="s8i-qw-yke" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="2dB-Dh-f0O"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FNs-vR-5sp" secondAttribute="trailing" constant="30" id="7aB-6n-AZp"/>
                             <constraint firstItem="jcV-5a-xNI" firstAttribute="top" secondItem="HjM-2C-e1K" secondAttribute="bottom" constant="62" id="8cF-am-U2x"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="91a-WJ-6M6" secondAttribute="trailing" constant="30" id="QAG-VW-Xzs"/>
+                            <constraint firstAttribute="bottom" secondItem="s8i-qw-yke" secondAttribute="bottom" constant="35" id="Rwd-h7-0e5"/>
                             <constraint firstItem="HjM-2C-e1K" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="UDG-vg-4uc"/>
                             <constraint firstItem="FNs-vR-5sp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="cgr-pF-cJD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="s8i-qw-yke" secondAttribute="trailing" constant="30" id="dTr-a2-5MW"/>
                             <constraint firstItem="91a-WJ-6M6" firstAttribute="top" secondItem="jcV-5a-xNI" secondAttribute="bottom" constant="7" id="iFt-rk-tF1"/>
                             <constraint firstItem="HjM-2C-e1K" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="168" id="omg-QI-1Jt"/>
                             <constraint firstItem="91a-WJ-6M6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="qQj-XK-70T"/>
@@ -79,6 +108,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ikd-xB-Uid"/>
                     <connections>
+                        <outlet property="disableBtn" destination="s8i-qw-yke" id="N3L-hq-jFg"/>
                         <outlet property="nicknameTextField" destination="91a-WJ-6M6" id="5Rb-6T-gHd"/>
                         <outlet property="toTabBarBtn" destination="FNs-vR-5sp" id="F5v-9f-PiQ"/>
                         <segue destination="qnp-mD-V1q" kind="show" identifier="loginToGiverTabBarSegue" id="pw7-Io-qWx"/>
