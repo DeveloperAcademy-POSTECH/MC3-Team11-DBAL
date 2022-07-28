@@ -10,8 +10,7 @@
         <!--Admin Tab BarVC-->
         <scene sceneID="acz-bx-H0M">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a0s-zL-kRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tabBarController id="26T-0S-MFv" customClass="AdminTabBarVC" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="AdminTabBarVC" id="26T-0S-MFv" customClass="AdminTabBarVC" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KUl-Ok-82d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -23,6 +22,7 @@
                         <segue destination="gLq-Hb-2II" kind="relationship" relationship="viewControllers" id="546-Wd-8tl"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0s-zL-kRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-310" y="-91"/>
         </scene>

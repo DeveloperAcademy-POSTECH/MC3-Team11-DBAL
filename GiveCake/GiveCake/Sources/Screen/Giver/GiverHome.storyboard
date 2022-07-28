@@ -183,8 +183,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Home_fill_DBAL" width="18" height="20"/>
         <image name="congratulation_mimo" width="140" height="143"/>
-        <image name="house" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
