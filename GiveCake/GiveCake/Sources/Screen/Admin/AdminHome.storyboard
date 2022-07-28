@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,16 +8,127 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Admin HomeVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdminHome" id="Y6W-OH-hqX" customClass="AdminHomeVC" customModule="GiveCake" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otW-cE-t5w">
+                                <rect key="frame" x="30" y="158" width="330" height="419"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztz-WM-1kE">
+                                        <rect key="frame" x="20" y="354" width="137" height="48"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="120/150">
+                                                <attributes>
+                                                    <font key="NSFont" size="40" name="AppleSDGothicNeo-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mW-zN-E50">
+                                        <rect key="frame" x="20" y="329" width="83" height="22"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="모인 케이크">
+                                                <attributes>
+                                                    <font key="NSFont" size="18" name="AppleSDGothicNeo-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6E-Xn-pIb">
+                                        <rect key="frame" x="30" y="40" width="270" height="270"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="270" id="FBW-kD-eLt"/>
+                                            <constraint firstAttribute="height" constant="270" id="ODE-Fq-lXW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.90196078431372551" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ztz-WM-1kE" firstAttribute="top" secondItem="2mW-zN-E50" secondAttribute="bottom" constant="3" id="5us-AK-IvK"/>
+                                    <constraint firstAttribute="height" constant="419" id="KUL-j8-qJK"/>
+                                    <constraint firstItem="ztz-WM-1kE" firstAttribute="leading" secondItem="otW-cE-t5w" secondAttribute="leading" constant="20" id="KZn-Z1-CxM"/>
+                                    <constraint firstItem="2mW-zN-E50" firstAttribute="leading" secondItem="otW-cE-t5w" secondAttribute="leading" constant="20" id="Pbn-Jn-gtF"/>
+                                    <constraint firstAttribute="bottom" secondItem="ztz-WM-1kE" secondAttribute="bottom" constant="17" id="w8U-eo-t44"/>
+                                    <constraint firstItem="P6E-Xn-pIb" firstAttribute="top" secondItem="otW-cE-t5w" secondAttribute="top" constant="40" id="xdX-qT-QNb"/>
+                                    <constraint firstItem="P6E-Xn-pIb" firstAttribute="centerX" secondItem="otW-cE-t5w" secondAttribute="centerX" id="z6L-Og-oRt"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" restorationIdentifier="AdminHome" translatesAutoresizingMaskIntoConstraints="NO" id="MvA-Cf-26b">
+                                <rect key="frame" x="30" y="602" width="330" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDW-Yy-SJv">
+                                        <rect key="frame" x="20" y="40" width="71" height="48"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="12명">
+                                                <attributes>
+                                                    <font key="NSFont" size="40" name="AppleSDGothicNeo-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnK-6t-Mnc">
+                                        <rect key="frame" x="20" y="15" width="120" height="22"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="12월의 생일 아동">
+                                                <attributes>
+                                                    <font key="NSFont" size="18" name="AppleSDGothicNeo-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.90196078430000004" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BDW-Yy-SJv" firstAttribute="leading" secondItem="MvA-Cf-26b" secondAttribute="leading" constant="20" id="aXQ-ZT-uPc"/>
+                                    <constraint firstAttribute="height" constant="96" id="cNq-pm-fhY"/>
+                                    <constraint firstItem="gnK-6t-Mnc" firstAttribute="top" secondItem="MvA-Cf-26b" secondAttribute="top" constant="15" id="hAE-qW-pcO"/>
+                                    <constraint firstItem="gnK-6t-Mnc" firstAttribute="leading" secondItem="MvA-Cf-26b" secondAttribute="leading" constant="20" id="y0G-3w-Djn"/>
+                                    <constraint firstAttribute="bottom" secondItem="BDW-Yy-SJv" secondAttribute="bottom" constant="8" id="y7S-ix-0uM"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyY-dF-nOU">
+                                <rect key="frame" x="30" y="88" width="127" height="41"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="기부 현황">
+                                        <attributes>
+                                            <font key="NSFont" size="34" name="AppleSDGothicNeo-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="otW-cE-t5w" firstAttribute="top" secondItem="lyY-dF-nOU" secondAttribute="bottom" constant="29" id="EKD-hA-9DR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="otW-cE-t5w" secondAttribute="trailing" constant="30" id="REL-dM-fl3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MvA-Cf-26b" secondAttribute="trailing" constant="30" id="Zzg-ne-yGl"/>
+                            <constraint firstItem="otW-cE-t5w" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="c2k-IE-me1"/>
+                            <constraint firstItem="MvA-Cf-26b" firstAttribute="top" secondItem="otW-cE-t5w" secondAttribute="bottom" constant="25" id="hUa-h3-Lmt"/>
+                            <constraint firstItem="otW-cE-t5w" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hn1-lK-dQI"/>
+                            <constraint firstItem="MvA-Cf-26b" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="oXW-4C-fUl"/>
+                            <constraint firstItem="lyY-dF-nOU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="rhm-rH-zEx"/>
+                            <constraint firstItem="lyY-dF-nOU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="44" id="zi1-SA-bQg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countCakeView" destination="otW-cE-t5w" id="PI6-mP-Jaz"/>
+                        <outlet property="countKidsView" destination="MvA-Cf-26b" id="WhN-Sh-Pqi"/>
+                        <outlet property="gageView" destination="P6E-Xn-pIb" id="4CV-dT-sQ0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

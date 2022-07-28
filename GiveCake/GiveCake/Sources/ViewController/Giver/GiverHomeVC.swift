@@ -10,7 +10,7 @@ import UIKit
 class CLoudkit {
     func getCakeNumber() -> Int{
         
-        return 30
+        return 150
         
     }
     
@@ -23,9 +23,13 @@ class GiverHomeVC: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var gageView: UIView!
     @IBOutlet weak var celebrateGirlImage: UIImageView!
+    @IBOutlet weak var countCakeCompleteView: UIView!
+    @IBOutlet weak var totalNum: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         let trackLayer = CAShapeLayer()
         let shapeLayer = CAShapeLayer()
         let center = CGPoint(x: gageView.frame.width/2 , y: gageView.frame.height/2)
@@ -56,6 +60,10 @@ class GiverHomeVC: UIViewController {
         
         let cloudkit = CLoudkit()
         let cakeNum = cloudkit.getCakeNumber()
+        //150보다 크거나 같을때 countCakeView를 숨긴다 (num에 cakeNum이 들어온다.)
+        didCompleteCountCake(num: cakeNum)
+        //총 개수를 보여주는 라벨의 수를 바꿔줌
+        totalNum.text = String(cakeNum) + "/150"
         
         makeAnimation(shapeLayer: shapeLayer, value: Double(cakeNum)/150.0)
         //게이지뷰 투명화
@@ -64,7 +72,7 @@ class GiverHomeVC: UIViewController {
         // 월별 생일 아동 수치 보드, 원형게이지 보드 반지름 값
         countKidsView.layer.cornerRadius = 20
         countCakeView.layer.cornerRadius = 25
-        
+        countCakeCompleteView.layer.cornerRadius = 25
         
       
         
@@ -83,6 +91,12 @@ class GiverHomeVC: UIViewController {
         
         shapeLayer.add(basicAnimation, forKey: "urSoBasic")
         
+        
+    }
+    func didCompleteCountCake (num: Int) {
+        if num >= 150 {
+            countCakeView.isHidden = true
+        }
         
     }
 }
