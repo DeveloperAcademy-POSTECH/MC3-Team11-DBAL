@@ -11,13 +11,27 @@ class GiverLoginVC: UIViewController {
     // 스토리보드에서 버튼 객체 가져옴
     @IBOutlet weak var nicknameTextField: UITextField!
     @IBOutlet weak var toTabBarBtn: UIButton!
+    @IBOutlet weak var disableBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.nicknameTextField.addAction(UIAction(handler: self.textHandler), for: .editingChanged)
+        
         // 네비게이션바 숨기기
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         // 버튼에 함수 연결
         toTabBarBtn.addTarget(self, action: #selector(onClickedToTabBarBtn(sender:)), for: .touchUpInside)
+    }
+    
+    // 텍스트 필드가 비어있을때 버튼을 비활성화
+    func textHandler(_ a: UIAction) -> Void {
+        if self.nicknameTextField.text?.isEmpty == true {
+            self.disableBtn.isHidden = false
+            self.toTabBarBtn.isHidden = true
+        } else {
+            self.toTabBarBtn.isHidden = false
+            self.disableBtn.isHidden = true
+        }
     }
   
     // tabbar 화면으로 이동
