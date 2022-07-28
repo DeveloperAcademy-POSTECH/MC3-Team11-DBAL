@@ -260,13 +260,13 @@
                     <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="cJR-Ck-9iB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="celebrateGirlImage" destination="0km-NX-7rw" id="HC6-6y-6jt"/>
-                        <outlet property="countCakeCompleteView" destination="ayi-0d-xh1" id="8LU-ml-D4Y"/>
-                        <outlet property="countCakeView" destination="lGJ-fT-GY2" id="YxM-G2-GxZ"/>
-                        <outlet property="countKidsView" destination="WQ8-BE-1KS" id="4N4-nc-nUb"/>
-                        <outlet property="gageView" destination="F6l-f5-AHZ" id="v2O-Bd-8UW"/>
-                        <outlet property="titleLabel" destination="f1C-ff-qyi" id="fUX-b4-nxl"/>
-                        <outlet property="totalNum" destination="4KN-Re-6S5" id="CFl-HH-Qzg"/>
+                        <outlet property="celebrateGirlImage" destination="0km-NX-7rw" id="4Tn-NA-bna"/>
+                        <outlet property="countCakeCompleteView" destination="ayi-0d-xh1" id="T67-1b-WXN"/>
+                        <outlet property="countCakeView" destination="lGJ-fT-GY2" id="XNh-Di-YAJ"/>
+                        <outlet property="countKidsView" destination="WQ8-BE-1KS" id="kQh-A1-txF"/>
+                        <outlet property="gageView" destination="F6l-f5-AHZ" id="nTX-jY-LSE"/>
+                        <outlet property="titleLabel" destination="f1C-ff-qyi" id="rYR-hx-t0X"/>
+                        <outlet property="totalNum" destination="4KN-Re-6S5" id="b6X-3j-SrA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
