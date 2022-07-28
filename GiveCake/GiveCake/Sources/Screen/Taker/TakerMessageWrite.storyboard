@@ -58,10 +58,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGZ-BA-POA">
-                                <rect key="frame" x="20" y="104" width="374" height="400"/>
+                                <rect key="frame" x="20" y="104" width="374" height="300"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rc3-XH-tfc">
-                                        <rect key="frame" x="20" y="15" width="334" height="370"/>
+                                        <rect key="frame" x="20" y="15" width="334" height="270"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -77,7 +77,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Rc3-XH-tfc" secondAttribute="bottom" constant="15" id="5D5-3Z-qZa"/>
-                                    <constraint firstAttribute="height" constant="400" id="7bL-0E-ee2"/>
+                                    <constraint firstAttribute="height" constant="300" id="7bL-0E-ee2"/>
                                     <constraint firstItem="1kM-0f-it9" firstAttribute="leading" secondItem="Rc3-XH-tfc" secondAttribute="leading" constant="7" id="DXr-ko-Wa1"/>
                                     <constraint firstItem="Rc3-XH-tfc" firstAttribute="leading" secondItem="eGZ-BA-POA" secondAttribute="leading" constant="20" id="eY3-m2-EK5"/>
                                     <constraint firstItem="Rc3-XH-tfc" firstAttribute="top" secondItem="eGZ-BA-POA" secondAttribute="top" constant="15" id="fgU-MB-7S8"/>
@@ -102,6 +102,7 @@
                         <outlet property="rectangle" destination="woX-ip-gov" id="jMY-XD-3jB"/>
                         <outlet property="sendBtn" destination="euS-we-9Rt" id="tsT-rA-qz3"/>
                         <outlet property="textField" destination="Rc3-XH-tfc" id="HAB-c8-vsb"/>
+                        <outlet property="textFieldBackground" destination="eGZ-BA-POA" id="xwk-i3-EdU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
