@@ -40,11 +40,6 @@ extension String {
             tempString = tempString.replacingOccurrences(of: "러브가", with: name + "이가")
             tempString = tempString.replacingOccurrences(of: "러브는", with: name + "이는")
             tempString = tempString.replacingOccurrences(of: "러브야", with: name + "아")
-        } else {
-            tempString = tempString.replacingOccurrences(of: "러브를", with: name + "를")
-            tempString = tempString.replacingOccurrences(of: "러브가", with: name + "가")
-            tempString = tempString.replacingOccurrences(of: "러브는", with: name + "는")
-            tempString = tempString.replacingOccurrences(of: "러브야", with: name + "야")
         }
         tempString = tempString.replacingOccurrences(of: "러브", with: name)
         
