@@ -16,6 +16,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMs-nn-kPk">
+                                <rect key="frame" x="28" y="158" width="334" height="419"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vZ-JE-49t">
+                                        <rect key="frame" x="115.66666666666666" y="41" width="103" height="22"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="총 케이크 개수">
+                                                <attributes>
+                                                    <font key="NSFont" size="18" name="AppleSDGothicNeo-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jp2-uh-3ku">
+                                        <rect key="frame" x="119" y="64" width="96" height="48"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="150개">
+                                                <attributes>
+                                                    <font key="NSFont" size="40" name="AppleSDGothicNeo-Bold"/>
+                                                    <font key="NSOriginalFont" size="40" name="AppleSDGothicNeo-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HappyBirthdayGirl" translatesAutoresizingMaskIntoConstraints="NO" id="4BJ-Kh-CWK">
+                                        <rect key="frame" x="72" y="129" width="190" height="190"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="190" id="nn7-Mm-5kb"/>
+                                            <constraint firstAttribute="height" constant="190" id="sMw-o5-VNv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZB-IX-83Y">
+                                        <rect key="frame" x="54.666666666666671" y="356.33333333333337" width="224.66666666666663" height="19.333333333333314"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">여러분의 마음이 올해 모든 아이들의 
+생일 케이크로 전달 할 수 있게되었습니다</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="AppleSDGothicNeo-SemiBold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IU7-Tq-3Kj">
+                                        <rect key="frame" x="34.666666666666657" y="376.66666666666663" width="265" height="19.333333333333314"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="생일 케이크로 전달 될 수 있게 되었습니다.">
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="AppleSDGothicNeo-SemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFb-Er-BQf">
+                                        <rect key="frame" x="117" y="246" width="54" height="60"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="🎂">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="50"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="T8p-Oj-tvp"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.90196078430000004" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="4BJ-Kh-CWK" firstAttribute="top" secondItem="Jp2-uh-3ku" secondAttribute="bottom" constant="17" id="7Qg-FZ-SWy"/>
+                                    <constraint firstItem="7ZB-IX-83Y" firstAttribute="centerX" secondItem="gMs-nn-kPk" secondAttribute="centerX" id="8p6-zB-qVR"/>
+                                    <constraint firstItem="IU7-Tq-3Kj" firstAttribute="centerX" secondItem="gMs-nn-kPk" secondAttribute="centerX" id="8ui-DE-Aeu"/>
+                                    <constraint firstAttribute="height" constant="419" id="H08-7N-e14"/>
+                                    <constraint firstItem="9vZ-JE-49t" firstAttribute="centerX" secondItem="gMs-nn-kPk" secondAttribute="centerX" id="VHW-Xk-PG3"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZFb-Er-BQf" secondAttribute="trailing" constant="163" id="YVt-wV-sBc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="419" id="a2h-g3-dwA"/>
+                                    <constraint firstItem="ZFb-Er-BQf" firstAttribute="top" secondItem="Jp2-uh-3ku" secondAttribute="bottom" constant="134" id="bal-PH-6Qf"/>
+                                    <constraint firstItem="9vZ-JE-49t" firstAttribute="top" secondItem="gMs-nn-kPk" secondAttribute="top" constant="41" id="fhl-4C-eua"/>
+                                    <constraint firstAttribute="bottom" secondItem="IU7-Tq-3Kj" secondAttribute="bottom" constant="23" id="g2P-Ii-mNm"/>
+                                    <constraint firstItem="Jp2-uh-3ku" firstAttribute="top" secondItem="9vZ-JE-49t" secondAttribute="bottom" constant="1" id="jHF-i3-uW8"/>
+                                    <constraint firstItem="IU7-Tq-3Kj" firstAttribute="top" secondItem="7ZB-IX-83Y" secondAttribute="bottom" constant="1" id="jzO-EY-qFC"/>
+                                    <constraint firstItem="Jp2-uh-3ku" firstAttribute="centerX" secondItem="gMs-nn-kPk" secondAttribute="centerX" id="n6T-fI-eG4"/>
+                                    <constraint firstItem="4BJ-Kh-CWK" firstAttribute="centerX" secondItem="gMs-nn-kPk" secondAttribute="centerX" id="rYB-UE-zuQ"/>
+                                    <constraint firstItem="ZFb-Er-BQf" firstAttribute="leading" secondItem="gMs-nn-kPk" secondAttribute="leading" constant="117" id="xcz-bm-xzE"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otW-cE-t5w">
                                 <rect key="frame" x="30" y="158" width="330" height="419"/>
                                 <subviews>
@@ -43,25 +133,61 @@
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6E-Xn-pIb">
                                         <rect key="frame" x="30" y="40" width="270" height="270"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zr-fe-Go1">
+                                                <rect key="frame" x="95" y="90.666666666666686" width="80" height="89"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="🎂">
+                                                        <attributes>
+                                                            <font key="NSFont" size="80" name=".AppleColorEmojiUI"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="0zr-fe-Go1" firstAttribute="centerX" secondItem="P6E-Xn-pIb" secondAttribute="centerX" id="0Xz-RY-3do"/>
                                             <constraint firstAttribute="width" constant="270" id="FBW-kD-eLt"/>
                                             <constraint firstAttribute="height" constant="270" id="ODE-Fq-lXW"/>
+                                            <constraint firstItem="0zr-fe-Go1" firstAttribute="centerY" secondItem="P6E-Xn-pIb" secondAttribute="centerY" id="QIv-1s-Lol"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIt-XP-wNQ">
+                                        <rect key="frame" x="247" y="19" width="65" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="2Sr-ku-8Sb"/>
+                                            <constraint firstAttribute="height" constant="30" id="W28-hE-JTB"/>
+                                        </constraints>
+                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule" titleAlignment="center">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="설정">
+                                                    <attributes>
+                                                        <font key="NSFont" size="18" name="AppleSDGothicNeo-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.066666666666666666" green="0.84313725490196079" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.9882352941176471" green="0.90196078431372551" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="ztz-WM-1kE" firstAttribute="top" secondItem="2mW-zN-E50" secondAttribute="bottom" constant="3" id="5us-AK-IvK"/>
+                                    <constraint firstItem="hIt-XP-wNQ" firstAttribute="top" secondItem="otW-cE-t5w" secondAttribute="top" constant="19" id="D9e-Pg-q6Y"/>
                                     <constraint firstAttribute="height" constant="419" id="KUL-j8-qJK"/>
                                     <constraint firstItem="ztz-WM-1kE" firstAttribute="leading" secondItem="otW-cE-t5w" secondAttribute="leading" constant="20" id="KZn-Z1-CxM"/>
                                     <constraint firstItem="2mW-zN-E50" firstAttribute="leading" secondItem="otW-cE-t5w" secondAttribute="leading" constant="20" id="Pbn-Jn-gtF"/>
+                                    <constraint firstAttribute="trailing" secondItem="hIt-XP-wNQ" secondAttribute="trailing" constant="18" id="Qhb-0C-ttp"/>
                                     <constraint firstAttribute="bottom" secondItem="ztz-WM-1kE" secondAttribute="bottom" constant="17" id="w8U-eo-t44"/>
                                     <constraint firstItem="P6E-Xn-pIb" firstAttribute="top" secondItem="otW-cE-t5w" secondAttribute="top" constant="40" id="xdX-qT-QNb"/>
                                     <constraint firstItem="P6E-Xn-pIb" firstAttribute="centerX" secondItem="otW-cE-t5w" secondAttribute="centerX" id="z6L-Og-oRt"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" restorationIdentifier="AdminHome" translatesAutoresizingMaskIntoConstraints="NO" id="MvA-Cf-26b">
+                            <view contentMode="scaleToFill" restorationIdentifier="AdminHome" translatesAutoresizingMaskIntoConstraints="NO" id="MvA-Cf-26b" customClass="AdminHome" customModule="GiveCake" customModuleProvider="target">
                                 <rect key="frame" x="30" y="602" width="330" height="96"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDW-Yy-SJv">
@@ -88,9 +214,18 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="congratulation_mimo" translatesAutoresizingMaskIntoConstraints="NO" id="4rD-vj-1XB">
+                                        <rect key="frame" x="190" y="-22" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="dAU-SK-F9m"/>
+                                            <constraint firstAttribute="height" constant="140" id="o93-Za-VHc"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.90196078430000004" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="4rD-vj-1XB" firstAttribute="centerY" secondItem="MvA-Cf-26b" secondAttribute="centerY" id="AEd-Y2-C4U"/>
+                                    <constraint firstAttribute="trailing" secondItem="4rD-vj-1XB" secondAttribute="trailing" id="WtC-jK-MQf"/>
                                     <constraint firstItem="BDW-Yy-SJv" firstAttribute="leading" secondItem="MvA-Cf-26b" secondAttribute="leading" constant="20" id="aXQ-ZT-uPc"/>
                                     <constraint firstAttribute="height" constant="96" id="cNq-pm-fhY"/>
                                     <constraint firstItem="gnK-6t-Mnc" firstAttribute="top" secondItem="MvA-Cf-26b" secondAttribute="top" constant="15" id="hAE-qW-pcO"/>
@@ -113,8 +248,10 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gMs-nn-kPk" firstAttribute="top" secondItem="lyY-dF-nOU" secondAttribute="bottom" constant="29" id="C22-Ej-37V"/>
                             <constraint firstItem="otW-cE-t5w" firstAttribute="top" secondItem="lyY-dF-nOU" secondAttribute="bottom" constant="29" id="EKD-hA-9DR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="otW-cE-t5w" secondAttribute="trailing" constant="30" id="REL-dM-fl3"/>
+                            <constraint firstItem="gMs-nn-kPk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="WCx-u8-ejX"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MvA-Cf-26b" secondAttribute="trailing" constant="30" id="Zzg-ne-yGl"/>
                             <constraint firstItem="otW-cE-t5w" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="c2k-IE-me1"/>
                             <constraint firstItem="MvA-Cf-26b" firstAttribute="top" secondItem="otW-cE-t5w" secondAttribute="bottom" constant="25" id="hUa-h3-Lmt"/>
@@ -125,9 +262,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="countCakeView" destination="otW-cE-t5w" id="PI6-mP-Jaz"/>
-                        <outlet property="countKidsView" destination="MvA-Cf-26b" id="WhN-Sh-Pqi"/>
-                        <outlet property="gageView" destination="P6E-Xn-pIb" id="4CV-dT-sQ0"/>
+                        <outlet property="adminCelebrateGirlImage" destination="4rD-vj-1XB" id="IKY-qB-6qn"/>
+                        <outlet property="adminCountCakeCompleteView" destination="gMs-nn-kPk" id="e8n-b4-oDG"/>
+                        <outlet property="adminCountCakeView" destination="otW-cE-t5w" id="Cmc-0J-DC1"/>
+                        <outlet property="adminCountKidsView" destination="MvA-Cf-26b" id="urb-AQ-vFn"/>
+                        <outlet property="adminGageView" destination="P6E-Xn-pIb" id="Hs8-gN-qc7"/>
+                        <outlet property="adminTitleLabel" destination="lyY-dF-nOU" id="S0j-4G-y6N"/>
+                        <outlet property="adminTotalNum" destination="ztz-WM-1kE" id="TSB-UP-bL4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -136,6 +277,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HappyBirthdayGirl" width="191" height="191"/>
+        <image name="congratulation_mimo" width="140" height="143"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
