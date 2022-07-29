@@ -85,7 +85,7 @@ class DetailScrollViewAdmin: UIScrollView {
         )
         
         titleView.text = FeedModel.instance.feedList[selectedIdx].title
-        titleView.font = UIFont.boldSystemFont(ofSize: 28)
+        titleView.font = UIFont.boldSystemFont(ofSize: 34)
         titleView.textColor = .white
 
         subTitleView.text = FeedModel.instance.feedList[selectedIdx].subTitle

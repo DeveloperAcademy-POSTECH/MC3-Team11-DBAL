@@ -22,15 +22,15 @@ class AdminLoginVC: UIViewController {
     }
   
     // tabbar 화면으로 이동
-//    @objc func onClickedToTabBarBtn(sender: UIButton) {
-//        performSegue(withIdentifier: "loginToAdminTabBarSegue", sender: nil)
-//    }
-    
     @objc func onClickedToTabBarBtn(sender: UIButton) {
-        let storyboard = UIStoryboard(name: "AdminTabBar", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "AdminTabBarVC") as! AdminTabBarVC
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
+        performSegue(withIdentifier: "loginToAdminTabBarSegue", sender: nil)
     }
+    
+//    @objc func onClickedToTabBarBtn(sender: UIButton) {
+//        let storyboard = UIStoryboard(name: "AdminTabBar", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "AdminTabBarVC") as! AdminTabBarVC
+//        vc.modalPresentationStyle = .fullScreen
+//        present(vc, animated: true, completion: nil)
+//    }
     
 }

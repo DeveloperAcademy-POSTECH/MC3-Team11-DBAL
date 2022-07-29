@@ -17,7 +17,7 @@ class FeedDetailViewControllerAdmin: UIViewController {
     var interactiveStartingPoint: CGPoint? = nil
     var draggingDownToDismiss = false
     let selectedIdx: Int
-    let cell: FeedTableViewCell!
+    let cell: FeedTableViewCellAdmin!
     
     // 모달 내리듯이 드래그 하는 제스처
     private lazy var dismissPanGesture: UIPanGestureRecognizer = {
@@ -29,9 +29,9 @@ class FeedDetailViewControllerAdmin: UIViewController {
     }()
     
     // 상세보기 화면의 스크롤 뷰
-    lazy var scrollView: DetailScrollView = {
+    lazy var scrollView: DetailScrollViewAdmin = {
         let frame = self.view.bounds
-        let view = DetailScrollView(frame: frame, selectedIdx: selectedIdx)
+        let view = DetailScrollViewAdmin(frame: frame, selectedIdx: selectedIdx)
         view.delegate = self
         return view
     }()
@@ -45,7 +45,7 @@ class FeedDetailViewControllerAdmin: UIViewController {
         return btn
     }()
     
-    init(cell: FeedTableViewCell, selectedIdx: Int) {
+    init(cell: FeedTableViewCellAdmin, selectedIdx: Int) {
         self.cell = cell
         self.selectedIdx = selectedIdx
         super.init(nibName: nil, bundle: nil)
@@ -157,15 +157,15 @@ class FeedDetailViewControllerAdmin: UIViewController {
 extension FeedDetailViewControllerAdmin: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return FeedAnimationTransition(animationType: .present)
+        return FeedAnimationTransitionAdmin(animationType: .present)
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return FeedAnimationTransition(animationType: .dismiss)
+        return FeedAnimationTransitionAdmin(animationType: .dismiss)
     }
     
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return FeedPresentationController(presentedViewController: presented, presenting: presenting)
+        return FeedPresentationControllerAdmin(presentedViewController: presented, presenting: presenting)
     }
 }
 
