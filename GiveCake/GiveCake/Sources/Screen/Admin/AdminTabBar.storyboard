@@ -10,7 +10,7 @@
         <!--Admin Tab BarVC-->
         <scene sceneID="acz-bx-H0M">
             <objects>
-                <tabBarController id="26T-0S-MFv" customClass="AdminTabBarVC" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="AdminTabBarVC" id="26T-0S-MFv" customClass="AdminTabBarVC" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KUl-Ok-82d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

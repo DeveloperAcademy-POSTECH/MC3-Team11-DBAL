@@ -275,6 +275,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Home_fill_DBAL" width="18" height="20"/>
         <image name="HappyBirthdayGirl" width="191" height="191"/>
         <image name="Home_DBAL" width="18" height="20"/>
         <image name="Home_fill_DBAL" width="18" height="20"/>
