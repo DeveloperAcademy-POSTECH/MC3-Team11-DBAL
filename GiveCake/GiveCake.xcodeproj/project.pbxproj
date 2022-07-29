@@ -14,9 +14,9 @@
 		9EB935922883EF9E00A56668 /* GiverMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB935912883EF9E00A56668 /* GiverMessageTableViewCell.swift */; };
 		9EB9359928842AE000A56668 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB9359828842AE000A56668 /* CloudKit.framework */; };
 		9EB9359C28845ACE00A56668 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB9359B28845ACE00A56668 /* CloudKitManager.swift */; };
-		9EB9AC962892C2E100F0FD26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EB9AC952892C2E100F0FD26 /* GoogleService-Info.plist */; };
 		9EB9AC992892C5DA00F0FD26 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9EB9AC982892C5DA00F0FD26 /* FirebaseAnalytics */; };
 		9EB9AC9B2892C5DA00F0FD26 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9EB9AC9A2892C5DA00F0FD26 /* FirebaseStorage */; };
+		9EB9AC9F28937B7F00F0FD26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EB9AC9E28937B7F00F0FD26 /* GoogleService-Info.plist */; };
 		A00D097C2891165A00F72459 /* GiverHomeCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00D097B2891165A00F72459 /* GiverHomeCompleteVC.swift */; };
 		A0519B2D28913513002DF848 /* AdminHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0519B2C28913513002DF848 /* AdminHome.storyboard */; };
 		A0519B2F28916C75002DF848 /* AdminHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0519B2E28916C75002DF848 /* AdminHomeVC.swift */; };
@@ -84,7 +84,7 @@
 		9EB9359628842AA900A56668 /* GiveCake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GiveCake.entitlements; sourceTree = "<group>"; };
 		9EB9359828842AE000A56668 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9EB9359B28845ACE00A56668 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
-		9EB9AC952892C2E100F0FD26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9EB9AC9E28937B7F00F0FD26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A00D097B2891165A00F72459 /* GiverHomeCompleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverHomeCompleteVC.swift; sourceTree = "<group>"; };
 		A0519B2C28913513002DF848 /* AdminHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminHome.storyboard; sourceTree = "<group>"; };
 		A0519B2E28916C75002DF848 /* AdminHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeVC.swift; sourceTree = "<group>"; };
@@ -351,7 +351,7 @@
 				BC8A6394287FAB7000D7DA7E /* Sources */,
 				BC8A6393287FAB5E00D7DA7E /* Resources */,
 				BC8A638A287FAAF900D7DA7E /* Info.plist */,
-				9EB9AC952892C2E100F0FD26 /* GoogleService-Info.plist */,
+				9EB9AC9E28937B7F00F0FD26 /* GoogleService-Info.plist */,
 			);
 			path = GiveCake;
 			sourceTree = "<group>";
@@ -557,7 +557,7 @@
 				BC09E15F28800A3900521F55 /* Main.storyboard in Resources */,
 				BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */,
 				BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */,
-				9EB9AC962892C2E100F0FD26 /* GoogleService-Info.plist in Resources */,
+				9EB9AC9F28937B7F00F0FD26 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
