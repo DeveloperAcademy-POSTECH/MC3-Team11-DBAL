@@ -19,13 +19,24 @@
                         <color key="selectedImageTintColor" red="0.96078431372549022" green="0.69019607843137254" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
-                        <segue destination="gLq-Hb-2II" kind="relationship" relationship="viewControllers" id="546-Wd-8tl"/>
-                        <segue destination="uww-fb-GYy" kind="relationship" relationship="viewControllers" id="KFY-Ig-uTh"/>
+                        <segue destination="UG5-vQ-Vjb" kind="relationship" relationship="viewControllers" id="GnV-Re-eqo"/>
+                        <segue destination="gLq-Hb-2II" kind="relationship" relationship="viewControllers" id="8EC-6W-nSN"/>
+                        <segue destination="uww-fb-GYy" kind="relationship" relationship="viewControllers" id="6Ak-93-4Gp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0s-zL-kRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-310" y="-91"/>
+        </scene>
+        <!--AdminHome-->
+        <scene sceneID="pR7-CB-ufl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdminHome" id="UG5-vQ-Vjb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="De3-bB-pIA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZBc-ly-1UJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="-178"/>
         </scene>
         <!--AdminFeed-->
         <scene sceneID="p1S-3l-P2d">
