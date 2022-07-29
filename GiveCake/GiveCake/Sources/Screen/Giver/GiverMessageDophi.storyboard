@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zMT-Zb-onh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="Yhx-LH-tgx">
+            <objects>
+                <viewController storyboardIdentifier="TakerMessageVC" id="zMT-Zb-onh" customClass="GiverMessageVC" customModule="GiveCake" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uPK-ht-sCe" userLabel="Screen">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fkk-jM-frj">
+                                <rect key="frame" x="0.0" y="146" width="414" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xl0-BT-XNL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="받은 편지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKp-JI-ZDE">
+                                        <rect key="frame" x="33" y="84" width="125" height="41"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P83-V4-ibd">
+                                        <rect key="frame" x="345.5" y="90" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="28" id="oVJ-hD-h9D"/>
+                                            <constraint firstAttribute="height" constant="28" id="q7y-F4-wBa"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.066666666669999999" green="0.84313725490000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="paperplane.circle.fill" catalog="system" title="">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="CX4-D9-Kmw" kind="presentation" id="NzQ-ru-vbe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="P83-V4-ibd" secondAttribute="bottom" constant="28" id="0e0-fY-rEr"/>
+                                    <constraint firstItem="hKp-JI-ZDE" firstAttribute="leading" secondItem="xl0-BT-XNL" secondAttribute="leading" constant="33" id="GkL-UJ-HpP"/>
+                                    <constraint firstAttribute="trailing" secondItem="P83-V4-ibd" secondAttribute="trailing" constant="40.700000000000003" id="J6o-BX-6yW"/>
+                                    <constraint firstAttribute="height" constant="146" id="LYo-MV-Y7l"/>
+                                    <constraint firstAttribute="bottom" secondItem="hKp-JI-ZDE" secondAttribute="bottom" constant="21" id="i3n-eQ-QBq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mu3-mu-3zx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xl0-BT-XNL" firstAttribute="top" secondItem="Mu3-mu-3zx" secondAttribute="top" constant="-44" id="5bp-K8-166"/>
+                            <constraint firstItem="fkk-jM-frj" firstAttribute="top" secondItem="xl0-BT-XNL" secondAttribute="bottom" id="7v0-PG-MYg"/>
+                            <constraint firstItem="Mu3-mu-3zx" firstAttribute="bottom" secondItem="fkk-jM-frj" secondAttribute="bottom" id="UAQ-RZ-HWt"/>
+                            <constraint firstItem="fkk-jM-frj" firstAttribute="leading" secondItem="Mu3-mu-3zx" secondAttribute="leading" id="Uhi-2c-Npc"/>
+                            <constraint firstItem="fkk-jM-frj" firstAttribute="trailing" secondItem="Mu3-mu-3zx" secondAttribute="trailing" id="gDc-t3-BnB"/>
+                            <constraint firstItem="xl0-BT-XNL" firstAttribute="leading" secondItem="Mu3-mu-3zx" secondAttribute="leading" id="gYF-IC-ZCC"/>
+                            <constraint firstItem="xl0-BT-XNL" firstAttribute="trailing" secondItem="Mu3-mu-3zx" secondAttribute="trailing" id="lAh-fR-HxK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="Envelope_DBAL" selectedImage="Envelope_fill_DBAL" id="EfZ-t3-3Br"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="header" destination="xl0-BT-XNL" id="dU7-At-VXS"/>
+                        <outlet property="tableView" destination="fkk-jM-frj" id="V1e-UJ-R5q"/>
+                        <outlet property="writeBtn" destination="P83-V4-ibd" id="8ze-ri-4UU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biT-zX-2IM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="86.383928571428569"/>
+        </scene>
+        <!--GiverMessageWrite-->
+        <scene sceneID="Kk3-M9-VOv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GiverMessageWrite" id="CX4-D9-Kmw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pf3-zd-MaJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="609" y="-183"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Envelope_DBAL" width="22" height="17"/>
+        <image name="Envelope_fill_DBAL" width="22" height="17"/>
+        <image name="paperplane.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

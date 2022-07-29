@@ -1,22 +1,33 @@
 //
-//  GiverHomeVC.swift
+//  AdminHomeVC.swift
 //  GiveCake
 //
-//  Created by 김동락 on 2022/07/14.
+//  Created by YOON CHANG HYO on 2022/07/27.
 //
 
 import UIKit
 
+class CLoudkit {
+    func getCakeNumber() -> Int{
+        
+        return 111
+        
+    }
+    
+}
 
-class GiverHomeVC: UIViewController {
+class AdminHomeVC: UIViewController {
 
-    @IBOutlet weak var countCakeView: UIView!
-    @IBOutlet weak var countKidsView: UIView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var gageView: UIView!
-    @IBOutlet weak var celebrateGirlImage: UIImageView!
-    @IBOutlet weak var countCakeCompleteView: UIView!
-    @IBOutlet weak var totalNum: UILabel!
+    
+    
+    @IBOutlet weak var adminCountCakeView: UIView!
+    @IBOutlet weak var adminCountKidsView: UIView!
+    @IBOutlet weak var adminTitleLabel: UILabel!
+    @IBOutlet weak var adminGageView: UIView!
+    @IBOutlet weak var adminCelebrateGirlImage: UIImageView!
+    @IBOutlet weak var adminCountCakeCompleteView: UIView!
+    @IBOutlet weak var adminTotalNum: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +35,7 @@ class GiverHomeVC: UIViewController {
         
         let trackLayer = CAShapeLayer()
         let shapeLayer = CAShapeLayer()
-        let center = CGPoint(x: gageView.frame.width/2 , y: gageView.frame.height/2)
+        let center = CGPoint(x: adminGageView.frame.width/2 , y: adminGageView.frame.height/2)
         print(center)
         let circularPath = UIBezierPath(arcCenter: center, radius: 120, startAngle: -CGFloat.pi / 2, endAngle: 1.5 * CGFloat.pi, clockwise: true)
         
@@ -36,7 +47,7 @@ class GiverHomeVC: UIViewController {
         trackLayer.lineWidth = 30
         trackLayer.fillColor = UIColor.clear.cgColor
         //trackLayer.lineCap = .round, 게이지엔 둥근 캡이 필요없음
-        gageView.layer.addSublayer(trackLayer)
+        adminGageView.layer.addSublayer(trackLayer)
         
         
         
@@ -48,23 +59,23 @@ class GiverHomeVC: UIViewController {
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineCap = .round
         
-        gageView.layer.addSublayer(shapeLayer)
+        adminGageView.layer.addSublayer(shapeLayer)
         
         let cloudkit = CLoudkit()
         let cakeNum = cloudkit.getCakeNumber()
-        //150보다 크거나 같을때 countCakeView를 숨긴다 (num에 cakeNum이 들어온다.)
+        //150보다 크거나 같을때 adminCountCakeView를 숨긴다 (num에 cakeNum이 들어온다.)
         didCompleteCountCake(num: cakeNum)
         //총 개수를 보여주는 라벨의 수를 바꿔줌
-        totalNum.text = String(cakeNum) + "/150"
+        adminTotalNum.text = String(cakeNum) + "/150"
         
         makeAnimation(shapeLayer: shapeLayer, value: Double(cakeNum)/150.0)
         //게이지뷰 투명화
-        gageView.backgroundColor = .clear
+        adminGageView.backgroundColor = .clear
        
         // 월별 생일 아동 수치 보드, 원형게이지 보드 반지름 값
-        countKidsView.layer.cornerRadius = 20
-        countCakeView.layer.cornerRadius = 25
-        countCakeCompleteView.layer.cornerRadius = 25
+        adminCountKidsView.layer.cornerRadius = 20
+        adminCountCakeView.layer.cornerRadius = 25
+        adminCountCakeCompleteView.layer.cornerRadius = 25
         
       
         
@@ -82,12 +93,12 @@ class GiverHomeVC: UIViewController {
         basicAnimation.isRemovedOnCompletion = false
         
         shapeLayer.add(basicAnimation, forKey: "urSoBasic")
-        
+    
         
     }
     func didCompleteCountCake (num: Int) {
         if num >= 150 {
-            countCakeView.isHidden = true
+            adminCountCakeView.isHidden = true
         }
         
     }

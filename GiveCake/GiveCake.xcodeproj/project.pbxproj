@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B35C79E289233420011DDD3 /* GiverMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35C79D289233420011DDD3 /* GiverMessageVC.swift */; };
+		7B35C7A0289233610011DDD3 /* GiverMessageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35C79F289233610011DDD3 /* GiverMessageWriteVC.swift */; };
 		9EB935882883E0A400A56668 /* GiverMesssageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB935872883E0A400A56668 /* GiverMesssageWriteVC.swift */; };
 		9EB9358A2883E0CD00A56668 /* GiverMessageReceiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB935892883E0CD00A56668 /* GiverMessageReceiveVC.swift */; };
 		9EB9358C2883E38E00A56668 /* GiverMessageTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB9358B2883E38E00A56668 /* GiverMessageTableVC.swift */; };
@@ -14,9 +16,12 @@
 		9EB935922883EF9E00A56668 /* GiverMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB935912883EF9E00A56668 /* GiverMessageTableViewCell.swift */; };
 		9EB9359928842AE000A56668 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB9359828842AE000A56668 /* CloudKit.framework */; };
 		9EB9359C28845ACE00A56668 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB9359B28845ACE00A56668 /* CloudKitManager.swift */; };
-		A00D0978289112FC00F72459 /* GiverHomeComplete.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00D0977289112FC00F72459 /* GiverHomeComplete.storyboard */; };
+		9EB9AC992892C5DA00F0FD26 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9EB9AC982892C5DA00F0FD26 /* FirebaseAnalytics */; };
+		9EB9AC9B2892C5DA00F0FD26 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9EB9AC9A2892C5DA00F0FD26 /* FirebaseStorage */; };
+		9EB9AC9F28937B7F00F0FD26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EB9AC9E28937B7F00F0FD26 /* GoogleService-Info.plist */; };
 		A00D097C2891165A00F72459 /* GiverHomeCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00D097B2891165A00F72459 /* GiverHomeCompleteVC.swift */; };
 		A0519B2D28913513002DF848 /* AdminHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0519B2C28913513002DF848 /* AdminHome.storyboard */; };
+		A0519B2F28916C75002DF848 /* AdminHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0519B2E28916C75002DF848 /* AdminHomeVC.swift */; };
 		BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */; };
 		BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E142287FF50900521F55 /* GiverHome.storyboard */; };
 		BC09E145287FF51800521F55 /* GiverFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E144287FF51800521F55 /* GiverFeed.storyboard */; };
@@ -43,7 +48,7 @@
 		BC508818288E784500A4AD5F /* AdminLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508817288E784500A4AD5F /* AdminLoginVC.swift */; };
 		BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC50881C288EB03500A4AD5F /* TakerMessage.storyboard */; };
 		BC508821288EB08000A4AD5F /* TakerMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508820288EB08000A4AD5F /* TakerMessageVC.swift */; };
-		BC508825288EBB6C00A4AD5F /* TakerMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508824288EBB6C00A4AD5F /* TakerMessageModel.swift */; };
+		BC508825288EBB6C00A4AD5F /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC508824288EBB6C00A4AD5F /* MessageModel.swift */; };
 		BC8A637D287FAAF800D7DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */; };
 		BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */; };
 		BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */; };
@@ -56,6 +61,10 @@
 		BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */; };
 		BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */; };
 		BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */; };
+		BCCE56F42891194100FB6929 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F32891194000FB6929 /* UIColorExtension.swift */; };
+		BCCE56F628914AD200FB6929 /* GiverMessageDophi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56F528914AD200FB6929 /* GiverMessageDophi.storyboard */; };
+		BCCE56F828914ADE00FB6929 /* GiverMessageWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56F728914ADE00FB6929 /* GiverMessageWrite.storyboard */; };
+		BCCE56FA2891525D00FB6929 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F92891525D00FB6929 /* StringExtension.swift */; };
 		CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */; };
 		CD41724E2890D61200BA8E9E /* AdminTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */; };
 		CD4172542890DDD900BA8E9E /* AdminTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */; };
@@ -69,6 +78,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B35C79D289233420011DDD3 /* GiverMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverMessageVC.swift; sourceTree = "<group>"; };
+		7B35C79F289233610011DDD3 /* GiverMessageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverMessageWriteVC.swift; sourceTree = "<group>"; };
 		9EB935872883E0A400A56668 /* GiverMesssageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiverMesssageWriteVC.swift; path = GiveCake/Sources/ViewController/GiverMessageVC/Controller/GiverMesssageWriteVC.swift; sourceTree = SOURCE_ROOT; };
 		9EB935892883E0CD00A56668 /* GiverMessageReceiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverMessageReceiveVC.swift; sourceTree = "<group>"; };
 		9EB9358B2883E38E00A56668 /* GiverMessageTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiverMessageTableVC.swift; path = GiveCake/Sources/ViewController/GiverMessageVC/Controller/GiverMessageTableVC.swift; sourceTree = SOURCE_ROOT; };
@@ -77,9 +88,10 @@
 		9EB9359628842AA900A56668 /* GiveCake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GiveCake.entitlements; sourceTree = "<group>"; };
 		9EB9359828842AE000A56668 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9EB9359B28845ACE00A56668 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
-		A00D0977289112FC00F72459 /* GiverHomeComplete.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverHomeComplete.storyboard; sourceTree = "<group>"; };
+		9EB9AC9E28937B7F00F0FD26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A00D097B2891165A00F72459 /* GiverHomeCompleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverHomeCompleteVC.swift; sourceTree = "<group>"; };
 		A0519B2C28913513002DF848 /* AdminHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminHome.storyboard; sourceTree = "<group>"; };
+		A0519B2E28916C75002DF848 /* AdminHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeVC.swift; sourceTree = "<group>"; };
 		BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverLogin.storyboard; sourceTree = "<group>"; };
 		BC09E142287FF50900521F55 /* GiverHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverHome.storyboard; sourceTree = "<group>"; };
 		BC09E144287FF51800521F55 /* GiverFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverFeed.storyboard; sourceTree = "<group>"; };
@@ -106,7 +118,7 @@
 		BC508817288E784500A4AD5F /* AdminLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginVC.swift; sourceTree = "<group>"; };
 		BC50881C288EB03500A4AD5F /* TakerMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakerMessage.storyboard; sourceTree = "<group>"; };
 		BC508820288EB08000A4AD5F /* TakerMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageVC.swift; sourceTree = "<group>"; };
-		BC508824288EBB6C00A4AD5F /* TakerMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageModel.swift; sourceTree = "<group>"; };
+		BC508824288EBB6C00A4AD5F /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		BC8A6379287FAAF800D7DA7E /* GiveCake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiveCake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8A637C287FAAF800D7DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8A637E287FAAF800D7DA7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +133,10 @@
 		BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageWriteVC.swift; sourceTree = "<group>"; };
 		BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminMessage.storyboard; sourceTree = "<group>"; };
 		BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMessageVC.swift; sourceTree = "<group>"; };
+		BCCE56F32891194000FB6929 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		BCCE56F528914AD200FB6929 /* GiverMessageDophi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessageDophi.storyboard; sourceTree = "<group>"; };
+		BCCE56F728914ADE00FB6929 /* GiverMessageWrite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessageWrite.storyboard; sourceTree = "<group>"; };
+		BCCE56F92891525D00FB6929 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminFeed.storyboard; sourceTree = "<group>"; };
 		CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminTabBar.storyboard; sourceTree = "<group>"; };
 		CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabBarVC.swift; sourceTree = "<group>"; };
@@ -138,7 +154,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EB9AC992892C5DA00F0FD26 /* FirebaseAnalytics in Frameworks */,
 				9EB9359928842AE000A56668 /* CloudKit.framework in Frameworks */,
+				9EB9AC9B2892C5DA00F0FD26 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +267,10 @@
 				BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */,
 				BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */,
 				BC09E142287FF50900521F55 /* GiverHome.storyboard */,
-				A00D0977289112FC00F72459 /* GiverHomeComplete.storyboard */,
 				BC09E144287FF51800521F55 /* GiverFeed.storyboard */,
 				BC09E148287FF5E900521F55 /* GiverMessage.storyboard */,
+				BCCE56F528914AD200FB6929 /* GiverMessageDophi.storyboard */,
+				BCCE56F728914ADE00FB6929 /* GiverMessageWrite.storyboard */,
 			);
 			path = Giver;
 			sourceTree = "<group>";
@@ -282,6 +301,8 @@
 			isa = PBXGroup;
 			children = (
 				BC09E156287FFCD900521F55 /* GiverLoginVC.swift */,
+				7B35C79D289233420011DDD3 /* GiverMessageVC.swift */,
+				7B35C79F289233610011DDD3 /* GiverMessageWriteVC.swift */,
 				BC5087DE2882743400A4AD5F /* GiverFeedVC */,
 				BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */,
 				BC09E158287FFD6200521F55 /* GiverHomeVC.swift */,
@@ -306,6 +327,7 @@
 				BC508817288E784500A4AD5F /* AdminLoginVC.swift */,
 				CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */,
 				BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */,
+				A0519B2E28916C75002DF848 /* AdminHomeVC.swift */,
 				CD41724F2890DD6E00BA8E9E /* AdminFeedVC */,
 			);
 			path = Admin;
@@ -335,6 +357,7 @@
 				BC8A6394287FAB7000D7DA7E /* Sources */,
 				BC8A6393287FAB5E00D7DA7E /* Resources */,
 				BC8A638A287FAAF900D7DA7E /* Info.plist */,
+				9EB9AC9E28937B7F00F0FD26 /* GoogleService-Info.plist */,
 			);
 			path = GiveCake;
 			sourceTree = "<group>";
@@ -391,7 +414,7 @@
 			isa = PBXGroup;
 			children = (
 				BC5087FC2882AD0800A4AD5F /* FeedModel.swift */,
-				BC508824288EBB6C00A4AD5F /* TakerMessageModel.swift */,
+				BC508824288EBB6C00A4AD5F /* MessageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -411,6 +434,8 @@
 			isa = PBXGroup;
 			children = (
 				BC5087F828827B0D00A4AD5F /* UIViewExtension.swift */,
+				BCCE56F92891525D00FB6929 /* StringExtension.swift */,
+				BCCE56F32891194000FB6929 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -469,6 +494,10 @@
 			dependencies = (
 			);
 			name = GiveCake;
+			packageProductDependencies = (
+				9EB9AC982892C5DA00F0FD26 /* FirebaseAnalytics */,
+				9EB9AC9A2892C5DA00F0FD26 /* FirebaseStorage */,
+			);
 			productName = GiveCake;
 			productReference = BC8A6379287FAAF800D7DA7E /* GiveCake.app */;
 			productType = "com.apple.product-type.application";
@@ -497,6 +526,9 @@
 				Base,
 			);
 			mainGroup = BC8A6370287FAAF800D7DA7E;
+			packageReferences = (
+				9EB9AC972892C5DA00F0FD26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = BC8A637A287FAAF800D7DA7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -520,16 +552,18 @@
 				BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */,
 				CD41724E2890D61200BA8E9E /* AdminTabBar.storyboard in Resources */,
 				BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */,
-				A00D0978289112FC00F72459 /* GiverHomeComplete.storyboard in Resources */,
+				BCCE56F628914AD200FB6929 /* GiverMessageDophi.storyboard in Resources */,
 				A0519B2D28913513002DF848 /* AdminHome.storyboard in Resources */,
 				CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */,
 				BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */,
 				BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */,
 				BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */,
+				BCCE56F828914ADE00FB6929 /* GiverMessageWrite.storyboard in Resources */,
 				BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */,
 				BC09E15F28800A3900521F55 /* Main.storyboard in Resources */,
 				BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */,
 				BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */,
+				9EB9AC9F28937B7F00F0FD26 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +576,7 @@
 			files = (
 				BC508821288EB08000A4AD5F /* TakerMessageVC.swift in Sources */,
 				BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */,
+				7B35C7A0289233610011DDD3 /* GiverMessageWriteVC.swift in Sources */,
 				BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */,
 				BC5087ED288277A000A4AD5F /* FeedTableHeaderView.swift in Sources */,
 				BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */,
@@ -551,29 +586,33 @@
 				CD4172602890DEF300BA8E9E /* FeedPresentationControllerAdmin.swift in Sources */,
 				9EB935882883E0A400A56668 /* GiverMesssageWriteVC.swift in Sources */,
 				BC5087EB2882778600A4AD5F /* DetailScrollView.swift in Sources */,
+				BCCE56FA2891525D00FB6929 /* StringExtension.swift in Sources */,
 				9EB935922883EF9E00A56668 /* GiverMessageTableViewCell.swift in Sources */,
 				9EB9359C28845ACE00A56668 /* CloudKitManager.swift in Sources */,
 				BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */,
+				7B35C79E289233420011DDD3 /* GiverMessageVC.swift in Sources */,
 				CD41725E2890DEDC00BA8E9E /* FeedDetailViewControllerAdmin.swift in Sources */,
 				BC5087E3288276F500A4AD5F /* FeedDetailViewController.swift in Sources */,
 				CD4172542890DDD900BA8E9E /* AdminTabBarVC.swift in Sources */,
 				CD41725A2890DEB600BA8E9E /* FeedTableViewCellAdmin.swift in Sources */,
 				BC5087E92882776B00A4AD5F /* FeedAnimationTransition.swift in Sources */,
-				BC508825288EBB6C00A4AD5F /* TakerMessageModel.swift in Sources */,
+				BC508825288EBB6C00A4AD5F /* MessageModel.swift in Sources */,
 				BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */,
 				9EB9358F2883E6BE00A56668 /* GiverMessageDummyModel.swift in Sources */,
 				BC508816288E783600A4AD5F /* TakerLoginVC.swift in Sources */,
-				BC5087FD2882AD0800A4AD5F /* GiverFeedModel.swift in Sources */,
+				BC5087FD2882AD0800A4AD5F /* FeedModel.swift in Sources */,
 				A00D097C2891165A00F72459 /* GiverHomeCompleteVC.swift in Sources */,
 				CD41725C2890DECB00BA8E9E /* FeedAnimationTransitionAdmin.swift in Sources */,
 				BCCE56EA288EDA1600FB6929 /* MessageCell.swift in Sources */,
 				BC5087FD2882AD0800A4AD5F /* FeedModel.swift in Sources */,
+				A0519B2F28916C75002DF848 /* AdminHomeVC.swift in Sources */,
 				BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */,
 				BC5087E72882773600A4AD5F /* FeedViewController.swift in Sources */,
 				BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */,
 				9EB9358C2883E38E00A56668 /* GiverMessageTableVC.swift in Sources */,
 				BC5087E52882771E00A4AD5F /* FeedPresentationController.swift in Sources */,
 				BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */,
+				BCCE56F42891194100FB6929 /* UIColorExtension.swift in Sources */,
 				CD4172562890DE9500BA8E9E /* DetailScrollViewAdmin.swift in Sources */,
 				CD4172582890DEA500BA8E9E /* FeedTableHeaderViewAdmin.swift in Sources */,
 				BC508808288E580A00A4AD5F /* VerticalAlignLabel.swift in Sources */,
@@ -728,7 +767,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 72PKNR92XJ;
+				DEVELOPMENT_TEAM = TD534ZU4RG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GiveCake/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -741,7 +780,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DBAL.GiveCakee;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DBAL.GiveCake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -759,7 +798,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 72PKNR92XJ;
+				DEVELOPMENT_TEAM = TD534ZU4RG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GiveCake/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -772,7 +811,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DBAL.GiveCakee;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DBAL.GiveCake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -803,6 +842,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9EB9AC972892C5DA00F0FD26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9EB9AC982892C5DA00F0FD26 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EB9AC972892C5DA00F0FD26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		9EB9AC9A2892C5DA00F0FD26 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EB9AC972892C5DA00F0FD26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC8A6371287FAAF800D7DA7E /* Project object */;
 }
