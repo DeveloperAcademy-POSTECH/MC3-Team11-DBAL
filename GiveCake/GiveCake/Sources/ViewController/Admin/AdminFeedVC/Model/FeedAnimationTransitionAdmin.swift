@@ -42,11 +42,8 @@ extension FeedAnimationTransitionAdmin: UIViewControllerAnimatedTransitioning {
     func animationForPresent(using transitionContext: UIViewControllerContextTransitioning) {
         let containerView = transitionContext.containerView
         // 1. 어떤 뷰(from)에서 어떤 뷰(to)로 넘어갈지 정하기
-        print("111")
         guard let fromVC = transitionContext.viewController(forKey: .from) as? AdminTabBarVC else { return }
-        print("222")
         guard let tableViewController = fromVC.viewControllers?[1] as? FeedViewControllerAdmin else { return }
-        print("333")
         guard let toVC = transitionContext.viewController(forKey: .to) as? FeedDetailViewControllerAdmin else { return }
         guard let selectedCell = tableViewController.selectedCell else { return }
         

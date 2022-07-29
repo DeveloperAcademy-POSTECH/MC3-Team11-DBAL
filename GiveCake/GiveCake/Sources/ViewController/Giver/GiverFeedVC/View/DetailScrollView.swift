@@ -63,14 +63,14 @@ class DetailScrollView: UIScrollView {
         descriptionView.layer.masksToBounds = true
         
         dayView.text = FeedModel.instance.feedList[selectedIdx].day
-        dayView.font = UIFont.systemFont(ofSize: 12)
+        dayView.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         dayView.textColor = .white
         dayView.frame = CGRect(
             x: kScreenW - (dayView.intrinsicContentSize.width + GlobalConstants.titlePaddingRight),
             y: descriptionView.bounds.height -       (dayView.intrinsicContentSize.height +           GlobalConstants.titlePaddingBottom),
             width: 0,
             height: 0
-        ) 
+        )
         dayView.sizeToFit()
         
         stackView.axis = .vertical
@@ -85,12 +85,12 @@ class DetailScrollView: UIScrollView {
         )
         
         titleView.text = FeedModel.instance.feedList[selectedIdx].title
-        titleView.font = UIFont.boldSystemFont(ofSize: 28)
+        titleView.font = UIFont.systemFont(ofSize: 28, weight: .semibold)
         titleView.textColor = .white
 
         subTitleView.text = FeedModel.instance.feedList[selectedIdx].subTitle
         subTitleView.numberOfLines = 0
-        subTitleView.font = UIFont.systemFont(ofSize: 12)
+        subTitleView.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
         subTitleView.textColor = .white
          
         var height:CGFloat = 0
@@ -107,8 +107,8 @@ class DetailScrollView: UIScrollView {
         )
         textView.numberOfLines = 0
         textView.text = FeedModel.instance.feedList[selectedIdx].content
-        textView.font = UIFont.boldSystemFont(ofSize: 15)
-        textView.textColor = .gray
+        textView.font = UIFont.systemFont(ofSize: 17, weight: .regular)
+        textView.textColor = UIColor(rgb: 0x8E8E93)
 
         contentSize = CGSize(width: kScreenW, height: bgBackView.frame.height + textViewTopMargin + textView.frame.height + textViewBottomMargin)
     }

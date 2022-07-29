@@ -23,7 +23,7 @@ class FeedViewControllerAdmin: UITableViewController {
     
     // 테이블 헤더 뷰 (모아보기 글자 써있는 부분)
     lazy var headerView: FeedTableHeaderViewAdmin = {
-        let frame = CGRect(x: 0, y: 0, width: kScreenW, height: 96)
+        let frame = CGRect(x: 0, y: 0, width: kScreenW, height: 109)
         let view = FeedTableHeaderViewAdmin(frame: frame)
         return view
     }()

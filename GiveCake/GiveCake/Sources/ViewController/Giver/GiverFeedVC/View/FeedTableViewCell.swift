@@ -67,13 +67,12 @@ class FeedTableViewCell: UITableViewCell {
             height: descriptionView.bounds.height - (GlobalConstants.titlePaddingTop+GlobalConstants.titlePaddingBottom)
         )
         
-        titleView.font = UIFont.boldSystemFont(ofSize: 28)
-        titleView.textColor = .white
+        titleView.font = UIFont.systemFont(ofSize: 28, weight: .semibold)
+        titleView.textColor = UIColor(rgb: 0xFEFEFE)
 
         subTitleView.numberOfLines = 0
-        subTitleView.font = UIFont.systemFont(ofSize: 12)
-        subTitleView.textColor = .white
+        subTitleView.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
+        subTitleView.textColor = UIColor(rgb: 0xFEFEFE)
     }
     
 }
-
