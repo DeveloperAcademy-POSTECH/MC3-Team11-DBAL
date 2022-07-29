@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B35C79E289233420011DDD3 /* GiverMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35C79D289233420011DDD3 /* GiverMessageVC.swift */; };
+		7B35C7A0289233610011DDD3 /* GiverMessageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35C79F289233610011DDD3 /* GiverMessageWriteVC.swift */; };
 		9EB935882883E0A400A56668 /* GiverMesssageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB935872883E0A400A56668 /* GiverMesssageWriteVC.swift */; };
 		9EB9358A2883E0CD00A56668 /* GiverMessageReceiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB935892883E0CD00A56668 /* GiverMessageReceiveVC.swift */; };
 		9EB9358C2883E38E00A56668 /* GiverMessageTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB9358B2883E38E00A56668 /* GiverMessageTableVC.swift */; };
@@ -76,6 +78,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B35C79D289233420011DDD3 /* GiverMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverMessageVC.swift; sourceTree = "<group>"; };
+		7B35C79F289233610011DDD3 /* GiverMessageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverMessageWriteVC.swift; sourceTree = "<group>"; };
 		9EB935872883E0A400A56668 /* GiverMesssageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiverMesssageWriteVC.swift; path = GiveCake/Sources/ViewController/GiverMessageVC/Controller/GiverMesssageWriteVC.swift; sourceTree = SOURCE_ROOT; };
 		9EB935892883E0CD00A56668 /* GiverMessageReceiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverMessageReceiveVC.swift; sourceTree = "<group>"; };
 		9EB9358B2883E38E00A56668 /* GiverMessageTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiverMessageTableVC.swift; path = GiveCake/Sources/ViewController/GiverMessageVC/Controller/GiverMessageTableVC.swift; sourceTree = SOURCE_ROOT; };
@@ -297,6 +301,8 @@
 			isa = PBXGroup;
 			children = (
 				BC09E156287FFCD900521F55 /* GiverLoginVC.swift */,
+				7B35C79D289233420011DDD3 /* GiverMessageVC.swift */,
+				7B35C79F289233610011DDD3 /* GiverMessageWriteVC.swift */,
 				BC5087DE2882743400A4AD5F /* GiverFeedVC */,
 				BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */,
 				BC09E158287FFD6200521F55 /* GiverHomeVC.swift */,
@@ -570,6 +576,7 @@
 			files = (
 				BC508821288EB08000A4AD5F /* TakerMessageVC.swift in Sources */,
 				BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */,
+				7B35C7A0289233610011DDD3 /* GiverMessageWriteVC.swift in Sources */,
 				BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */,
 				BC5087ED288277A000A4AD5F /* FeedTableHeaderView.swift in Sources */,
 				BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */,
@@ -583,6 +590,7 @@
 				9EB935922883EF9E00A56668 /* GiverMessageTableViewCell.swift in Sources */,
 				9EB9359C28845ACE00A56668 /* CloudKitManager.swift in Sources */,
 				BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */,
+				7B35C79E289233420011DDD3 /* GiverMessageVC.swift in Sources */,
 				CD41725E2890DEDC00BA8E9E /* FeedDetailViewControllerAdmin.swift in Sources */,
 				BC5087E3288276F500A4AD5F /* FeedDetailViewController.swift in Sources */,
 				CD4172542890DDD900BA8E9E /* AdminTabBarVC.swift in Sources */,
