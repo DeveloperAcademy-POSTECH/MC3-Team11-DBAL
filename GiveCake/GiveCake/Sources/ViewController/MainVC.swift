@@ -14,6 +14,10 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         continueBtn.addTarget(self, action: #selector(onClickedContinueBtn(sender:)), for: .touchUpInside)
+        // 키보드 바로 띄워주기
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.01) {
+            self.enterCodeTextField.becomeFirstResponder()
+        }
     }
     
     // tabbar 화면으로 이동

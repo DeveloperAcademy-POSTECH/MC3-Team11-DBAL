@@ -16,7 +16,10 @@ class GiverLoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.nicknameTextField.addAction(UIAction(handler: self.textHandler), for: .editingChanged)
-        
+        // 키보드 바로 띄워주기
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.01) {
+            self.nicknameTextField.becomeFirstResponder()
+        }
         // 네비게이션바 숨기기
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         // 버튼에 함수 연결

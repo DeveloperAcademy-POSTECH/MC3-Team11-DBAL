@@ -34,15 +34,6 @@ class FeedViewController: UITableViewController {
         super.viewDidLoad()
         setupTableView()
         configureItems()
-        
-        self.view.addSubview(addButton)
-        addButton.translatesAutoresizingMaskIntoConstraints = false
-        addButton.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 35).isActive = true
-        addButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        addButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        addButton.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 325).isActive = true
-        addButton.addTarget(self, action: #selector(btnClicked(sender:)), for: .touchUpInside)
-        addButton.setImage(UIImage(named: "Plus_fill_DBAL"), for: .normal)
     }
     
     private func configureItems() {
