@@ -14,6 +14,9 @@
 		9EB935922883EF9E00A56668 /* GiverMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB935912883EF9E00A56668 /* GiverMessageTableViewCell.swift */; };
 		9EB9359928842AE000A56668 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB9359828842AE000A56668 /* CloudKit.framework */; };
 		9EB9359C28845ACE00A56668 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB9359B28845ACE00A56668 /* CloudKitManager.swift */; };
+		9EB9AC962892C2E100F0FD26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EB9AC952892C2E100F0FD26 /* GoogleService-Info.plist */; };
+		9EB9AC992892C5DA00F0FD26 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9EB9AC982892C5DA00F0FD26 /* FirebaseAnalytics */; };
+		9EB9AC9B2892C5DA00F0FD26 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9EB9AC9A2892C5DA00F0FD26 /* FirebaseStorage */; };
 		A00D097C2891165A00F72459 /* GiverHomeCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00D097B2891165A00F72459 /* GiverHomeCompleteVC.swift */; };
 		A0519B2D28913513002DF848 /* AdminHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0519B2C28913513002DF848 /* AdminHome.storyboard */; };
 		A0519B2F28916C75002DF848 /* AdminHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0519B2E28916C75002DF848 /* AdminHomeVC.swift */; };
@@ -56,10 +59,10 @@
 		BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */; };
 		BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */; };
 		BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */; };
-		BCCE56FA2891525D00FB6929 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F92891525D00FB6929 /* StringExtension.swift */; };
 		BCCE56F42891194100FB6929 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F32891194000FB6929 /* UIColorExtension.swift */; };
 		BCCE56F628914AD200FB6929 /* GiverMessageDophi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56F528914AD200FB6929 /* GiverMessageDophi.storyboard */; };
 		BCCE56F828914ADE00FB6929 /* GiverMessageWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56F728914ADE00FB6929 /* GiverMessageWrite.storyboard */; };
+		BCCE56FA2891525D00FB6929 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F92891525D00FB6929 /* StringExtension.swift */; };
 		CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */; };
 		CD41724E2890D61200BA8E9E /* AdminTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */; };
 		CD4172542890DDD900BA8E9E /* AdminTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */; };
@@ -81,6 +84,7 @@
 		9EB9359628842AA900A56668 /* GiveCake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GiveCake.entitlements; sourceTree = "<group>"; };
 		9EB9359828842AE000A56668 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9EB9359B28845ACE00A56668 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		9EB9AC952892C2E100F0FD26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A00D097B2891165A00F72459 /* GiverHomeCompleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverHomeCompleteVC.swift; sourceTree = "<group>"; };
 		A0519B2C28913513002DF848 /* AdminHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminHome.storyboard; sourceTree = "<group>"; };
 		A0519B2E28916C75002DF848 /* AdminHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeVC.swift; sourceTree = "<group>"; };
@@ -125,10 +129,10 @@
 		BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageWriteVC.swift; sourceTree = "<group>"; };
 		BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminMessage.storyboard; sourceTree = "<group>"; };
 		BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMessageVC.swift; sourceTree = "<group>"; };
-		BCCE56F92891525D00FB6929 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		BCCE56F32891194000FB6929 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		BCCE56F528914AD200FB6929 /* GiverMessageDophi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessageDophi.storyboard; sourceTree = "<group>"; };
 		BCCE56F728914ADE00FB6929 /* GiverMessageWrite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessageWrite.storyboard; sourceTree = "<group>"; };
+		BCCE56F92891525D00FB6929 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminFeed.storyboard; sourceTree = "<group>"; };
 		CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminTabBar.storyboard; sourceTree = "<group>"; };
 		CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabBarVC.swift; sourceTree = "<group>"; };
@@ -146,7 +150,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EB9AC992892C5DA00F0FD26 /* FirebaseAnalytics in Frameworks */,
 				9EB9359928842AE000A56668 /* CloudKit.framework in Frameworks */,
+				9EB9AC9B2892C5DA00F0FD26 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +351,7 @@
 				BC8A6394287FAB7000D7DA7E /* Sources */,
 				BC8A6393287FAB5E00D7DA7E /* Resources */,
 				BC8A638A287FAAF900D7DA7E /* Info.plist */,
+				9EB9AC952892C2E100F0FD26 /* GoogleService-Info.plist */,
 			);
 			path = GiveCake;
 			sourceTree = "<group>";
@@ -481,6 +488,10 @@
 			dependencies = (
 			);
 			name = GiveCake;
+			packageProductDependencies = (
+				9EB9AC982892C5DA00F0FD26 /* FirebaseAnalytics */,
+				9EB9AC9A2892C5DA00F0FD26 /* FirebaseStorage */,
+			);
 			productName = GiveCake;
 			productReference = BC8A6379287FAAF800D7DA7E /* GiveCake.app */;
 			productType = "com.apple.product-type.application";
@@ -509,6 +520,9 @@
 				Base,
 			);
 			mainGroup = BC8A6370287FAAF800D7DA7E;
+			packageReferences = (
+				9EB9AC972892C5DA00F0FD26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = BC8A637A287FAAF800D7DA7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -533,7 +547,6 @@
 				CD41724E2890D61200BA8E9E /* AdminTabBar.storyboard in Resources */,
 				BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */,
 				BCCE56F628914AD200FB6929 /* GiverMessageDophi.storyboard in Resources */,
-				A00D0978289112FC00F72459 /* GiverHomeComplete.storyboard in Resources */,
 				A0519B2D28913513002DF848 /* AdminHome.storyboard in Resources */,
 				CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */,
 				BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */,
@@ -544,6 +557,7 @@
 				BC09E15F28800A3900521F55 /* Main.storyboard in Resources */,
 				BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */,
 				BC8A6384287FAAF800D7DA7E /* GiverTabBar.storyboard in Resources */,
+				9EB9AC962892C2E100F0FD26 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,6 +834,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9EB9AC972892C5DA00F0FD26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9EB9AC982892C5DA00F0FD26 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EB9AC972892C5DA00F0FD26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		9EB9AC9A2892C5DA00F0FD26 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EB9AC972892C5DA00F0FD26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC8A6371287FAAF800D7DA7E /* Project object */;
 }
