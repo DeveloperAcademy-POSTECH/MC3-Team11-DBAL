@@ -15,6 +15,8 @@
 		9EB9359928842AE000A56668 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB9359828842AE000A56668 /* CloudKit.framework */; };
 		9EB9359C28845ACE00A56668 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB9359B28845ACE00A56668 /* CloudKitManager.swift */; };
 		A00D097C2891165A00F72459 /* GiverHomeCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00D097B2891165A00F72459 /* GiverHomeCompleteVC.swift */; };
+		A02344C82893C52800347421 /* AdminHomeSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02344C72893C52800347421 /* AdminHomeSetting.storyboard */; };
+		A02344CA2893C55900347421 /* AdminHomeSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02344C92893C55900347421 /* AdminHomeSettingVC.swift */; };
 		A0519B2D28913513002DF848 /* AdminHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0519B2C28913513002DF848 /* AdminHome.storyboard */; };
 		A0519B2F28916C75002DF848 /* AdminHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0519B2E28916C75002DF848 /* AdminHomeVC.swift */; };
 		BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */; };
@@ -56,10 +58,10 @@
 		BCCE56EE288F8E2700FB6929 /* TakerMessageWriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */; };
 		BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */; };
 		BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */; };
-		BCCE56FA2891525D00FB6929 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F92891525D00FB6929 /* StringExtension.swift */; };
 		BCCE56F42891194100FB6929 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F32891194000FB6929 /* UIColorExtension.swift */; };
 		BCCE56F628914AD200FB6929 /* GiverMessageDophi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56F528914AD200FB6929 /* GiverMessageDophi.storyboard */; };
 		BCCE56F828914ADE00FB6929 /* GiverMessageWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56F728914ADE00FB6929 /* GiverMessageWrite.storyboard */; };
+		BCCE56FA2891525D00FB6929 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F92891525D00FB6929 /* StringExtension.swift */; };
 		CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */; };
 		CD41724E2890D61200BA8E9E /* AdminTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */; };
 		CD4172542890DDD900BA8E9E /* AdminTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */; };
@@ -82,6 +84,8 @@
 		9EB9359828842AE000A56668 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9EB9359B28845ACE00A56668 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		A00D097B2891165A00F72459 /* GiverHomeCompleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverHomeCompleteVC.swift; sourceTree = "<group>"; };
+		A02344C72893C52800347421 /* AdminHomeSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminHomeSetting.storyboard; sourceTree = "<group>"; };
+		A02344C92893C55900347421 /* AdminHomeSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeSettingVC.swift; sourceTree = "<group>"; };
 		A0519B2C28913513002DF848 /* AdminHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminHome.storyboard; sourceTree = "<group>"; };
 		A0519B2E28916C75002DF848 /* AdminHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeVC.swift; sourceTree = "<group>"; };
 		BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverLogin.storyboard; sourceTree = "<group>"; };
@@ -125,10 +129,10 @@
 		BCCE56ED288F8E2700FB6929 /* TakerMessageWriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakerMessageWriteVC.swift; sourceTree = "<group>"; };
 		BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminMessage.storyboard; sourceTree = "<group>"; };
 		BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMessageVC.swift; sourceTree = "<group>"; };
-		BCCE56F92891525D00FB6929 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		BCCE56F32891194000FB6929 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		BCCE56F528914AD200FB6929 /* GiverMessageDophi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessageDophi.storyboard; sourceTree = "<group>"; };
 		BCCE56F728914ADE00FB6929 /* GiverMessageWrite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessageWrite.storyboard; sourceTree = "<group>"; };
+		BCCE56F92891525D00FB6929 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminFeed.storyboard; sourceTree = "<group>"; };
 		CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminTabBar.storyboard; sourceTree = "<group>"; };
 		CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabBarVC.swift; sourceTree = "<group>"; };
@@ -280,6 +284,7 @@
 			children = (
 				BC50880D288E766100A4AD5F /* AdminLogin.storyboard */,
 				A0519B2C28913513002DF848 /* AdminHome.storyboard */,
+				A02344C72893C52800347421 /* AdminHomeSetting.storyboard */,
 				CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */,
 				CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */,
 				BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */,
@@ -316,6 +321,7 @@
 				CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */,
 				BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */,
 				A0519B2E28916C75002DF848 /* AdminHomeVC.swift */,
+				A02344C92893C55900347421 /* AdminHomeSettingVC.swift */,
 				CD41724F2890DD6E00BA8E9E /* AdminFeedVC */,
 			);
 			path = Admin;
@@ -533,11 +539,11 @@
 				CD41724E2890D61200BA8E9E /* AdminTabBar.storyboard in Resources */,
 				BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */,
 				BCCE56F628914AD200FB6929 /* GiverMessageDophi.storyboard in Resources */,
-				A00D0978289112FC00F72459 /* GiverHomeComplete.storyboard in Resources */,
 				A0519B2D28913513002DF848 /* AdminHome.storyboard in Resources */,
 				CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */,
 				BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */,
 				BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */,
+				A02344C82893C52800347421 /* AdminHomeSetting.storyboard in Resources */,
 				BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */,
 				BCCE56F828914ADE00FB6929 /* GiverMessageWrite.storyboard in Resources */,
 				BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */,
@@ -570,6 +576,7 @@
 				9EB9359C28845ACE00A56668 /* CloudKitManager.swift in Sources */,
 				BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */,
 				CD41725E2890DEDC00BA8E9E /* FeedDetailViewControllerAdmin.swift in Sources */,
+				A02344CA2893C55900347421 /* AdminHomeSettingVC.swift in Sources */,
 				BC5087E3288276F500A4AD5F /* FeedDetailViewController.swift in Sources */,
 				CD4172542890DDD900BA8E9E /* AdminTabBarVC.swift in Sources */,
 				CD41725A2890DEB600BA8E9E /* FeedTableViewCellAdmin.swift in Sources */,
