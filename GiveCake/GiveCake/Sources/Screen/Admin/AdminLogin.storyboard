@@ -107,7 +107,7 @@
                         <outlet property="adminNameTextField" destination="6oZ-qb-GDL" id="maQ-dN-hUd"/>
                         <outlet property="disableBtn" destination="NVh-u6-FhH" id="uzy-YG-mC0"/>
                         <outlet property="toTabBarBtn" destination="N3W-Ey-vcH" id="5ba-qD-bab"/>
-                        <segue destination="vE6-O4-qhd" kind="show" identifier="loginToAdminTabBarSegue" id="pjm-9l-e0w"/>
+                        <segue destination="vE6-O4-qhd" kind="presentation" identifier="loginToAdminTabBarSegue" modalPresentationStyle="fullScreen" id="pjm-9l-e0w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
