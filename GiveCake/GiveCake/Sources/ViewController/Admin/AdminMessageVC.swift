@@ -73,7 +73,7 @@ class AdminMessageVC: UIViewController {
             messageList = MessageModel.instance.takerMessageList
             tableView.reloadData()
         } else {
-            messageList = MessageModel.instance.giverMessasgeList
+            messageList = MessageModel.instance.giverMessageList
             tableView.reloadData()
         }
     }

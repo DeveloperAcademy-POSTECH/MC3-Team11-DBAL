@@ -34,7 +34,7 @@ class MessageModel {
         )
     ]
     
-    var giverMessasgeList: [Message] = [
+    var giverMessageList: [Message] = [
         Message(
             emoticon: "😘",
             sender: "러브",

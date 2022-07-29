@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Giver Message WriteVC-->
         <scene sceneID="S3x-u6-4Mz">
             <objects>
-                <viewController storyboardIdentifier="TakerMessageWriteVC" id="Gv1-C6-wnT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TakerMessageWriteVC" id="Gv1-C6-wnT" customClass="GiverMessageWriteVC" customModule="GiveCake" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fSU-pr-pSI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,8 +100,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRO-0s-gok">
-                                        <rect key="frame" x="200" y="9" width="7" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRO-0s-gok">
+                                        <rect key="frame" x="200" y="9" width="9" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -140,6 +140,13 @@
                             <constraint firstItem="dJ3-Ra-mCD" firstAttribute="top" secondItem="fSU-pr-pSI" secondAttribute="top" id="w3G-i8-vRW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cakeCountLabel" destination="KRO-0s-gok" id="cgI-DZ-I8b"/>
+                        <outlet property="placeHolder" destination="AGY-v2-2OO" id="Dsp-Gh-0OC"/>
+                        <outlet property="sendBtn" destination="kbK-MB-s7g" id="xfD-ja-3g4"/>
+                        <outlet property="stepper" destination="fFh-za-BGx" id="FOw-kZ-fLC"/>
+                        <outlet property="textField" destination="sd6-f0-v4V" id="eAf-O9-kzy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQo-n6-Cpw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
