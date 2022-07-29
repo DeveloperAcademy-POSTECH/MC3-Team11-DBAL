@@ -24,9 +24,9 @@ class FeedTableHeaderViewAdmin: UIView {
     private func setupUI() {
         let screenWidth = UIScreen.main.bounds.width
         todayLabel.text = "모아보기"
-        todayLabel.font = UIFont.boldSystemFont(ofSize: 17)
-        todayLabel.textAlignment = .center
-        todayLabel.frame = CGRect(x: screenWidth/2 - 31.5, y: 48, width: 63, height: 20)
+        todayLabel.font = UIFont.boldSystemFont(ofSize: 34)
+        todayLabel.textAlignment = .left
+        todayLabel.frame = CGRect(x: screenWidth/2 - 15, y: 48, width: 118, height: 41)
 
         addSubview(todayLabel)
     }

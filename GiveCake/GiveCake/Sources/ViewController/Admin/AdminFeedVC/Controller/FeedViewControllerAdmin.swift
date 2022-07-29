@@ -27,10 +27,34 @@ class FeedViewControllerAdmin: UITableViewController {
         let view = FeedTableHeaderView(frame: frame)
         return view
     }()
+    
+    var addButton = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        configureItems()
+        
+        self.view.addSubview(addButton)
+        addButton.translatesAutoresizingMaskIntoConstraints = false
+        addButton.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 35).isActive = true
+        addButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        addButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        addButton.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 325).isActive = true
+        addButton.addTarget(self, action: #selector(btnClicked(sender:)), for: .touchUpInside)
+        addButton.setImage(UIImage(named: "Plus_fill_DBAL"), for: .normal)
+    }
+    
+    private func configureItems() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem ()
+    }
+    
+    @objc func btnClicked(sender: UIButton) {
+        let vc = UIViewController()
+        vc.title = "새 게시물"
+        vc.view.backgroundColor = .systemRed
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     // 테이블 뷰 세팅하기 (헤더 + 테이블 셀들)
