@@ -19,6 +19,8 @@
 		9EB9AC992892C5DA00F0FD26 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9EB9AC982892C5DA00F0FD26 /* FirebaseAnalytics */; };
 		9EB9AC9B2892C5DA00F0FD26 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9EB9AC9A2892C5DA00F0FD26 /* FirebaseStorage */; };
 		9EB9AC9F28937B7F00F0FD26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EB9AC9E28937B7F00F0FD26 /* GoogleService-Info.plist */; };
+		9EB9ACA12893AE7200F0FD26 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9EB9ACA02893AE7200F0FD26 /* FirebaseFirestore */; };
+		9EB9ACA32893AE7200F0FD26 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9EB9ACA22893AE7200F0FD26 /* FirebaseFirestoreSwift */; };
 		A00D097C2891165A00F72459 /* GiverHomeCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00D097B2891165A00F72459 /* GiverHomeCompleteVC.swift */; };
 		A0519B2D28913513002DF848 /* AdminHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0519B2C28913513002DF848 /* AdminHome.storyboard */; };
 		A0519B2F28916C75002DF848 /* AdminHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0519B2E28916C75002DF848 /* AdminHomeVC.swift */; };
@@ -154,7 +156,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EB9ACA32893AE7200F0FD26 /* FirebaseFirestoreSwift in Frameworks */,
 				9EB9AC992892C5DA00F0FD26 /* FirebaseAnalytics in Frameworks */,
+				9EB9ACA12893AE7200F0FD26 /* FirebaseFirestore in Frameworks */,
 				9EB9359928842AE000A56668 /* CloudKit.framework in Frameworks */,
 				9EB9AC9B2892C5DA00F0FD26 /* FirebaseStorage in Frameworks */,
 			);
@@ -497,6 +501,8 @@
 			packageProductDependencies = (
 				9EB9AC982892C5DA00F0FD26 /* FirebaseAnalytics */,
 				9EB9AC9A2892C5DA00F0FD26 /* FirebaseStorage */,
+				9EB9ACA02893AE7200F0FD26 /* FirebaseFirestore */,
+				9EB9ACA22893AE7200F0FD26 /* FirebaseFirestoreSwift */,
 			);
 			productName = GiveCake;
 			productReference = BC8A6379287FAAF800D7DA7E /* GiveCake.app */;
@@ -864,6 +870,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9EB9AC972892C5DA00F0FD26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		9EB9ACA02893AE7200F0FD26 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EB9AC972892C5DA00F0FD26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		9EB9ACA22893AE7200F0FD26 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EB9AC972892C5DA00F0FD26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
