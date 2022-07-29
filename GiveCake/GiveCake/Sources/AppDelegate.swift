@@ -34,11 +34,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // [START default_firestore]
         FirebaseApp.configure()
         
-        /// A reference to the Firestore service
+        /// A reference to the Cloud Firestore service. It's initialized as an instance of Cloud Firestore
         let db = Firestore.firestore()
-        /// A reference to the Cloud Storage service
+        /// A reference to the Cloud Storage service. It's initialized as an instance of Cloud Storage
         let storage = Storage.storage()
-        
         // [END default_firestore]
         return true
     }
