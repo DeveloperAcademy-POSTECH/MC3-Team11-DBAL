@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Admin HomeVC-->
+        <!--홈-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="AdminHome" id="Y6W-OH-hqX" customClass="AdminHomeVC" customModule="GiveCake" customModuleProvider="target" sceneMemberID="viewController">
@@ -264,6 +264,8 @@
                             <constraint firstItem="lyY-dF-nOU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="44" id="zi1-SA-bQg"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="Home_DBAL" selectedImage="Home_fill_DBAL" id="ZTl-3m-PCf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="adminCelebrateGirlImage" destination="4rD-vj-1XB" id="IKY-qB-6qn"/>
                         <outlet property="adminCountCakeCompleteView" destination="gMs-nn-kPk" id="e8n-b4-oDG"/>
@@ -292,6 +294,8 @@
     </scenes>
     <resources>
         <image name="HappyBirthdayGirl" width="191" height="191"/>
+        <image name="Home_DBAL" width="18" height="20"/>
+        <image name="Home_fill_DBAL" width="18" height="20"/>
         <image name="congratulation_mimo" width="140" height="143"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

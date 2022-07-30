@@ -9,7 +9,7 @@ import UIKit
 
 class FeedViewControllerAdmin: UITableViewController {
     
-    var selectedCell: FeedTableViewCell?
+    var selectedCell: FeedTableViewCellAdmin?
     
     var statusBarShouldBeHidden = false
     
@@ -22,9 +22,9 @@ class FeedViewControllerAdmin: UITableViewController {
     }
     
     // 테이블 헤더 뷰 (모아보기 글자 써있는 부분)
-    lazy var headerView: FeedTableHeaderView = {
-        let frame = CGRect(x: 0, y: 0, width: kScreenW, height: 96)
-        let view = FeedTableHeaderView(frame: frame)
+    lazy var headerView: FeedTableHeaderViewAdmin = {
+        let frame = CGRect(x: 0, y: 0, width: kScreenW, height: 109)
+        let view = FeedTableHeaderViewAdmin(frame: frame)
         return view
     }()
     
@@ -59,7 +59,7 @@ class FeedViewControllerAdmin: UITableViewController {
 
     // 테이블 뷰 세팅하기 (헤더 + 테이블 셀들)
     private func setupTableView() {
-        tableView.register(FeedTableViewCell.self, forCellReuseIdentifier: "\(FeedTableViewCell.self)")
+        tableView.register(FeedTableViewCellAdmin.self, forCellReuseIdentifier: "\(FeedTableViewCellAdmin.self)")
         tableView.separatorStyle = .none
         tableView.rowHeight = GlobalConstants.feedCardRowHeight
         tableView.tableHeaderView = headerView
@@ -79,7 +79,7 @@ class FeedViewControllerAdmin: UITableViewController {
     
     // 테이블 셀 설정하기
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "\(FeedTableViewCell.self)", for: indexPath) as! FeedTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "\(FeedTableViewCellAdmin.self)", for: indexPath) as! FeedTableViewCellAdmin
         cell.selectionStyle = .none
         cell.bgImageView.image = FeedModel.instance.feedList[indexPath.row].image
         cell.titleView.text = FeedModel.instance.feedList[indexPath.row].title
@@ -89,7 +89,7 @@ class FeedViewControllerAdmin: UITableViewController {
     
     // 테이블 셀 누르고 있을 때 일어나는 반응 (셀 크기가 살짝 작아짐)
     override func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-        guard let row = tableView.cellForRow(at: indexPath) as? FeedTableViewCell else { return }
+        guard let row = tableView.cellForRow(at: indexPath) as? FeedTableViewCellAdmin else { return }
         UIView.animate(withDuration: 0.1) {
             row.bgBackView.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
         }
@@ -97,7 +97,7 @@ class FeedViewControllerAdmin: UITableViewController {
     
     // 테이블 셀 누르고 있는 거 취소됐을때 일어나는 반응 (셀 크기가 원상태로 돌아옴)
     override func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
-        guard let row = tableView.cellForRow(at: indexPath) as? FeedTableViewCell else { return }
+        guard let row = tableView.cellForRow(at: indexPath) as? FeedTableViewCellAdmin else { return }
         UIView.animate(withDuration: 0.3) {
             row.bgBackView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }
@@ -107,11 +107,11 @@ class FeedViewControllerAdmin: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         // 현재 클릭된 셀
-        guard let cell = tableView.cellForRow(at: indexPath) as? FeedTableViewCell else { return }
+        guard let cell = tableView.cellForRow(at: indexPath) as? FeedTableViewCellAdmin else { return }
         selectedCell = cell
         
         // 현재 클릭된 셀에 대한 상세보기 화면
-        let detailVC = FeedDetailViewController(cell: cell, selectedIdx: indexPath.row)
+        let detailVC = FeedDetailViewControllerAdmin(cell: cell, selectedIdx: indexPath.row)
         
         // 상세보기 화면에서 다시 돌아올 경우, 스테이터스바(시간, 배터리 부분) 나타나게 하기
         detailVC.dismissClosure = { [weak self] in

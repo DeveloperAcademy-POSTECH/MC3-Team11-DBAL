@@ -42,9 +42,9 @@ extension FeedAnimationTransitionAdmin: UIViewControllerAnimatedTransitioning {
     func animationForPresent(using transitionContext: UIViewControllerContextTransitioning) {
         let containerView = transitionContext.containerView
         // 1. 어떤 뷰(from)에서 어떤 뷰(to)로 넘어갈지 정하기
-        guard let fromVC = transitionContext.viewController(forKey: .from) as? GiverTabBarVC else { return }
-        guard let tableViewController = fromVC.viewControllers?[1] as? FeedViewController else { return }
-        guard let toVC = transitionContext.viewController(forKey: .to) as? FeedDetailViewController else { return }
+        guard let fromVC = transitionContext.viewController(forKey: .from) as? AdminTabBarVC else { return }
+        guard let tableViewController = fromVC.viewControllers?[1] as? FeedViewControllerAdmin else { return }
+        guard let toVC = transitionContext.viewController(forKey: .to) as? FeedDetailViewControllerAdmin else { return }
         guard let selectedCell = tableViewController.selectedCell else { return }
         
         let frame = selectedCell.convert(selectedCell.bgBackView.frame, to: fromVC.view)
@@ -84,9 +84,9 @@ extension FeedAnimationTransitionAdmin: UIViewControllerAnimatedTransitioning {
     
     // 상세보기 화면에서 뒤로갈때
     func animationForDismiss(using transitionContext: UIViewControllerContextTransitioning) {
-        guard let fromVC = transitionContext.viewController(forKey: .from) as? FeedDetailViewController else { return }
-        guard let toVC = transitionContext.viewController(forKey: .to) as? GiverTabBarVC else { return }
-        guard let tableViewController = toVC.viewControllers?[1] as? FeedViewController else { return }
+        guard let fromVC = transitionContext.viewController(forKey: .from) as? FeedDetailViewControllerAdmin else { return }
+        guard let toVC = transitionContext.viewController(forKey: .to) as? AdminTabBarVC else { return }
+        guard let tableViewController = toVC.viewControllers?[1] as? FeedViewControllerAdmin else { return }
         guard let selectedCell = tableViewController.selectedCell else { return }
         
         // from 뷰의 이미지 사이즈를 애니메이션과 함께 원래 테이블 셀의 크기에 맞게 줄여줌

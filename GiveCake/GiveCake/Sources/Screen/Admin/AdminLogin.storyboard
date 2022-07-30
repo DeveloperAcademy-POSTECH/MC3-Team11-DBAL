@@ -57,7 +57,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVh-u6-FhH">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVh-u6-FhH">
                                 <rect key="frame" x="30" y="801" width="354" height="60"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -69,7 +69,7 @@
                                 <color key="tintColor" red="0.95259684320000004" green="0.6902951598" blue="0.74117475749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                    <backgroundConfiguration key="background" cornerRadius="15" strokeWidth="2" strokeOutset="0.0">
                                         <color key="strokeColor" red="0.95259684320000004" green="0.6902951598" blue="0.74117475749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                     <attributedString key="attributedTitle">
@@ -107,7 +107,7 @@
                         <outlet property="adminNameTextField" destination="6oZ-qb-GDL" id="maQ-dN-hUd"/>
                         <outlet property="disableBtn" destination="NVh-u6-FhH" id="uzy-YG-mC0"/>
                         <outlet property="toTabBarBtn" destination="N3W-Ey-vcH" id="5ba-qD-bab"/>
-                        <segue destination="vE6-O4-qhd" kind="show" identifier="loginToAdminTabBarSegue" id="pjm-9l-e0w"/>
+                        <segue destination="vE6-O4-qhd" kind="presentation" identifier="loginToAdminTabBarSegue" modalPresentationStyle="fullScreen" id="pjm-9l-e0w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

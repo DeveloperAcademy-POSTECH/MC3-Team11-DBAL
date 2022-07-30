@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="KmP-ie-7Xy" id="nHP-0z-czZ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="모아보기" image="CakeIcon_fill_DBAL" id="QGY-QS-lZg"/>
+                    <tabBarItem key="tabBarItem" title="모아보기" image="CakeIcon_DBAL" selectedImage="CakeIcon_fill_DBAL" id="QGY-QS-lZg"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3JJ-1A-SS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -39,6 +39,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CakeIcon_DBAL" width="25" height="18"/>
         <image name="CakeIcon_fill_DBAL" width="25" height="17"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

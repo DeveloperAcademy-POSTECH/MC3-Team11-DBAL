@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="1185" y="-194"/>
         </scene>
-        <!--GiverMessageDophi-->
+        <!--GiverMessage-->
         <scene sceneID="QcU-Ve-6wG">
             <objects>
-                <viewControllerPlaceholder storyboardName="GiverMessageDophi" id="XVx-aI-4j9" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="GiverMessage" id="XVx-aI-4j9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="M0f-1b-iZE"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4WD-cn-QOo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

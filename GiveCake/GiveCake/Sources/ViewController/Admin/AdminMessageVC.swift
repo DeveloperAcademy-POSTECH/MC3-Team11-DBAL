@@ -55,8 +55,8 @@ class AdminMessageVC: UIViewController {
         makeBottomDeleteView()
         // alert 세팅하기
         setAlert()
-        // blurView 세팅하기
-        setBlurView()
+        // blurView 세팅하기 (blur가 이상해서 일단 제거)
+        // setBlurView()
     }
     
     @objc fileprivate func onClickedEditBtn(sender: UIButton) {
@@ -65,7 +65,7 @@ class AdminMessageVC: UIViewController {
     
     @objc fileprivate func onClickedDeleteBtn(sender: UIButton) {
         present(alert, animated: true)
-        blurView.alpha = 0.9
+        // blurView.alpha = 0.9
     }
     
     @objc fileprivate func onClickedSegmentedCtrl(sender: UISegmentedControl) {
@@ -126,7 +126,7 @@ class AdminMessageVC: UIViewController {
             self.blurView.alpha = 0.0
         }
         let deleteAction = UIAlertAction(title: "삭제", style: .destructive) { _ in
-            print(self.tableView.indexPathsForSelectedRows)
+            // print(self.tableView.indexPathsForSelectedRows)
             self.isTableEditing = false
             self.blurView.alpha = 0.0
         }
