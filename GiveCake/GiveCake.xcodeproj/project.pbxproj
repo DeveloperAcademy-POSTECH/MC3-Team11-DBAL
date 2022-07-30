@@ -20,6 +20,8 @@
 		9EB9AC9B2892C5DA00F0FD26 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9EB9AC9A2892C5DA00F0FD26 /* FirebaseStorage */; };
 		9EB9AC9F28937B7F00F0FD26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EB9AC9E28937B7F00F0FD26 /* GoogleService-Info.plist */; };
 		A00D097C2891165A00F72459 /* GiverHomeCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00D097B2891165A00F72459 /* GiverHomeCompleteVC.swift */; };
+		A02344C82893C52800347421 /* AdminHomeSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02344C72893C52800347421 /* AdminHomeSetting.storyboard */; };
+		A02344CA2893C55900347421 /* AdminHomeSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02344C92893C55900347421 /* AdminHomeSettingVC.swift */; };
 		A0519B2D28913513002DF848 /* AdminHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0519B2C28913513002DF848 /* AdminHome.storyboard */; };
 		A0519B2F28916C75002DF848 /* AdminHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0519B2E28916C75002DF848 /* AdminHomeVC.swift */; };
 		BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */; };
@@ -90,6 +92,8 @@
 		9EB9359B28845ACE00A56668 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		9EB9AC9E28937B7F00F0FD26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A00D097B2891165A00F72459 /* GiverHomeCompleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverHomeCompleteVC.swift; sourceTree = "<group>"; };
+		A02344C72893C52800347421 /* AdminHomeSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminHomeSetting.storyboard; sourceTree = "<group>"; };
+		A02344C92893C55900347421 /* AdminHomeSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeSettingVC.swift; sourceTree = "<group>"; };
 		A0519B2C28913513002DF848 /* AdminHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminHome.storyboard; sourceTree = "<group>"; };
 		A0519B2E28916C75002DF848 /* AdminHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeVC.swift; sourceTree = "<group>"; };
 		BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverLogin.storyboard; sourceTree = "<group>"; };
@@ -290,6 +294,7 @@
 			children = (
 				BC50880D288E766100A4AD5F /* AdminLogin.storyboard */,
 				A0519B2C28913513002DF848 /* AdminHome.storyboard */,
+				A02344C72893C52800347421 /* AdminHomeSetting.storyboard */,
 				CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */,
 				CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */,
 				BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */,
@@ -328,6 +333,7 @@
 				CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */,
 				BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */,
 				A0519B2E28916C75002DF848 /* AdminHomeVC.swift */,
+				A02344C92893C55900347421 /* AdminHomeSettingVC.swift */,
 				CD41724F2890DD6E00BA8E9E /* AdminFeedVC */,
 			);
 			path = Admin;
@@ -557,6 +563,7 @@
 				CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */,
 				BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */,
 				BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */,
+				A02344C82893C52800347421 /* AdminHomeSetting.storyboard in Resources */,
 				BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */,
 				BCCE56F828914ADE00FB6929 /* GiverMessageWrite.storyboard in Resources */,
 				BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */,
@@ -592,6 +599,7 @@
 				BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */,
 				7B35C79E289233420011DDD3 /* GiverMessageVC.swift in Sources */,
 				CD41725E2890DEDC00BA8E9E /* FeedDetailViewControllerAdmin.swift in Sources */,
+				A02344CA2893C55900347421 /* AdminHomeSettingVC.swift in Sources */,
 				BC5087E3288276F500A4AD5F /* FeedDetailViewController.swift in Sources */,
 				CD4172542890DDD900BA8E9E /* AdminTabBarVC.swift in Sources */,
 				CD41725A2890DEB600BA8E9E /* FeedTableViewCellAdmin.swift in Sources */,

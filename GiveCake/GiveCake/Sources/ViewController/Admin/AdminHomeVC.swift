@@ -27,6 +27,7 @@ class AdminHomeVC: UIViewController {
     @IBOutlet weak var adminCelebrateGirlImage: UIImageView!
     @IBOutlet weak var adminCountCakeCompleteView: UIView!
     @IBOutlet weak var adminTotalNum: UILabel!
+    @IBOutlet weak var homeSettingButton: UIButton!
     
     
     override func viewDidLoad() {

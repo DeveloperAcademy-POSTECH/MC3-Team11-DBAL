@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -135,11 +135,11 @@
                                         <rect key="frame" x="30" y="40" width="270" height="270"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zr-fe-Go1">
-                                                <rect key="frame" x="95" y="90.666666666666686" width="80" height="89"/>
+                                                <rect key="frame" x="92" y="87.333333333333314" width="86" height="95.666666666666686"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="🎂">
                                                         <attributes>
-                                                            <font key="NSFont" size="80" name=".AppleColorEmojiUI"/>
+                                                            <font key="NSFont" metaFont="system" size="80"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -172,6 +172,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.066666666666666666" green="0.84313725490196079" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="yWh-fj-j3R" kind="show" id="yTE-tL-0Fw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.9882352941176471" green="0.90196078431372551" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -269,11 +272,22 @@
                         <outlet property="adminGageView" destination="P6E-Xn-pIb" id="Hs8-gN-qc7"/>
                         <outlet property="adminTitleLabel" destination="lyY-dF-nOU" id="S0j-4G-y6N"/>
                         <outlet property="adminTotalNum" destination="ztz-WM-1kE" id="TSB-UP-bL4"/>
+                        <outlet property="homeSettingButton" destination="hIt-XP-wNQ" id="Bl4-m3-dQZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="125" y="81"/>
+        </scene>
+        <!--AdminHomeSetting-->
+        <scene sceneID="uM8-Mn-lTN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdminHomeSetting" id="yWh-fj-j3R" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zTl-PG-AnB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ByO-Lx-cD0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813" y="54"/>
         </scene>
     </scenes>
     <resources>
