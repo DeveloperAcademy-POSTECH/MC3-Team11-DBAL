@@ -172,6 +172,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.066666666666666666" green="0.84313725490196079" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="yWh-fj-j3R" kind="show" id="yTE-tL-0Fw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.9882352941176471" green="0.90196078431372551" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -271,11 +274,22 @@
                         <outlet property="adminGageView" destination="P6E-Xn-pIb" id="Hs8-gN-qc7"/>
                         <outlet property="adminTitleLabel" destination="lyY-dF-nOU" id="S0j-4G-y6N"/>
                         <outlet property="adminTotalNum" destination="ztz-WM-1kE" id="TSB-UP-bL4"/>
+                        <outlet property="homeSettingButton" destination="hIt-XP-wNQ" id="Bl4-m3-dQZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="125" y="81"/>
+        </scene>
+        <!--AdminHomeSetting-->
+        <scene sceneID="uM8-Mn-lTN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdminHomeSetting" id="yWh-fj-j3R" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zTl-PG-AnB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ByO-Lx-cD0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813" y="54"/>
         </scene>
     </scenes>
     <resources>
