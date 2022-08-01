@@ -26,6 +26,7 @@
 		BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E156287FFCD900521F55 /* GiverLoginVC.swift */; };
 		BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E158287FFD6200521F55 /* GiverHomeVC.swift */; };
 		BC09E15F28800A3900521F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E15E28800A3900521F55 /* Main.storyboard */; };
+		BC1B89962897A91C00D0DE99 /* cake_complete_animation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BC1B89952897A91C00D0DE99 /* cake_complete_animation.mp4 */; };
 		BC5087E3288276F500A4AD5F /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E2288276F500A4AD5F /* FeedDetailViewController.swift */; };
 		BC5087E52882771E00A4AD5F /* FeedPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E42882771E00A4AD5F /* FeedPresentationController.swift */; };
 		BC5087E72882773600A4AD5F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E62882773600A4AD5F /* FeedViewController.swift */; };
@@ -92,6 +93,7 @@
 		BC09E156287FFCD900521F55 /* GiverLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverLoginVC.swift; sourceTree = "<group>"; };
 		BC09E158287FFD6200521F55 /* GiverHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverHomeVC.swift; sourceTree = "<group>"; };
 		BC09E15E28800A3900521F55 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BC1B89952897A91C00D0DE99 /* cake_complete_animation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = cake_complete_animation.mp4; path = GiveCake/Resources/Assets.xcassets/cake_complete_animation.dataset/cake_complete_animation.mp4; sourceTree = "<group>"; };
 		BC5087E2288276F500A4AD5F /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
 		BC5087E42882771E00A4AD5F /* FeedPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresentationController.swift; sourceTree = "<group>"; };
 		BC5087E62882773600A4AD5F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 		BC8A6370287FAAF800D7DA7E = {
 			isa = PBXGroup;
 			children = (
+				BC1B89952897A91C00D0DE99 /* cake_complete_animation.mp4 */,
 				BC8A637B287FAAF800D7DA7E /* GiveCake */,
 				BC8A637A287FAAF800D7DA7E /* Products */,
 				9EB9359728842AE000A56668 /* Frameworks */,
@@ -499,6 +502,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1B89962897A91C00D0DE99 /* cake_complete_animation.mp4 in Resources */,
 				BC8A6389287FAAF900D7DA7E /* LaunchScreen.storyboard in Resources */,
 				BC50880E288E766100A4AD5F /* AdminLogin.storyboard in Resources */,
 				BC8A639E287FB05400D7DA7E /* Colors.xcassets in Resources */,
