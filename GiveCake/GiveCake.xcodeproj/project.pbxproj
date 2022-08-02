@@ -13,6 +13,7 @@
 		9E6397972897AAA50051FCAE /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6397962897AAA50051FCAE /* FirebaseModel.swift */; };
 		9E6397992897D92F0051FCAE /* FirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6397982897D92F0051FCAE /* FirebaseStorageManager.swift */; };
 		9EB9359928842AE000A56668 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB9359828842AE000A56668 /* CloudKit.framework */; };
+		9EB9359C28845ACE00A56668 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB9359B28845ACE00A56668 /* CloudKitManager.swift */; };
 		9EB9AC992892C5DA00F0FD26 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9EB9AC982892C5DA00F0FD26 /* FirebaseAnalytics */; };
 		9EB9AC9B2892C5DA00F0FD26 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9EB9AC9A2892C5DA00F0FD26 /* FirebaseStorage */; };
 		9EB9AC9F28937B7F00F0FD26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EB9AC9E28937B7F00F0FD26 /* GoogleService-Info.plist */; };
@@ -87,7 +88,9 @@
 		9E63979228979FED0051FCAE /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		9E6397962897AAA50051FCAE /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
 		9E6397982897D92F0051FCAE /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
+		9EB9359628842AA900A56668 /* GiveCake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GiveCake.entitlements; sourceTree = "<group>"; };
 		9EB9359828842AE000A56668 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		9EB9359B28845ACE00A56668 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		9EB9AC9E28937B7F00F0FD26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9EB9ACA42893BF9C00F0FD26 /* GiverMessageGround.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessageGround.storyboard; sourceTree = "<group>"; };
 		9EB9ACA62893C58500F0FD26 /* GiverMessageGroundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverMessageGroundVC.swift; sourceTree = "<group>"; };
@@ -181,6 +184,7 @@
 		9EB9359A28845ABD00A56668 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				9EB9359B28845ACE00A56668 /* CloudKitManager.swift */,
 				9E63979228979FED0051FCAE /* FirebaseManager.swift */,
 				9E6397982897D92F0051FCAE /* FirebaseStorageManager.swift */,
 			);
@@ -336,6 +340,7 @@
 		BC8A637B287FAAF800D7DA7E /* GiveCake */ = {
 			isa = PBXGroup;
 			children = (
+				9EB9359628842AA900A56668 /* GiveCake.entitlements */,
 				BC8A6394287FAB7000D7DA7E /* Sources */,
 				BC8A6393287FAB5E00D7DA7E /* Resources */,
 				BC8A638A287FAAF900D7DA7E /* Info.plist */,
@@ -575,6 +580,7 @@
 				CD4172602890DEF300BA8E9E /* FeedPresentationControllerAdmin.swift in Sources */,
 				BC5087EB2882778600A4AD5F /* DetailScrollView.swift in Sources */,
 				BCCE56FA2891525D00FB6929 /* StringExtension.swift in Sources */,
+				9EB9359C28845ACE00A56668 /* CloudKitManager.swift in Sources */,
 				BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */,
 				7B35C79E289233420011DDD3 /* GiverMessageVC.swift in Sources */,
 				9E6397992897D92F0051FCAE /* FirebaseStorageManager.swift in Sources */,
@@ -753,9 +759,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GiveCake/GiveCake.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = TD534ZU4RG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GiveCake/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "\"사용자의 허용을 요구하는 기능입니다.\"";
@@ -787,9 +793,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GiveCake/GiveCake.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = TD534ZU4RG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GiveCake/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "\"사용자의 허용을 요구하는 기능입니다.\"";
