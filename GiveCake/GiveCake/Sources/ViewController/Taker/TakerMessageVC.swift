@@ -112,9 +112,9 @@ extension TakerMessageVC: UITableViewDelegate, UITableViewDataSource {
 //        cell.senderLabel.text = messageList[indexPath.row].sender
 //        cell.contentLabel.text = messageList[indexPath.row].content
 
-        cell.emoticonLabel.text = MessageModel.emoticons[indexPath.row]
+        cell.emoticonLabel.text = MessageModel.emoticons.randomElement()
         cell.senderLabel.text = messageList[indexPath.row].giverNaverID
-        cell.contentLabel.text = messageList[indexPath.row].messageFromGiverToTaker
+        cell.contentLabel.text = messageList[indexPath.row].messageFromGiverToTaker.changeName(by: FirebaseManager.takerUser)
         return cell
     }
 }

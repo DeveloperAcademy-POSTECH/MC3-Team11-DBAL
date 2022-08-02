@@ -69,7 +69,7 @@ extension GiverMessageVC: UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as! MessageCell
         //        cell.emoticonLabel.text = messageList[indexPath.row].emoticon
         //        cell.emoticonLabel.text = MessageModel.emoticons[indexPath.row]
-        cell.emoticonLabel.text = MessageModel.emoticons[indexPath.row]
+        cell.emoticonLabel.text = MessageModel.emoticons.randomElement()
         cell.senderLabel.text = messageList[indexPath.row].takerName
         cell.contentLabel.text = messageList[indexPath.row].messageFromTakerToGiver
         
