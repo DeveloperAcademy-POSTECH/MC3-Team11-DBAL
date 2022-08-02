@@ -32,7 +32,9 @@ class TakerMessageWriteVC: UIViewController {
     }
     
     @objc fileprivate func onClickedSendBtn(sender: UIButton) {
-        // TODO: 클라우드 킷으로 감사메시지 업로드하기
+        
+        let newDocument = WrittenByTaker(takerName: FirebaseManager.takerUser, messageFromTakerToGiver: textField.text, documentID: UUID().uuidString)
+        FirebaseManager.instance.uploadDocument(collectionName: "WrittenByTaker", newDocument: newDocument.dictionary)
         completionHandler?()
         self.dismiss(animated: true)
     }
