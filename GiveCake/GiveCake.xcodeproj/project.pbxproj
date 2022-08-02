@@ -761,7 +761,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TD534ZU4RG;
+				DEVELOPMENT_TEAM = B5PRRNR42T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GiveCake/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "\"사용자의 허용을 요구하는 기능입니다.\"";
@@ -795,7 +795,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TD534ZU4RG;
+				DEVELOPMENT_TEAM = B5PRRNR42T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GiveCake/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "\"사용자의 허용을 요구하는 기능입니다.\"";
