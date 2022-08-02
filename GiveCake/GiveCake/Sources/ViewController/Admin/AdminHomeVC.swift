@@ -11,7 +11,7 @@ import AVKit
 class CLoudkit {
     func getCakeNumber() -> Int{
         
-        return 150
+        return 140
         
     }
     
