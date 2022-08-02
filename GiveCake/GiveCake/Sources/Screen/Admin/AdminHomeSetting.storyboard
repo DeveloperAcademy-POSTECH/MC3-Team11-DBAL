@@ -118,6 +118,7 @@
                         <outlet property="controlBar" destination="PoD-hq-5Ho" id="vT3-Z2-wug"/>
                         <outlet property="currentCakeCountBox" destination="KFv-D1-ru9" id="24f-eE-Wci"/>
                         <outlet property="currentField" destination="nkC-0Y-C9Z" id="ZNB-GH-o3B"/>
+                        <outlet property="setBtn" destination="5Il-ii-8ng" id="mHU-Gz-cav"/>
                         <outlet property="totalCakeCountBox" destination="6Vr-Bn-ukj" id="aaC-dJ-u1W"/>
                         <outlet property="totalField" destination="Xjd-6K-RuJ" id="KPl-bR-Oei"/>
                     </connections>
