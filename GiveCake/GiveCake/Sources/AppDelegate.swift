@@ -9,6 +9,9 @@ import UIKit
 import CoreData
 import CloudKit
 import FirebaseCore
+import FirebaseFirestore
+import FirebaseFirestoreSwift
+import FirebaseStorage
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,7 +30,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // [START default_firestore]
         FirebaseApp.configure()
+        
+        /// A reference to the Cloud Firestore service. It's initialized as an instance of Cloud Firestore
+        let db = Firestore.firestore()
+        /// A reference to the Cloud Storage service. It's initialized as an instance of Cloud Storage
+        let storage = Storage.storage()
+        // [END default_firestore]
         return true
     }
 
