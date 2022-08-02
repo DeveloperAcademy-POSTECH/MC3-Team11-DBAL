@@ -7,23 +7,25 @@
 
 import UIKit
 
-class AdminHomeSettingVC: UIViewController{
-    @IBOutlet var controlBar: UIView!
+class AdminHomeSettingVC: UIViewController {
+    
+    @IBOutlet weak var controlBar: UIView!
     @IBOutlet weak var currentCakeCountBox: UIView!
     @IBOutlet weak var totalCakeCountBox: UIView!
-    @IBAction func confirmButton(_ sender: Any) {
-    }
-    @IBAction func currentCakeTextField(_ sender: Any) {
-    }
-    @IBAction func totalCakeTextField(_ sender: Any) {
-    }
+    @IBOutlet weak var currentField: UITextField!
+    @IBOutlet weak var totalField: UITextField!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         
+        // UIVIew 모서리 값들
         controlBar.layer.cornerRadius = 2
         currentCakeCountBox.layer.cornerRadius = 15
         totalCakeCountBox.layer.cornerRadius = 15
-
+        
+        
     }
     
 }
+
+

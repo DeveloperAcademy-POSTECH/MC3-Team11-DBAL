@@ -24,15 +24,12 @@
                                     <constraint firstAttribute="height" constant="4" id="gaV-l3-PCh"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Il-ii-8ng">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Il-ii-8ng">
                                 <rect key="frame" x="311" y="59" width="54" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="확인">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="confirmButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gcH-vC-Q8G"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기부현황 설정하기" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9x0-dj-SKV">
                                 <rect key="frame" x="123" y="104" width="144" height="24"/>
@@ -54,10 +51,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                        <connections>
-                                            <action selector="currentCakeTextField:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="PEc-hG-PmE"/>
-                                        </connections>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.9882352941176471" green="0.90196078431372551" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,10 +81,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                        <connections>
-                                            <action selector="totalCakeTextField:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="10Y-Ct-tQL"/>
-                                        </connections>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.90196078430000004" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,9 +115,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="controlBar" destination="PoD-hq-5Ho" id="XTp-Nd-jX9"/>
-                        <outlet property="currentCakeCountBox" destination="KFv-D1-ru9" id="qOT-Ud-kVv"/>
-                        <outlet property="totalCakeCountBox" destination="6Vr-Bn-ukj" id="gDF-HD-Yei"/>
+                        <outlet property="controlBar" destination="PoD-hq-5Ho" id="vT3-Z2-wug"/>
+                        <outlet property="currentCakeCountBox" destination="KFv-D1-ru9" id="24f-eE-Wci"/>
+                        <outlet property="currentField" destination="nkC-0Y-C9Z" id="ZNB-GH-o3B"/>
+                        <outlet property="totalCakeCountBox" destination="6Vr-Bn-ukj" id="aaC-dJ-u1W"/>
+                        <outlet property="totalField" destination="Xjd-6K-RuJ" id="KPl-bR-Oei"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
