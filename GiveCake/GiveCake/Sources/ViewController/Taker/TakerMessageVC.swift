@@ -8,7 +8,8 @@
 import UIKit
 
 class TakerMessageVC: UIViewController {
-    fileprivate let messageList = MessageModel.instance.takerMessageList
+//    fileprivate let messageList = MessageModel.instance.takerMessageList
+    fileprivate var messageList: [WrittenByGiver] = []
     fileprivate let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
     fileprivate let blurView = UIVisualEffectView(effect: nil)
     
@@ -20,14 +21,21 @@ class TakerMessageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 테이블뷰 세팅하기
-        setTableView()
-        // 헤더의 그림자 세팅하기
-        setHeaderShadow()
-        // 버튼 동작 연결
-        writeBtn.addTarget(self, action: #selector(onClickedWriteBtn(sender:)), for: .touchUpInside)
-        // alert 세팅하기
-        setAlert()
+        FirebaseManager.instance.loadData(collectionName: "WrittenByGiver") { isSuccess, conveyedArray in
+            if isSuccess {
+                self.messageList = conveyedArray as? [WrittenByGiver] ?? []
+                // 테이블뷰 세팅하기
+                self.setTableView()
+                // 헤더의 그림자 세팅하기
+                self.setHeaderShadow()
+                // 버튼 동작 연결
+                self.writeBtn.addTarget(self, action: #selector(self.onClickedWriteBtn(sender:)), for: .touchUpInside)
+                // alert 세팅하기
+            } else {
+                print("통신에 어떤 식으로든 문제가 발생했다...")
+            }
+        }
+        self.setAlert()
         // blurView 세팅하기 (blur가 이상해서 일단은 제거)
         // setBlurView()
     }
@@ -100,10 +108,13 @@ extension TakerMessageVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as! MessageCell
         
-        cell.emoticonLabel.text = messageList[indexPath.row].emoticon
-        cell.senderLabel.text = messageList[indexPath.row].sender
-        cell.contentLabel.text = messageList[indexPath.row].content
+//        cell.emoticonLabel.text = messageList[indexPath.row].emoticon
+//        cell.senderLabel.text = messageList[indexPath.row].sender
+//        cell.contentLabel.text = messageList[indexPath.row].content
 
+        cell.emoticonLabel.text = MessageModel.emoticons[indexPath.row]
+        cell.senderLabel.text = messageList[indexPath.row].giverNaverID
+        cell.contentLabel.text = messageList[indexPath.row].messageFromGiverToTaker
         return cell
     }
 }

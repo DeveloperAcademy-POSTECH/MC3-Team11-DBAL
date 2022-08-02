@@ -17,7 +17,7 @@ final class FirebaseManager {
     /// Firestore database에 접근하기 위한 reference(오직 한 곳을 향해 고정되어 있음)
     private let db = Firestore.firestore()
     /// 접근될때마다 아무런 값도 없는 배열로 설정하기 위해 willSet 이용
-    private var writtenByGivers: [WrittenByGiver] = [] {
+    static var writtenByGivers: [WrittenByGiver] = [] {
         willSet { [WrittenByGiver]() }
     }
     /// 접근될때마다 아무런 값도 없는 배열로 설정하기 위해 willSet 이용
@@ -75,10 +75,12 @@ extension FirebaseManager {
                     if let stamp = document.data()["documentID"] as? String {
                         switch collectionName {
                         case "WrittenByGiver":
-                            self.writtenByGivers.append(WrittenByGiver(giverNaverID: document.data()["giverNaverID"] as! String, giverNumberOfCake: document.data()["giverNumberOfCake"] as! Int, messageFromGiverToTaker: document.data()["messageFromGiverToTaker"] as! String, documentID: document.data()["documentID"] as! String))
+                            FirebaseManager.writtenByGivers.append(WrittenByGiver(giverNaverID: document.data()["giverNaverID"] as! String, giverNumberOfCake: document.data()["giverNumberOfCake"] as! Int, messageFromGiverToTaker: document.data()["messageFromGiverToTaker"] as! String, documentID: document.data()["documentID"] as! String))
+                            DispatchQueue.main.async {
+                                completion(true, FirebaseManager.writtenByGivers)
+                            }
                         case "WrittenByTaker":
                             FirebaseManager.writtenByTakers.append(WrittenByTaker(takerName: document.data()["takerName"] as! String, messageFromTakerToGiver: document.data()["messageFromTakerToGiver"] as! String, documentID: document.data()["documentID"] as! String))
-                            print("할거다했으")
                             DispatchQueue.main.async {
                                 completion(true, FirebaseManager.writtenByTakers)
                             }
