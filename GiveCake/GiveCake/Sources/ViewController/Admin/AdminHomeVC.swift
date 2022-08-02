@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import AVKit
 
 class CLoudkit {
     func getCakeNumber() -> Int{
         
-        return 111
+        return 150
         
     }
     
@@ -20,18 +21,22 @@ class AdminHomeVC: UIViewController {
 
     
     
+    @IBOutlet weak var animationView: UIView!
     @IBOutlet weak var adminCountCakeView: UIView!
     @IBOutlet weak var adminCountKidsView: UIView!
     @IBOutlet weak var adminTitleLabel: UILabel!
     @IBOutlet weak var adminGageView: UIView!
     @IBOutlet weak var adminCelebrateGirlImage: UIImageView!
-    @IBOutlet weak var adminCountCakeCompleteView: UIView!
     @IBOutlet weak var adminTotalNum: UILabel!
+    @IBOutlet weak var homeSettingButton: UIButton!
     
+    var playerLooper: NSObject?
+    var queuePlayer: AVQueuePlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        putAnimation()
         
         let trackLayer = CAShapeLayer()
         let shapeLayer = CAShapeLayer()
@@ -75,11 +80,16 @@ class AdminHomeVC: UIViewController {
         // 월별 생일 아동 수치 보드, 원형게이지 보드 반지름 값
         adminCountKidsView.layer.cornerRadius = 20
         adminCountCakeView.layer.cornerRadius = 25
-        adminCountCakeCompleteView.layer.cornerRadius = 25
-        
-      
-        
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        queuePlayer?.pause()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        queuePlayer?.play()
+    }
+    
     // 게이지 애니메이션 설정
     func makeAnimation(shapeLayer: CAShapeLayer, value: Double) {
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
@@ -96,9 +106,33 @@ class AdminHomeVC: UIViewController {
     
         
     }
+    
+    // 케익 모두 채워졌을 때 애니메이션 보여주기
+    func putAnimation() {
+        guard let path = Bundle.main.path(forResource: "cake_complete_animation", ofType: "mp4") else {return}
+        let fileURL = URL(fileURLWithPath: path)
+        let item = AVPlayerItem(url: fileURL)
+        queuePlayer = AVQueuePlayer(playerItem: item)
+        guard let queuePlayer = queuePlayer else {
+            return
+        }
+        queuePlayer.replaceCurrentItem(with: item)
+        playerLooper = AVPlayerLooper(player: queuePlayer, templateItem: item)
+        let playerLayer = AVPlayerLayer(player: queuePlayer)
+        playerLayer.frame = animationView.bounds
+        playerLayer.videoGravity = .resizeAspectFill
+        animationView.layer.addSublayer(playerLayer)
+        queuePlayer.play()
+    }
+    
     func didCompleteCountCake (num: Int) {
         if num >= 150 {
             adminCountCakeView.isHidden = true
+            animationView.isHidden = false
+            adminCountKidsView.topAnchor.constraint(equalTo: animationView.bottomAnchor, constant: 25).isActive = true
+        } else {
+            adminCountCakeView.isHidden = false
+            animationView.isHidden = true
         }
         
     }

@@ -23,14 +23,29 @@ class FeedViewController: UITableViewController {
     
     // 테이블 헤더 뷰 (모아보기 글자 써있는 부분)
     lazy var headerView: FeedTableHeaderView = {
-        let frame = CGRect(x: 0, y: 0, width: kScreenW, height: 96)
+        let frame = CGRect(x: 0, y: 0, width: kScreenW, height: 109)
         let view = FeedTableHeaderView(frame: frame)
         return view
     }()
+    
+    var addButton = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        configureItems()
+    }
+    
+    private func configureItems() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem ()
+    }
+    
+    @objc func btnClicked(sender: UIButton) {
+        let vc = UIViewController()
+        vc.title = "새 게시물"
+        vc.view.backgroundColor = .systemRed
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     // 테이블 뷰 세팅하기 (헤더 + 테이블 셀들)

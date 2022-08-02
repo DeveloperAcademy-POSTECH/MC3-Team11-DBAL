@@ -27,16 +27,18 @@
 		9EB9ACA52893BF9C00F0FD26 /* GiverMessageGround.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB9ACA42893BF9C00F0FD26 /* GiverMessageGround.storyboard */; };
 		9EB9ACA72893C58500F0FD26 /* GiverMessageGroundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB9ACA62893C58500F0FD26 /* GiverMessageGroundVC.swift */; };
 		A00D097C2891165A00F72459 /* GiverHomeCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00D097B2891165A00F72459 /* GiverHomeCompleteVC.swift */; };
+		A02344C82893C52800347421 /* AdminHomeSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02344C72893C52800347421 /* AdminHomeSetting.storyboard */; };
+		A02344CA2893C55900347421 /* AdminHomeSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02344C92893C55900347421 /* AdminHomeSettingVC.swift */; };
 		A0519B2D28913513002DF848 /* AdminHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0519B2C28913513002DF848 /* AdminHome.storyboard */; };
 		A0519B2F28916C75002DF848 /* AdminHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0519B2E28916C75002DF848 /* AdminHomeVC.swift */; };
 		BC09E141287FF4FA00521F55 /* GiverLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */; };
 		BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E142287FF50900521F55 /* GiverHome.storyboard */; };
 		BC09E145287FF51800521F55 /* GiverFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E144287FF51800521F55 /* GiverFeed.storyboard */; };
-		BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E148287FF5E900521F55 /* GiverMessage.storyboard */; };
 		BC09E155287FFCC200521F55 /* GiverTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */; };
 		BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E156287FFCD900521F55 /* GiverLoginVC.swift */; };
 		BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09E158287FFD6200521F55 /* GiverHomeVC.swift */; };
 		BC09E15F28800A3900521F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC09E15E28800A3900521F55 /* Main.storyboard */; };
+		BC1B89962897A91C00D0DE99 /* cake_complete_animation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BC1B89952897A91C00D0DE99 /* cake_complete_animation.mp4 */; };
 		BC5087E3288276F500A4AD5F /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E2288276F500A4AD5F /* FeedDetailViewController.swift */; };
 		BC5087E52882771E00A4AD5F /* FeedPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E42882771E00A4AD5F /* FeedPresentationController.swift */; };
 		BC5087E72882773600A4AD5F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5087E62882773600A4AD5F /* FeedViewController.swift */; };
@@ -69,7 +71,7 @@
 		BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */; };
 		BCCE56F228900B2900FB6929 /* AdminMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */; };
 		BCCE56F42891194100FB6929 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F32891194000FB6929 /* UIColorExtension.swift */; };
-		BCCE56F628914AD200FB6929 /* GiverMessageDophi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56F528914AD200FB6929 /* GiverMessageDophi.storyboard */; };
+		BCCE56F628914AD200FB6929 /* GiverMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56F528914AD200FB6929 /* GiverMessage.storyboard */; };
 		BCCE56F828914ADE00FB6929 /* GiverMessageWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE56F728914ADE00FB6929 /* GiverMessageWrite.storyboard */; };
 		BCCE56FA2891525D00FB6929 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE56F92891525D00FB6929 /* StringExtension.swift */; };
 		CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */; };
@@ -102,16 +104,18 @@
 		9EB9ACA42893BF9C00F0FD26 /* GiverMessageGround.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessageGround.storyboard; sourceTree = "<group>"; };
 		9EB9ACA62893C58500F0FD26 /* GiverMessageGroundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverMessageGroundVC.swift; sourceTree = "<group>"; };
 		A00D097B2891165A00F72459 /* GiverHomeCompleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverHomeCompleteVC.swift; sourceTree = "<group>"; };
+		A02344C72893C52800347421 /* AdminHomeSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminHomeSetting.storyboard; sourceTree = "<group>"; };
+		A02344C92893C55900347421 /* AdminHomeSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeSettingVC.swift; sourceTree = "<group>"; };
 		A0519B2C28913513002DF848 /* AdminHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminHome.storyboard; sourceTree = "<group>"; };
 		A0519B2E28916C75002DF848 /* AdminHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeVC.swift; sourceTree = "<group>"; };
 		BC09E140287FF4FA00521F55 /* GiverLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverLogin.storyboard; sourceTree = "<group>"; };
 		BC09E142287FF50900521F55 /* GiverHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverHome.storyboard; sourceTree = "<group>"; };
 		BC09E144287FF51800521F55 /* GiverFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverFeed.storyboard; sourceTree = "<group>"; };
-		BC09E148287FF5E900521F55 /* GiverMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessage.storyboard; sourceTree = "<group>"; };
 		BC09E154287FFCC200521F55 /* GiverTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverTabBarVC.swift; sourceTree = "<group>"; };
 		BC09E156287FFCD900521F55 /* GiverLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverLoginVC.swift; sourceTree = "<group>"; };
 		BC09E158287FFD6200521F55 /* GiverHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiverHomeVC.swift; sourceTree = "<group>"; };
 		BC09E15E28800A3900521F55 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BC1B89952897A91C00D0DE99 /* cake_complete_animation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = cake_complete_animation.mp4; path = GiveCake/Resources/Assets.xcassets/cake_complete_animation.dataset/cake_complete_animation.mp4; sourceTree = "<group>"; };
 		BC5087E2288276F500A4AD5F /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
 		BC5087E42882771E00A4AD5F /* FeedPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresentationController.swift; sourceTree = "<group>"; };
 		BC5087E62882773600A4AD5F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -146,7 +150,7 @@
 		BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminMessage.storyboard; sourceTree = "<group>"; };
 		BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMessageVC.swift; sourceTree = "<group>"; };
 		BCCE56F32891194000FB6929 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		BCCE56F528914AD200FB6929 /* GiverMessageDophi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessageDophi.storyboard; sourceTree = "<group>"; };
+		BCCE56F528914AD200FB6929 /* GiverMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessage.storyboard; sourceTree = "<group>"; };
 		BCCE56F728914ADE00FB6929 /* GiverMessageWrite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiverMessageWrite.storyboard; sourceTree = "<group>"; };
 		BCCE56F92891525D00FB6929 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminFeed.storyboard; sourceTree = "<group>"; };
@@ -177,42 +181,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9EB935862883E03800A56668 /* GiverMessageVC */ = {
-			isa = PBXGroup;
-			children = (
-				9EB9358D2883E6A000A56668 /* DummyModel */,
-				9EB935932883EFAA00A56668 /* View */,
-				9EB935902883EADF00A56668 /* Controller */,
-			);
-			path = GiverMessageVC;
-			sourceTree = "<group>";
-		};
-		9EB9358D2883E6A000A56668 /* DummyModel */ = {
-			isa = PBXGroup;
-			children = (
-				9EB9358E2883E6BE00A56668 /* GiverMessageDummyModel.swift */,
-			);
-			path = DummyModel;
-			sourceTree = "<group>";
-		};
-		9EB935902883EADF00A56668 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				9EB9358B2883E38E00A56668 /* GiverMessageTableVC.swift */,
-				9EB935872883E0A400A56668 /* GiverMesssageWriteVC.swift */,
-				9EB935892883E0CD00A56668 /* GiverMessageReceiveVC.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		9EB935932883EFAA00A56668 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				9EB935912883EF9E00A56668 /* GiverMessageTableViewCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		9EB9359728842AE000A56668 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,8 +261,7 @@
 				BC8A6382287FAAF800D7DA7E /* GiverTabBar.storyboard */,
 				BC09E142287FF50900521F55 /* GiverHome.storyboard */,
 				BC09E144287FF51800521F55 /* GiverFeed.storyboard */,
-				BC09E148287FF5E900521F55 /* GiverMessage.storyboard */,
-				BCCE56F528914AD200FB6929 /* GiverMessageDophi.storyboard */,
+				BCCE56F528914AD200FB6929 /* GiverMessage.storyboard */,
 				BCCE56F728914ADE00FB6929 /* GiverMessageWrite.storyboard */,
 			);
 			path = Giver;
@@ -315,6 +282,7 @@
 			children = (
 				BC50880D288E766100A4AD5F /* AdminLogin.storyboard */,
 				A0519B2C28913513002DF848 /* AdminHome.storyboard */,
+				A02344C72893C52800347421 /* AdminHomeSetting.storyboard */,
 				CD41724D2890D61200BA8E9E /* AdminTabBar.storyboard */,
 				CD41724B2890D60100BA8E9E /* AdminFeed.storyboard */,
 				BCCE56EF2890094500FB6929 /* AdminMessage.storyboard */,
@@ -353,6 +321,7 @@
 				CD4172532890DDD900BA8E9E /* AdminTabBarVC.swift */,
 				BCCE56F128900B2900FB6929 /* AdminMessageVC.swift */,
 				A0519B2E28916C75002DF848 /* AdminHomeVC.swift */,
+				A02344C92893C55900347421 /* AdminHomeSettingVC.swift */,
 				CD41724F2890DD6E00BA8E9E /* AdminFeedVC */,
 			);
 			path = Admin;
@@ -361,6 +330,7 @@
 		BC8A6370287FAAF800D7DA7E = {
 			isa = PBXGroup;
 			children = (
+				BC1B89952897A91C00D0DE99 /* cake_complete_animation.mp4 */,
 				BC8A637B287FAAF800D7DA7E /* GiveCake */,
 				BC8A637A287FAAF800D7DA7E /* Products */,
 				9EB9359728842AE000A56668 /* Frameworks */,
@@ -390,7 +360,6 @@
 		BC8A6392287FAB4C00D7DA7E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9EB935862883E03800A56668 /* GiverMessageVC */,
 				BC508809288E6EEC00A4AD5F /* MainVC.swift */,
 				BCCE56E9288EDA1600FB6929 /* MessageCell.swift */,
 				BC508812288E77C600A4AD5F /* Giver */,
@@ -572,6 +541,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1B89962897A91C00D0DE99 /* cake_complete_animation.mp4 in Resources */,
 				BC8A6389287FAAF900D7DA7E /* LaunchScreen.storyboard in Resources */,
 				BC50880E288E766100A4AD5F /* AdminLogin.storyboard in Resources */,
 				BC8A639E287FB05400D7DA7E /* Colors.xcassets in Resources */,
@@ -580,13 +550,13 @@
 				BC09E145287FF51800521F55 /* GiverFeed.storyboard in Resources */,
 				BCCE56F02890094500FB6929 /* AdminMessage.storyboard in Resources */,
 				CD41724E2890D61200BA8E9E /* AdminTabBar.storyboard in Resources */,
-				BC09E149287FF5E900521F55 /* GiverMessage.storyboard in Resources */,
-				BCCE56F628914AD200FB6929 /* GiverMessageDophi.storyboard in Resources */,
+				BCCE56F628914AD200FB6929 /* GiverMessage.storyboard in Resources */,
 				A0519B2D28913513002DF848 /* AdminHome.storyboard in Resources */,
 				9EB9ACA52893BF9C00F0FD26 /* GiverMessageGround.storyboard in Resources */,
 				CD41724C2890D60100BA8E9E /* AdminFeed.storyboard in Resources */,
 				BC50881D288EB03500A4AD5F /* TakerMessage.storyboard in Resources */,
 				BC8A6386287FAAF900D7DA7E /* Assets.xcassets in Resources */,
+				A02344C82893C52800347421 /* AdminHomeSetting.storyboard in Resources */,
 				BC09E143287FF50900521F55 /* GiverHome.storyboard in Resources */,
 				BCCE56F828914ADE00FB6929 /* GiverMessageWrite.storyboard in Resources */,
 				BCCE56EC288F7C5400FB6929 /* TakerMessageWrite.storyboard in Resources */,
@@ -615,22 +585,20 @@
 				BC50880A288E6EEC00A4AD5F /* MainVC.swift in Sources */,
 				BC5087F12882790500A4AD5F /* GlobalConstants.swift in Sources */,
 				CD4172602890DEF300BA8E9E /* FeedPresentationControllerAdmin.swift in Sources */,
-				9EB935882883E0A400A56668 /* GiverMesssageWriteVC.swift in Sources */,
 				BC5087EB2882778600A4AD5F /* DetailScrollView.swift in Sources */,
 				BCCE56FA2891525D00FB6929 /* StringExtension.swift in Sources */,
-				9EB935922883EF9E00A56668 /* GiverMessageTableViewCell.swift in Sources */,
 				9EB9359C28845ACE00A56668 /* CloudKitManager.swift in Sources */,
 				BC5087EF288277B500A4AD5F /* FeedTableViewCell.swift in Sources */,
 				7B35C79E289233420011DDD3 /* GiverMessageVC.swift in Sources */,
 				9E6397992897D92F0051FCAE /* FirebaseStorageManager.swift in Sources */,
 				CD41725E2890DEDC00BA8E9E /* FeedDetailViewControllerAdmin.swift in Sources */,
+				A02344CA2893C55900347421 /* AdminHomeSettingVC.swift in Sources */,
 				BC5087E3288276F500A4AD5F /* FeedDetailViewController.swift in Sources */,
 				CD4172542890DDD900BA8E9E /* AdminTabBarVC.swift in Sources */,
 				CD41725A2890DEB600BA8E9E /* FeedTableViewCellAdmin.swift in Sources */,
 				BC5087E92882776B00A4AD5F /* FeedAnimationTransition.swift in Sources */,
 				BC508825288EBB6C00A4AD5F /* MessageModel.swift in Sources */,
 				BC09E159287FFD6200521F55 /* GiverHomeVC.swift in Sources */,
-				9EB9358F2883E6BE00A56668 /* GiverMessageDummyModel.swift in Sources */,
 				BC508816288E783600A4AD5F /* TakerLoginVC.swift in Sources */,
 				BC5087FD2882AD0800A4AD5F /* FeedModel.swift in Sources */,
 				A00D097C2891165A00F72459 /* GiverHomeCompleteVC.swift in Sources */,
@@ -641,7 +609,6 @@
 				BC09E157287FFCD900521F55 /* GiverLoginVC.swift in Sources */,
 				BC5087E72882773600A4AD5F /* FeedViewController.swift in Sources */,
 				BC5087F928827B0D00A4AD5F /* UIViewExtension.swift in Sources */,
-				9EB9358C2883E38E00A56668 /* GiverMessageTableVC.swift in Sources */,
 				BC5087E52882771E00A4AD5F /* FeedPresentationController.swift in Sources */,
 				BC8A637F287FAAF800D7DA7E /* SceneDelegate.swift in Sources */,
 				BCCE56F42891194100FB6929 /* UIColorExtension.swift in Sources */,
@@ -650,7 +617,6 @@
 				CD4172582890DEA500BA8E9E /* FeedTableHeaderViewAdmin.swift in Sources */,
 				9E63979328979FED0051FCAE /* FirebaseManager.swift in Sources */,
 				BC508808288E580A00A4AD5F /* VerticalAlignLabel.swift in Sources */,
-				9EB9358A2883E0CD00A56668 /* GiverMessageReceiveVC.swift in Sources */,
 				CD4172622890DF1A00BA8E9E /* FeedViewControllerAdmin.swift in Sources */,
 				BC508818288E784500A4AD5F /* AdminLoginVC.swift in Sources */,
 			);

@@ -28,8 +28,8 @@ class TakerMessageVC: UIViewController {
         writeBtn.addTarget(self, action: #selector(onClickedWriteBtn(sender:)), for: .touchUpInside)
         // alert 세팅하기
         setAlert()
-        // blurView 세팅하기
-        setBlurView()
+        // blurView 세팅하기 (blur가 이상해서 일단은 제거)
+        // setBlurView()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -38,7 +38,7 @@ class TakerMessageVC: UIViewController {
         vc.completionHandler = {
             // 0.5초 있다가 alert 띄워주고 blur 효과주기
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                self.blurView.alpha = 0.9
+                // self.blurView.alpha = 0.9
                 self.present(self.alert, animated: true)
             }
         }
@@ -74,9 +74,9 @@ class TakerMessageVC: UIViewController {
         alert.message = "행복한 생일 보내세요~!"
         // 확인 누르면 blur효과 지우기
         let okAction = UIAlertAction(title: "확인", style: .default) { _ in
-            UIView.animate(withDuration: 0.1, delay: 0, animations: {
-                self.blurView.alpha = 0.0
-            })
+//            UIView.animate(withDuration: 0.1, delay: 0, animations: {
+//                self.blurView.alpha = 0.0
+//            })
         }
         alert.addAction(okAction)
     }
