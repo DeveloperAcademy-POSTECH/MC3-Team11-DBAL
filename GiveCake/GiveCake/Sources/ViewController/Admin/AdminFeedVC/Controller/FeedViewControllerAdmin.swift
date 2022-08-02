@@ -29,11 +29,10 @@ class FeedViewControllerAdmin: UITableViewController {
     }()
     
     var addButton = UIButton()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        configureItems()
         
         self.view.addSubview(addButton)
         addButton.translatesAutoresizingMaskIntoConstraints = false
@@ -45,18 +44,15 @@ class FeedViewControllerAdmin: UITableViewController {
         addButton.setImage(UIImage(named: "Plus_fill_DBAL"), for: .normal)
     }
     
-    private func configureItems() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem ()
+    @objc func btnClicked(sender: UIButton) {
+        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "FeedUploadViewController") as? FeedUploadViewController else { return }
+        
+        nextVC.modalTransitionStyle = .coverVertical
+        nextVC.modalPresentationStyle = .fullScreen
+        
+        self.present(nextVC, animated: true, completion: nil)
     }
     
-    @objc func btnClicked(sender: UIButton) {
-        let vc = UIViewController()
-        vc.title = "새 게시물"
-        vc.view.backgroundColor = .systemRed
-        
-        navigationController?.pushViewController(vc, animated: true)
-    }
-
     // 테이블 뷰 세팅하기 (헤더 + 테이블 셀들)
     private func setupTableView() {
         tableView.register(FeedTableViewCellAdmin.self, forCellReuseIdentifier: "\(FeedTableViewCellAdmin.self)")
@@ -72,7 +68,7 @@ class FeedViewControllerAdmin: UITableViewController {
             self.setNeedsStatusBarAppearanceUpdate()
         }
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return FeedModel.instance.feedList.count
     }
@@ -102,10 +98,10 @@ class FeedViewControllerAdmin: UITableViewController {
             row.bgBackView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }
     }
-
+    
     // 테이블 셀 클릭했을 때 일어나는 반응 (상세 보기 화면으로 이동)
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        
         // 현재 클릭된 셀
         guard let cell = tableView.cellForRow(at: indexPath) as? FeedTableViewCellAdmin else { return }
         selectedCell = cell
@@ -124,6 +120,6 @@ class FeedViewControllerAdmin: UITableViewController {
         
         // 상세보기 화면으로 뷰 전환
         present(detailVC, animated: true, completion: nil)
-
+        
     }
 }
