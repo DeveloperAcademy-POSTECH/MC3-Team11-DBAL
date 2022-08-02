@@ -53,6 +53,7 @@ class GiverLoginVC: UIViewController {
   
     // tabbar 화면으로 이동
     @objc func onClickedToTabBarBtn(sender: UIButton) {
+        FirebaseManager.giverUser = nicknameTextField.text ?? ""
         let storyboard = UIStoryboard(name: "GiverTabBar", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "GiverTabBarVC") as! GiverTabBarVC
         vc.modalPresentationStyle = .fullScreen

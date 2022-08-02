@@ -11,6 +11,7 @@ import FirebaseFirestoreSwift
 
 final class FirebaseManager {
     static let instance = FirebaseManager()
+    static var giverUser: String = ""
     /// Firestore database에 접근하기 위한 reference(오직 한 곳을 향해 고정되어 있음)
     private let db = Firestore.firestore()
     /// 접근될때마다 아무런 값도 없는 배열로 설정하기 위해 willSet 이용

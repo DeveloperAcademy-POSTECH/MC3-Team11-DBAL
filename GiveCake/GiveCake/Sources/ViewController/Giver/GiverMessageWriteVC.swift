@@ -32,7 +32,7 @@ class GiverMessageWriteVC: UIViewController {
         complitionHandler?()
         
         if let tempText = cakeCountLabel.text, let tempIntValue = Int(tempText) {
-            let newDocument = WrittenByGiver(giverNaverID: "그라운드18", giverNumberOfCake: tempIntValue, messageFromGiverToTaker: textField.text, documentID: UUID().uuidString)
+            let newDocument = WrittenByGiver(giverNaverID: FirebaseManager.giverUser, giverNumberOfCake: tempIntValue, messageFromGiverToTaker: textField.text, documentID: UUID().uuidString)
             
             FirebaseManager.instance.uploadDocument(collectionName: "WrittenByGiver", newDocument: newDocument.dictionary)
         }
