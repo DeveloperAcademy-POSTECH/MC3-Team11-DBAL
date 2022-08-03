@@ -9,15 +9,19 @@ import FirebaseCore
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
+
 final class FirebaseManager {
+    static let instance = FirebaseManager()
+    static var giverUser: String = ""
+    static var takerUser: String = ""
     /// Firestore database에 접근하기 위한 reference(오직 한 곳을 향해 고정되어 있음)
     private let db = Firestore.firestore()
     /// 접근될때마다 아무런 값도 없는 배열로 설정하기 위해 willSet 이용
-    private var writtenByGivers: [WrittenByGiver] = [] {
+    static var writtenByGivers: [WrittenByGiver] = [] {
         willSet { [WrittenByGiver]() }
     }
     /// 접근될때마다 아무런 값도 없는 배열로 설정하기 위해 willSet 이용
-    private var writtenByTakers: [WrittenByTaker] = [] {
+    static var writtenByTakers: [WrittenByTaker] = [] {
         willSet { [WrittenByTaker]() }
     }
     /// Firestore database에 접근하기 위한 reference(가변적임)
@@ -61,7 +65,7 @@ extension FirebaseManager {
     /// self.tableview.reloadData()
     /// 참고 : https://medium.com/quick-code/step-by-step-guide-to-use-firebase-firestore-in-an-ios-app-749c5254a27b
     /// }
-    func loadData(collectionName: String, fieldName: String) {
+    func loadData(collectionName: String, completion: @escaping (Bool, [Any]) -> Void) {
         db.collection(collectionName).getDocuments() { querySnapshot, err in
             if let err = err {
                 print("데이터 가져오는 과정 중 error 발생 : \(err)")
@@ -71,9 +75,15 @@ extension FirebaseManager {
                     if let stamp = document.data()["documentID"] as? String {
                         switch collectionName {
                         case "WrittenByGiver":
-                            self.writtenByGivers.append(WrittenByGiver(giverNaverID: document.data()["giverNaverID"] as! String, giverNumberOfCake: document.data()["giverNumberOfCake"] as! Int, messageFromGiverToTaker: document.data()["messageFromGiverToTaker"] as! String, documentID: document.data()["documentID"] as! String))
+                            FirebaseManager.writtenByGivers.append(WrittenByGiver(giverNaverID: document.data()["giverNaverID"] as! String, giverNumberOfCake: document.data()["giverNumberOfCake"] as! Int, messageFromGiverToTaker: document.data()["messageFromGiverToTaker"] as! String, documentID: document.data()["documentID"] as! String))
+                            DispatchQueue.main.async {
+                                completion(true, FirebaseManager.writtenByGivers)
+                            }
                         case "WrittenByTaker":
-                            self.writtenByTakers.append(WrittenByTaker(takerName: document.data()["takerName"] as! String, messageFromTakerToGiver: document.data()["messageFromTakerToGiver"] as! String, documentID: document.data()["documentID"] as! String))
+                            FirebaseManager.writtenByTakers.append(WrittenByTaker(takerName: document.data()["takerName"] as! String, messageFromTakerToGiver: document.data()["messageFromTakerToGiver"] as! String, documentID: document.data()["documentID"] as! String))
+                            DispatchQueue.main.async {
+                                completion(true, FirebaseManager.writtenByTakers)
+                            }
                         default:
                             print("데이터를 가져오는 과정에서 문제 발생")
                         }

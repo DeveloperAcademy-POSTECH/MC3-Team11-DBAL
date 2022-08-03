@@ -16,7 +16,7 @@ class GiverMessageWriteVC: UIViewController {
     @IBOutlet weak var placeHolder: UILabel!
     @IBOutlet weak var textField: UITextView!
     @IBOutlet weak var cakeCountLabel: UILabel!
-    
+
     override func viewDidLoad() {
         sendBtn.addTarget(self, action: #selector(onClickedSendBtn(sender: )), for: .touchUpInside)
         textField.delegate = self
@@ -30,6 +30,13 @@ class GiverMessageWriteVC: UIViewController {
     }
     @objc fileprivate func onClickedSendBtn(sender: UIButton) {
         complitionHandler?()
+        
+        if let tempText = cakeCountLabel.text, let tempIntValue = Int(tempText) {
+            let newDocument = WrittenByGiver(giverNaverID: FirebaseManager.giverUser, giverNumberOfCake: tempIntValue, messageFromGiverToTaker: textField.text, documentID: UUID().uuidString)
+            
+            FirebaseManager.instance.uploadDocument(collectionName: "WrittenByGiver", newDocument: newDocument.dictionary)
+        }
+        
         self.dismiss(animated: true)
     }
 }

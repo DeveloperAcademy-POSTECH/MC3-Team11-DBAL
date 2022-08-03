@@ -53,6 +53,7 @@ class TakerLoginVC: UIViewController {
     
     // tabbar 화면으로 이동
     @objc func onClickedToTabBarBtn(sender: UIButton) {
+        FirebaseManager.takerUser = childNameTextField.text ?? ""
         performSegue(withIdentifier: "loginToTakerSegue", sender: nil)
     }
     
